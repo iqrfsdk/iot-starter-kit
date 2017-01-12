@@ -1,0 +1,1 @@
+How to setup Azure ecosystem
