@@ -1,0 +1,13 @@
+{
+  "BrokerAddr": "tcp://localhost:1883",
+  "ClientId": "IqrfDpaMessaging",
+  "Enabled": true,
+  "Persistence": 1,
+  "Qos": 0,
+  "Timeout:": 10000,
+  "TopicRequest": "Iqrf/DpaRequest",
+  "TopicResponse": "Iqrf/DpaResponse",
+  "User": "",
+  "Password": "",
+  "EnabledSSL": false
+}
