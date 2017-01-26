@@ -1,25 +1,6 @@
 {
   "Tasks": [
-    "00 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"00 00 06 03 ff ff\", \"Timeout\": 0}",
-    "05 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"01 00 06 03 ff ff\", \"Timeout\": 0}",
-    "07 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"01 00 07 03 ff ff\", \"Timeout\": 0}",
-    "10 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"02 00 06 03 ff ff\", \"Timeout\": 0}",
-    "12 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"02 00 07 03 ff ff\", \"Timeout\": 0}",
-    "15 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"03 00 06 03 ff ff\", \"Timeout\": 0}",
-    "17 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"03 00 07 03 ff ff\", \"Timeout\": 0}",
-    "20 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"00 00 06 03 ff ff\", \"Timeout\": 0}",
-    "25 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"01 00 06 03 ff ff\", \"Timeout\": 0}",
-    "27 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"01 00 07 03 ff ff\", \"Timeout\": 0}",
-    "30 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"02 00 06 03 ff ff\", \"Timeout\": 0}",
-    "32 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"02 00 07 03 ff ff\", \"Timeout\": 0}",
-    "35 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"03 00 06 03 ff ff\", \"Timeout\": 0}",
-    "37 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"03 00 07 03 ff ff\", \"Timeout\": 0}",
-    "40 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"00 00 06 03 ff ff\", \"Timeout\": 0}",
-    "45 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"01 00 06 03 ff ff\", \"Timeout\": 0}",
-    "47 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"01 00 07 03 ff ff\", \"Timeout\": 0}",
-    "50 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"02 00 06 03 ff ff\", \"Timeout\": 0}",
-    "52 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"02 00 07 03 ff ff\", \"Timeout\": 0}",
-    "55 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"03 00 06 03 ff ff\", \"Timeout\": 0}",
-    "57 * * * * * * TestClient2 {\"Type\": \"Raw\", \"Request\": \"03 00 07 03 ff ff\", \"Timeout\": 0}"
+    "00 * * * * * * ClientServicePlain2 {\"Type\": \"Raw\", \"Request\": \"01 00 0C 02 FF FF FE 01 42 00 03 75 34 75 33 75 32 CD 86\", \"Timeout\": 5000}",
+    "10 * * * * * * ClientServicePlain2 {\"Type\": \"Raw\", \"Request\": \"02 00 0C 02 FF FF FE 01 42 00 03 75 31 75 33 75 32 01 86\", \"Timeout\": 5000}"
   ]
 }
