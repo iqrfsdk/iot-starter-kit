@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "IotHubs_iqrf_demo_name": {
+            "value": null
+        },
+        "workspaceCollections_IQRF_name": {
+            "value": null
+        },
+        "servers_iqrf_name": {
+            "value": null
+        },
+        "storageAccounts_iqrf_name": {
+            "value": null
+        },
+        "serverfarms_NorthEuropePlan_name": {
+            "value": null
+        },
+        "sites_iqrf_api_name": {
+            "value": null
+        },
+        "databases_data_name": {
+            "value": null
+        },
+        "databases_master_name": {
+            "value": null
+        }
+    }
+}
