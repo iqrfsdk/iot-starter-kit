@@ -1,6 +1,0 @@
-{
-  "Tasks": [
-    "00 * * * * * * ClientServicePlain2 {\"Type\": \"Raw\", \"Request\": \"01 00 0C 02 FF FF FE 01 42 00 03 75 34 75 33 75 32 CD 86\", \"Timeout\": 5000}",
-    "10 * * * * * * ClientServicePlain2 {\"Type\": \"Raw\", \"Request\": \"02 00 0C 02 FF FF FE 01 42 00 03 75 31 75 33 75 32 01 86\", \"Timeout\": 5000}"
-  ]
-}

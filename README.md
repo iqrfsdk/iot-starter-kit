@@ -1,2 +1,2 @@
 # iot-starter-kit
-IoT Starter Kit 
+![Preliminary block diagram](/core/microrisc.com/doc/iot-starter-kit.png)
