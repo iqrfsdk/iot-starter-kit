@@ -1,5 +1,5 @@
-#How to setup Azure ecosystem
+# How to setup Azure ecosystem
 
-##Dev Essentials
+## Dev Essentials
 
 https://www.visualstudio.com/cs/dev-essentials/
