@@ -1,5 +1,11 @@
 # Iot-Starter-Kit
 
-## Tutorials
+A kit is designed to quickly and effectively build up your IoT infrastructure.
 
-https://www.youtube.com/playlist?list=PLEQy1I01En98-Q68fH50l-yjtoeV48zKU
+- Setup IQRF sensors and actuators
+- Connect IQRF coordinator to the UP board
+- Install ready IQRF deamon on the GW
+- Connect the GW to Azure cloud
+
+You can afterwards connect any IQRF interoperable devices available on http://www.iqrf.shop.
+
