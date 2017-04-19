@@ -1,4 +1,4 @@
-# How to star with IBM Bluemix cloud platform.
+# How to start with IBM Bluemix cloud platform
 
 Steps:
 
