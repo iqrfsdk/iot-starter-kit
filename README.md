@@ -8,4 +8,7 @@ A kit is designed to quickly and effectively build up your IoT infrastructure.
 - Connect the UP to Azure cloud
 - Learn about possible extensions
 
+* Installation [guide](INSTALL.md)
+* Hands-On Workshop [guideline](workshops/HANDS-ON-IQRF-IOT.md)
+
 You can afterwards connect any IQRF interoperable devices available on http://www.iqrf.shop.
