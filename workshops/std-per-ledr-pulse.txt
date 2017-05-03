@@ -1,0 +1,15 @@
+{
+	"ctype":"dpa",
+	"type":"std-per-ledr",
+	"msgid":"1",
+	"timeout":200,
+	"nadr":"01",
+	"cmd":"PULSE",
+	"hwpid":"ffff",
+	"request": ".",
+	"request-ts": "",
+	"confirmation": ".",
+	"confirmation-ts": "",
+	"response": ".",
+	"response-ts": ""
+}
