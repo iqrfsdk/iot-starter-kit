@@ -7,7 +7,7 @@ RehiveTech Management System is an ecosystem used for remote monitoring and main
 The key point is in installing the client side software on the device running OS Linux system. Installation is performed via a prepared installation package. For installation please do follow the instructions bellow.
 
 #### Step 1
-Create your own user ancount at the management website [registration page](https://management-beta.rehivetech.com/en/sign/up/).
+Create your own user ancount at the management website [registration page](https://management.rehivetech.com/en/sign/up/).
 
 ![Registration](/extensions/rehivetech.com/images/registration.png)
 
@@ -22,7 +22,7 @@ Each registered gateway is identified by an unique identifier called **token** t
 ![Add-command](/extensions/rehivetech.com/images/adding_device.png)
 
 ### Step 4
-Check if everything is correct and device is posting data into the managament system. You should see the device active in the [monitoring](https://management-beta.rehivetech.com/en/monitoring/) section and should be also able to run an action from the [management](https://management-beta.rehivetech.com/en/management/) section.
+Check if everything is correct and device is posting data into the managament system. You should see the device active in the [monitoring](https://management.rehivetech.com/en/monitoring/) section and should be also able to run an action from the [management](https://management.rehivetech.com/en/management/) section.
 
 ![Statistics](/extensions/rehivetech.com/images/statistics.png)
 
