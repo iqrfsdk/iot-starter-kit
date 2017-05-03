@@ -2,71 +2,86 @@
 
 ## Setup IQRF sensors and actuators
 
-- Download Startup package
-- Install IQRF IDE software
+- Download IQRF Startup [package](http://www.iqrf.org/support/how-to-start)
+- Install IQRF IDE software that is included in the package
 - Upload DPA plugins, custom handlers and configurations
 - Use IDE macros for IoT Starter Kit to test your IQRF mesh network
 
-## Install Linux &+ to your UP board 
+## Install Linux
 
-- UbiLinux (has been done for you already)
+- UbiLinux (It has been done for you already)
 - Ubuntu 
 - Yocto
 
 ## Connect IQRF module 
 
-- Connect IQRF SPI board to the UP board extension connector
-- Plug-in prepared IQRF coordinator to IQRF SPI board 
+- [Connect](http://www.iqrf.org/weben/downloads.php?id=412) IQRF SPI board to the UP board extension connector
+- Plug-in already prepared IQRF coordinator to IQRF SPI board 
 
-## Install IQRF daemon on the UP board
+## Install IQRF daemon
 
-- Download Putty and connect to your UP board via ssh
-- Download public key to verify the packages from the repository
-- Add repository to the source list
-- Install or update the daemon
-- Check the daemon service status
-- Setup your configuration
-- Install mosquitto broker
+- Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH
+- Follow the [instructions](https://github.com/iqrfsdk/iqrf-daemon/blob/master/README.md)
+- Install MQTT mosquitto broker
+
+```bash
+sudo apt-get install mosquitto
+```
 
 ## Test MQTT channel
 
-- Download MQTT Paho client for Win
+- Download MQTT Paho [client](https://eclipse.org/paho/clients/tool/) for Win/Linux
 - Connect Paho client to your Mosquitto broker on the UP
 - Use prepared json examples to communicate with IQRF sensors and actuators
-- Try your own DPA commands
+- Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
 
 ## Test MQ channel
 
-- Use putty to connect to your UP board via ssh
+- Use Putty to connect to your UP board via SSH
 - Use iqrfapp and prepared examples to communicate via the daemon to IQRF network
-- Try your own DPA commands
+- Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
 - Switch the daemon to service mode
+
+```bash
+sudo iqrfapp conf service
+```
 
 ## Test UDP channel
 
-- Connect IQRF IDE to the UP board
+- Connect IQRF IDE to the UP board via UDP
 - Run IQMesh Network Manager to control your IQRF network
-- Switch the daemon back to operational mode by iqrfapp using putty
+- Switch the daemon back to operational mode by iqrfapp
+
+```bash
+sudo iqrfapp conf operational
+```
 
 ## Use NodeRED to create your local dashboard
 
 - Install NodeRED
-- Import Jotio IQRF IoT package
+- Import Jotio IQRF IoT [package](../extensions/jotio/README.md)
 - Run your local control dashboard
 
 ## Connect to Azure cloud
 
-- Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate azure package
+- Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate Azure package
 - Create iothub in your Azure portal
 - Create device in the iothub that will reprezent IQRF gw - UP board
 - Use Device explorer app to connect to iothub
 - Copy connection string from your Azure portal
-- Generate SAS token using Device explorer
+- Generate SAS token using Device explorer - is used as password
 - Update mqtt [config](MqttMessaging.json) in the iqrf-daemon
 - Restart the daemon
 
+```bash
+sudo systemctl restart iqrf-daemon.service
+```
+
+- create stream analytics 
+- create Power BI dashboard
+
 ## Try our mobile app
 
-- Download our free iot iqrf app to your android device
-- Setup mqtt connection
-- Experiment with it
+- Download our free IoT IQRF app to your Android device
+- Setup MQTT connection to your broker
+- Give a try
