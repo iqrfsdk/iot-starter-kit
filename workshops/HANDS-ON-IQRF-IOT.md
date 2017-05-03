@@ -1,4 +1,4 @@
-# Hands-On-Workshop for IQRF IOT
+# Hands-On-Workshop for IQRF IOT Starter Kit
 
 ## Setup IQRF sensors and actuators
 
@@ -25,6 +25,7 @@
 - Install MQTT mosquitto broker
 
 ```bash
+sudo apt-get update
 sudo apt-get install mosquitto
 ```
 
@@ -32,7 +33,7 @@ sudo apt-get install mosquitto
 
 - Download MQTT Paho [client](https://eclipse.org/paho/clients/tool/) for Win/Linux
 - Connect Paho client to your Mosquitto broker on the UP
-- Use prepared json examples to communicate with IQRF sensors and actuators
+- Use prepared JSON examples to communicate with IQRF sensors and actuators
 - Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
 
 ## Test MQ channel
@@ -59,18 +60,18 @@ sudo iqrfapp conf operational
 ## Use NodeRED to create your local dashboard
 
 - Install NodeRED
-- Import Jotio IQRF IoT [package](../extensions/jotio/README.md)
+- Import Jotio IQRF IoT [package](../extensions/jotio.cz/README.md)
 - Run your local control dashboard
 
 ## Connect to Azure cloud
 
 - Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate Azure package
 - Create iothub in your Azure portal
-- Create device in the iothub that will reprezent IQRF gw - UP board
-- Use Device explorer app to connect to iothub
+- Create device in the iothub that will reprezent IQRF GW - UP board
+- Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
 - Copy connection string from your Azure portal
-- Generate SAS token using Device explorer - is used as password
-- Update mqtt [config](MqttMessaging.json) in the iqrf-daemon
+- Generate SAS token using Device explorer - is used as password in MQTT config
+- Update MQTT [config](MqttMessaging.json) in the iqrf-daemon
 - Restart the daemon
 
 ```bash
