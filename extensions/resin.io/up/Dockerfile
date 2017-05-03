@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM resin/up-board-debian
 ENV INITSYSTEM on
 
 MAINTAINER Rostislav Spinar "rostislav.spinar@microrisc.com"
