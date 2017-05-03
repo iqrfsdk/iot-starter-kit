@@ -66,14 +66,21 @@ Follow the instructions [here](https://github.com/iqrfsdk/iqrf-daemon)
 
 ## Connect the UP to Azure cloud
 
-* Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate azure package
-* Create iothub in your Azure portal
-* Create device in the iothub that will reprezent IQRF gw - UP board
-* Use Device explorer app to connect to iothub
-* Copy connection string from your Azure portal
-* Generate SAS token using Device explorer - used as password
-* Update mqtt [config](workshops/MqttMessaging.json) in the iqrf-daemon
-* Restart the daemon
+- Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate Azure package
+- Create iothub in your Azure portal
+- Create device in the iothub that will represent IQRF GW - UP board
+- Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
+- Copy connection string from your Azure portal
+- Generate SAS token using Device explorer - is used as password in MQTT [config](MqttMessaging.json)
+- Update MQTT [config](MqttMessaging.json) in the iqrf-daemon
+- Restart the daemon
+
+```bash
+sudo systemctl restart iqrf-daemon.service
+```
+
+- create stream analytics 
+- create Power BI dashboard
 
 ## Learn about possible extensions
 
