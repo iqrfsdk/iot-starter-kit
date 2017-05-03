@@ -7,9 +7,9 @@
 - Upload DPA plugins, custom handlers and configurations
 - Use IDE macros for IoT Starter Kit to test your IQRF mesh network
 
-## Install Linux &+ to your UP board (has been done for you already)
+## Install Linux &+ to your UP board 
 
-- UbiLinux 
+- UbiLinux (has been done for you already)
 - Ubuntu 
 - Yocto
 
@@ -61,8 +61,8 @@
 - Create device in the iothub that will reprezent IQRF gw - UP board
 - Use Device explorer app to connect to iothub
 - Copy connection string from your Azure portal
-- Generate sas token using Device explorer
-- Update mqtt config in the iqrf-daemon
+- Generate SAS token using Device explorer
+- Update mqtt [config](MqttMessaging.json) in the iqrf-daemon
 - Restart the daemon
 
 ## Try our mobile app

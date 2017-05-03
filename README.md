@@ -2,7 +2,7 @@
 
 A kit is designed to quickly and effectively build up your IoT infrastructure.
 
-Installation [guide](INSTALL.md)
+Installation [guideline](INSTALL.md)
 
 - Setup IQRF sensors and actuators
 - Connect IQRF coordinator to the UP board
