@@ -1,0 +1,49 @@
+{
+  "Implements": "IMessaging",
+  "Instances": [
+    {
+      "Name": "MqttMessaging1",
+      "Properties": {
+        "BrokerAddr": "tcp://127.0.0.1:1883",
+        "ClientId": "IqrfDpaMessaging1",
+        "Enabled": true,
+        "Persistence": 1,
+        "Qos": 1,
+        "TopicRequest": "Iqrf/DpaRequest",
+        "TopicResponse": "Iqrf/DpaResponse",
+        "User": "",
+        "Password": "",
+        "EnabledSSL": false,
+        "KeepAliveInterval": 20,
+        "ConnectTimeout": 5,
+        "MinReconnect": 1,
+        "MaxReconnect": 64
+      }
+    },
+    {
+      "Name": "MqttMessaging2",
+      "Properties": {
+        "BrokerAddr": "ssl://mqtt.online:49300",
+        "ClientId": "YOURID",
+        "Enabled": true,
+        "Persistence": 1,
+        "Qos": 1,
+        "TopicRequest": "YOURROOTTOPIC/Iqrf/DpaRequest",
+        "TopicResponse": "YOURROOTTOPIC/Iqrf/DpaResponse",
+        "User": "YOURID",
+        "Password": "YOURPASS",
+        "EnabledSSL": true,
+        "KeepAliveInterval": 20,
+        "ConnectTimeout": 5,
+        "MinReconnect": 1,
+        "MaxReconnect": 64,
+        "TrustStore": "/etc/iqrf-daemon/cert/IntelimentsRootCA.crt",
+        "KeyStore": "",
+        "PrivateKey": "",
+        "PrivateKeyPassword": "",
+        "EnabledCipherSuites": "",
+        "EnableServerCertAuth": true
+      }
+    }
+  ]
+}
