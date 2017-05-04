@@ -1,4 +1,4 @@
-# Setup platforms
+# Setting up a Platform
 
 # Run Docker 
 Install Docker -> See the inspiration [here](https://github.com/iqrfsdk/iqrf-daemon/blob/master/DOCKER.md)
@@ -19,7 +19,7 @@ sudo docker network connect isolated_nw redgw
 docker exec -it redgw /bin/bash
 npm i node-red/node-red-dashboard
 ```
-### configure NodeRed
+### configure NodeRed Flow
 
 
 # Setup Azure ecosystem 
