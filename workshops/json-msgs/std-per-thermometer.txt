@@ -1,0 +1,17 @@
+json-dpa-request
+
+{
+"ctype":"dpa",
+"type":"std-per-thermometer",
+"msgid":"1",
+"timeout":500,
+"nadr":"01",
+"cmd":"READ",
+"hwpid":"ffff",
+"request":".",
+"request-ts":"",
+"confirmation":".",
+"confirmation-ts":"",
+"response":".",
+"response-ts":""
+}

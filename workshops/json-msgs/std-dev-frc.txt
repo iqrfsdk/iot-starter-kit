@@ -1,0 +1,19 @@
+json-dpa-request
+
+{
+  "ctype": "dpa",
+  "type": "std-dev-frc",
+  "msgid": "1",
+  "timeout": "5000",
+  "cmd": "SEND",
+  "hwpid": "ffff",
+  "frc-type": "GET_BYTE",
+  "frc-user": "90/E0",
+  "frc-data": "50.03.00.00.00",
+  "request": "",
+  "request-ts": "",
+  "confirmation": "",
+  "confirmation-ts": "",
+  "response": "",
+  "response-ts": ""
+}

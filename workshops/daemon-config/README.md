@@ -1,0 +1,1 @@
+https://github.com/iqrfsdk/iqrf-daemon/wiki/Configuration
