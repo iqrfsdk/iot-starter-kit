@@ -1,4 +1,4 @@
-N2 relays on
+json-dpa-request N2 relays on
 
 {
 "ctype":"dpa",
@@ -18,7 +18,7 @@ N2 relays on
 "response-ts":""
 }
 
-N2 relays off
+json-dpa-request N2 relays off
 
 {
 "ctype":"dpa",

@@ -1,4 +1,4 @@
-N1 sensor reading
+json-dpa-request N1 sensor reading
 
 {
 "ctype":"dpa",
@@ -18,7 +18,7 @@ N1 sensor reading
 "response-ts":""
 }
 
-FRC Temperature
+json-dpa-request FRC Temperature
 
 {
 "ctype":"dpa",
@@ -38,7 +38,7 @@ FRC Temperature
 "response-ts":""
 }
 
-FRC Light
+json-dpa-request FRC Light
 
 {
 "ctype":"dpa",
@@ -58,7 +58,7 @@ FRC Light
 "response-ts":""
 }
 
-FRC Potenciometer
+json-dpa-request FRC Potenciometer
 
 {
 "ctype":"dpa",
