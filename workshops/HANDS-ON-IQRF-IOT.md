@@ -33,13 +33,13 @@ sudo apt-get install mosquitto
 
 - Download MQTT Paho [client](https://eclipse.org/paho/clients/tool/) for Win/Linux
 - Connect Paho client to your Mosquitto broker on the UP
-- Use prepared JSON examples to communicate with IQRF sensors and actuators
+- Use prepared JSON [examples](json-msgs) to communicate with IQRF sensors and actuators
 - Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
 
 ## Test MQ channel
 
 - Use Putty to connect to your UP board via SSH
-- Use iqrfapp and prepared examples to communicate via the daemon to IQRF network
+- Use iqrfapp and prepared scripts to communicate via the daemon to IQRF network
 - Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
 - Switch the daemon to service mode
 
@@ -70,15 +70,17 @@ sudo iqrfapp conf operational
 - Create device in the iothub that will represent IQRF GW - UP board
 - Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
 - Copy connection string from your Azure portal
-- Generate SAS token using Device explorer - is used as password in MQTT [config](MqttMessaging.json)
-- Update MQTT [config](MqttMessaging.json) in the iqrf-daemon
+- Generate SAS token using Device explorer - is used as password in MQTT [config](daemon-config/MqttMessaging.json)
+- Update MQTT [config](daemon-config/MqttMessaging.json) in the iqrf-daemon
+- Setup [scheduler](daemon-config/Scheduler.json) for regural readings from DDC-SE
 - Restart the daemon
 
 ```bash
 sudo systemctl restart iqrf-daemon.service
 ```
 
-- create stream analytics 
+- confirm receiving regural DDC-SE readings by Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases)
+- create stream analytics script
 - create Power BI dashboard
 
 ## Try our mobile app
