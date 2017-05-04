@@ -1,4 +1,4 @@
-# Setting up a Platform
+# Setting up a Platforms
 
 # Run Docker 
 Install Docker -> See the inspiration [here](https://github.com/iqrfsdk/iqrf-daemon/blob/master/DOCKER.md)
