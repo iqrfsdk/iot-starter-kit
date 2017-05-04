@@ -1,11 +1,11 @@
-json-dpa-request
+json-dpa-request (not implemented yet)
 
 {
   "ctype": "dpa",
   "type": "std-dev-frc",
   "msgid": "1",
   "timeout": "5000",
-  "cmd": "send",
+  "cmd": "SEND",
   "hwpid": "ffff",
   "frc-type": "GET_BYTE",
   "frc-user": "90",
@@ -18,14 +18,14 @@ json-dpa-request
   "response-ts": ""
 }
 
-json-dpa-request
+json-dpa-request (not implemented yet)
 
 {
   "ctype": "dpa",
   "type": "std-dev-frc",
   "msgid": "1",
   "timeout": "5000",
-  "cmd": "send",
+  "cmd": "SEND",
   "hwpid": "ffff",
   "frc-type": "GET_BYTE2",
   "frc-user": "E0",

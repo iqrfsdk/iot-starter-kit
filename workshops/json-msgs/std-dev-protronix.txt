@@ -1,4 +1,4 @@
-json-dpa-request
+json-dpa-request (not implemented yet)
 
 {
 "ctype":"dpa",
@@ -17,7 +17,7 @@ json-dpa-request
 "response-ts":""
 }
 
-json-dpa-response
+json-dpa-response (not implemented yet)
 
 {
 "ctype":"dpa",
