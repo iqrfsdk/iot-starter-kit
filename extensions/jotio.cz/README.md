@@ -21,7 +21,7 @@ npm i node-red/node-red-dashboard
 ```
 ### configure NodeRed Flow
 
-Import the contents of this [file](extensions/jotio.cz/jotio_nodered.json) into nodered. 
+Import the contents of this [file](/jotio_nodered.json) into nodered. 
 
 # Setup Azure ecosystem 
 ### docker_net
