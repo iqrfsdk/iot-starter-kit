@@ -1,4 +1,4 @@
-# Hands-On-Workshop for IQRF IOT Starter Kit
+# Hands-on Workshop for IQRF IoT Starter Kit
 
 ## Setup IQRF sensors and actuators
 
