@@ -1,4 +1,4 @@
-# How to setup Node-RED ecosystem
+# Setup platforms
 
 # Run Docker 
 Install Docker -> See the inspiration [here](https://github.com/iqrfsdk/iqrf-daemon/blob/master/DOCKER.md)
@@ -20,3 +20,26 @@ docker exec -it redgw /bin/bash
 npm i node-red/node-red-dashboard
 ```
 ### configure NodeRed
+
+
+# Setup Azure ecosystem 
+### docker_net
+```javascript
+// Convert Hex value to integer.
+function main(hexValue) {
+    return parseInt(hexValue, 16);
+}
+```
+### MQTT Broker
+```sql
+SELECT
+    *
+     ,UDF.hex2Int(Substring (response,25,2)) AS Temperature
+     ,UDF.hex2Int(Substring (response,28,2)) AS Light
+     ,UDF.hex2Int(Substring (response,31,2)) AS Potentiometer
+INTO
+    DataOUT
+FROM
+    DataIN
+```
+
