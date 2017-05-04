@@ -59,8 +59,8 @@ sudo iqrfapp conf operational
 
 ## Use NodeRED to create your local dashboard
 
-- Install NodeRED
-- Import Jotio IQRF IoT [package](../extensions/jotio.cz/README.md)
+- Install [NodeRED](../extensions/jotio.cz/README.md)
+- Import Jotio IQRF IoT [package](../extensions/jotio.cz/jotio_nodered.json)
 - Run your local control dashboard
 
 ## Connect to Azure cloud
@@ -79,7 +79,7 @@ sudo iqrfapp conf operational
 sudo systemctl restart iqrf-daemon.service
 ```
 
-- confirm receiving regural DDC-SE readings by Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases)
+- confirm receiving scheduled DDC-SE readings by Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases)
 - create stream analytics script
 - create Power BI dashboard
 
