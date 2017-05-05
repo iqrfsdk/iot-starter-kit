@@ -1,5 +1,5 @@
-```bash
 sudo iqrfapp "{\"ctype\":\"dpa\",\"type\":\"raw\",\"msgid\":\"1\",\"timeout\":1000,\"request\":\"01.00.06.03.ff.ff\"}"
+
 {
     "ctype": "dpa",
     "type": "raw",
@@ -9,4 +9,3 @@ sudo iqrfapp "{\"ctype\":\"dpa\",\"type\":\"raw\",\"msgid\":\"1\",\"timeout\":10
     "response": "01.00.06.83.1e.00.00.31",
     "status": "STATUS_NO_ERROR"
 }
-```
