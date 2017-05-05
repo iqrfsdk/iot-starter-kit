@@ -18,6 +18,8 @@ sudo docker run -d -p 1880:1880 --restart=always --name redgw nodered/node-red-d
 sudo docker network connect isolated_nw redgw
 docker exec -it redgw /bin/bash
 npm i node-red/node-red-dashboard
+exit
+sudo docker restart redgw
 ```
 ### configure NodeRed Flow
 
