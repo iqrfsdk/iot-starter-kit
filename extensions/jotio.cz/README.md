@@ -26,7 +26,7 @@ sudo docker restart redgw
 Import the contents of this [file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/extensions/jotio.cz/jotio_nodered.json) into nodered. 
 
 # Setup Azure ecosystem 
-### docker_net
+### javascript
 ```javascript
 // Convert Hex value to integer.
 function main(hexValue) {
