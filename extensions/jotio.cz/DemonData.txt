@@ -1,0 +1,20 @@
+Data:[{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "nadr": "01",
+    "pnum": "20",
+    "pcmd": "31",
+    "rcode": "00",
+    "dpaval": "3e",
+    "res-data": "17.35.d5",
+    "hwpid": "ffff",
+    "timeout": 500,
+    "request": "01.00.20.31.ff.ff",
+    "request-ts": "2017-05-05 08:51:45.891",
+    "confirmation": "01.00.20.31.ff.ff.ff.3a.01.04.01",
+    "confirmation-ts": "2017-05-05 08:51:45.70307",
+    "response": "01.00.20.b1.1e.00.00.3e.17.35.d5",
+    "response-ts": "2017-05-05 08:51:45.191584",
+    "status": "STATUS_NO_ERROR"
+}]
