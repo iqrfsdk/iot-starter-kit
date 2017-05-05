@@ -22,6 +22,13 @@
 
 - Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH
 - Follow the [instructions](https://github.com/iqrfsdk/iqrf-daemon/blob/master/README.md)
+- Configure the daemon by [iqrf-daemon-webapp](https://github.com/iqrfsdk/iqrf-daemon-webapp) 
+
+```bash
+cd /home/ubilinux/IQRF/iqrf-daemon-webapp
+php -S 0.0.0.0:8000 -t www
+```
+
 - Install MQTT mosquitto broker
 
 ```bash
