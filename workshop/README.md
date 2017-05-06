@@ -26,6 +26,10 @@
 
 ## Install IQRF daemon
 
+*It has been done for you already*
+
+- Check the daemon [architecture](https://github.com/iqrfsdk/iqrf-daemon/blob/master/doc/iqrf-linux-gw.png)
+
 - Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH (192.168.13.x)
 
 - Download public key to verify the packages from the repository
@@ -47,19 +51,20 @@ sudo apt-get update
 sudo apt-get install iqrf-daemon
 ```
 
-- Configure the daemon by [iqrf-daemon-webapp](https://github.com/iqrfsdk/iqrf-daemon-webapp) 
+## Configure IQRF daemon by [iqrf-daemon-webapp](https://github.com/iqrfsdk/iqrf-daemon-webapp) 
 
-Use your browser: http://192.168.13.x:8000 (admin/iqrf)
+- Use your browser 
 
-- Restart the service
+http://192.168.13.x:8000 (admin/iqrf)
+
+- Restart the iqrf-daemon service
 
 ```bash
 sudo systemctl restart iqrf-daemon.service
 ```
+*or you can use iqrf-daemon-webapp*
 
-or you can use iqrf-daemon-webapp
-
-- Install MQTT mosquitto broker
+## Install MQTT mosquitto broker
 
 ```bash
 sudo apt-get update
