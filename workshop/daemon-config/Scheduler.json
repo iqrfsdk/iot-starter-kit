@@ -4,7 +4,7 @@
 
   "TasksJson": [
     {
-      "time": "*/5 * * * * * *",
+      "time": "*/30 * * * * * *",
       "service": "BaseServiceForMQTT2",
       "message": {
         "ctype":"dpa",

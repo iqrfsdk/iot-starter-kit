@@ -12,4 +12,4 @@ Installation [guideline](INSTALL.md)
 
 You can afterwards connect any IQRF interoperable devices available on http://www.iqrf.shop.
 
-Hands-On Workshop [guideline](workshops/HANDS-ON-IQRF-IOT.md)
+Hands-On Workshop [guideline](workshop/HANDS-ON-WORKSHOP.md)
