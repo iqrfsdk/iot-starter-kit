@@ -1,0 +1,40 @@
+N1 LEDR Pulse
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"01",
+	"pnum":"06",
+	"pcmd":"03",
+	"hwpid":"ffff",
+	"req-data":"",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "06",
+    "pcmd": "03",
+    "rcode": "00",
+    "dpaval": "25",
+    "res-data": "",
+    "hwpid": "ffff",
+    "request": "01 00 06 03 ff ff",
+    "request-ts": "2017-05-09 18:14:45.636921",
+    "confirmation": "01 00 06 03 ff ff ff 21 01 04 01",
+    "confirmation-ts": "2017-05-09 18:14:45.706907",
+    "response": "01 00 06 83 1e 00 00 25",
+    "response-ts": "2017-05-09 18:14:45.824456",
+    "status": "STATUS_NO_ERROR"
+}

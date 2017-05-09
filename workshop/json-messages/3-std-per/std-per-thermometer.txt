@@ -1,0 +1,35 @@
+N1 Thermometer Read
+
+{
+	"ctype":"dpa",
+	"type":"std-per-thermometer",
+	"msgid":"1",
+	"timeout":500,
+	"nadr":"01",
+	"cmd":"READ",
+	"hwpid":"ffff",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "std-per-thermometer",
+    "msgid": "1",
+    "timeout": 500,
+    "nadr": "01",
+    "cmd": "READ",
+    "hwpid": "ffff",
+    "temperature": 23.25,
+    "request": "01 00 0a 00 ff ff",
+    "request-ts": "2017-05-09 19:08:25.4940",
+    "confirmation": "01 00 0a 00 ff ff ff 27 01 04 01",
+    "confirmation-ts": "2017-05-09 19:08:25.74582",
+    "response": "01 00 0a 80 1e 00 00 2e 17 74 01",
+    "response-ts": "2017-05-09 19:08:25.195622",
+    "status": "STATUS_NO_ERROR"
+}

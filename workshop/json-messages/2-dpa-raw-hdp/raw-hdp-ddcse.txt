@@ -1,0 +1,164 @@
+N1 sensor readings
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"01",
+	"pnum":"20",
+	"pcmd":"31",
+	"hwpid":"ffff",
+	"req-data":"",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "20",
+    "pcmd": "31",
+    "rcode": "00",
+    "dpaval": "28",
+    "res-data": "16 3e d8",
+    "hwpid": "ffff",
+    "request": "01 00 20 31 ff ff",
+    "request-ts": "2017-05-09 18:29:00.719556",
+    "confirmation": "01 00 20 31 ff ff ff 23 01 04 01",
+    "confirmation-ts": "2017-05-09 18:29:00.789384",
+    "response": "01 00 20 b1 1e 00 00 28 16 3e d8",
+    "response-ts": "2017-05-09 18:29:00.910839",
+    "status": "STATUS_NO_ERROR"
+}
+
+
+FRC Temperature
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"00",
+	"pnum":"0d",
+	"pcmd":"00",
+	"hwpid":"ffff",
+	"req-data":"c0.00.00",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "rcode": "00",
+    "dpaval": "23",
+    "res-data": "05.00.16.01.80.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "request": "00.00.0d.00.ff.ff.c0.00.00",
+    "request-ts": "2017-05-09 18:31:55.391686",
+    "confirmation": "",
+    "confirmation-ts": "",
+    "response": "00.00.0d.80.00.00.00.23.05.00.16.01.80.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response-ts": "2017-05-09 18:31:56.353680",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC Light
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"00",
+	"pnum":"0d",
+	"pcmd":"00",
+	"hwpid":"ffff",
+	"req-data":"c1.00.00",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "rcode": "00",
+    "dpaval": "21",
+    "res-data": "05.00.40.01.b0.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "request": "00.00.0d.00.ff.ff.c1.00.00",
+    "request-ts": "2017-05-09 18:34:42.840630",
+    "confirmation": "",
+    "confirmation-ts": "",
+    "response": "00.00.0d.80.00.00.00.21.05.00.40.01.b0.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response-ts": "2017-05-09 18:34:43.799013",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC Potenciometer
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"00",
+	"pnum":"0d",
+	"pcmd":"00",
+	"hwpid":"ffff",
+	"req-data":"c2.00.00",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "rcode": "00",
+    "dpaval": "29",
+    "res-data": "0f.00.df.01.fe.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "request": "00.00.0d.00.ff.ff.c2.00.00",
+    "request-ts": "2017-05-09 18:35:43.544810",
+    "confirmation": "",
+    "confirmation-ts": "",
+    "response": "00.00.0d.80.00.00.00.29.0f.00.df.01.fe.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response-ts": "2017-05-09 18:35:44.499633",
+    "status": "STATUS_NO_ERROR"
+}

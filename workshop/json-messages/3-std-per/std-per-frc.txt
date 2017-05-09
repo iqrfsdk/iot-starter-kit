@@ -1,0 +1,38 @@
+FRC Thermometer
+
+{
+    "ctype": "dpa",
+    "type": "std-per-frc",
+    "msgid": "1",
+    "timeout": 5000,
+    "cmd": "SEND",
+    "hwpid": "ffff",
+    "frc-type": "GET_BYTE",
+    "frc-user": 0,
+    "user-data": "00.00",
+    "request": ".",
+    "request-ts": "",
+    "confirmation": ".",
+    "confirmation-ts": "",
+    "response": ".",
+    "response-ts": ""
+}
+
+{
+    "ctype": "dpa",
+    "type": "std-per-frc",
+    "msgid": "1",
+    "timeout": 5000,
+    "cmd": "SEND",
+    "hwpid": "ffff",
+    "frc-type": "GET_BYTE",
+    "frc-user": 0,
+    "frc-data": "16.01.80.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "request": "00.00.0d.00.ff.ff.c0.00.00.00.00",
+    "request-ts": "2017-05-09 19:38:44.505127",
+    "confirmation": "",
+    "confirmation-ts": "",
+    "response": "00.00.0d.80.00.00.00.2b.05.00.16.01.80.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response-ts": "2017-05-09 19:38:45.548687",
+    "status": "STATUS_NO_ERROR"
+}

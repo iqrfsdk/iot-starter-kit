@@ -1,14 +1,13 @@
-json-dpa-request (not implemented yet)
+FRC Standard Sensor
 
 {
   "ctype": "dpa",
   "type": "std-dev-frc",
   "msgid": "1",
-  "timeout": "5000",
+  "timeout": 5000,
   "cmd": "SEND",
   "hwpid": "ffff",
   "frc-type": "GET_BYTE",
-  "frc-user": "90",
   "user-data": "50.83.00.00.00",
   "request": "",
   "request-ts": "",
@@ -18,17 +17,14 @@ json-dpa-request (not implemented yet)
   "response-ts": ""
 }
 
-json-dpa-request (not implemented yet)
-
 {
   "ctype": "dpa",
   "type": "std-dev-frc",
   "msgid": "1",
-  "timeout": "5000",
+  "timeout": 5000,
   "cmd": "SEND",
   "hwpid": "ffff",
   "frc-type": "GET_BYTE2",
-  "frc-user": "E0",
   "user-data": "50.83.00.00.00",
   "request": "",
   "request-ts": "",

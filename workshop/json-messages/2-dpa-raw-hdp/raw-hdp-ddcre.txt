@@ -1,0 +1,81 @@
+N2 relays on
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"02",
+	"pnum":"20",
+	"pcmd":"32",
+	"hwpid":"ffff",
+	"req-data":"01.01",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "02",
+    "pnum": "20",
+    "pcmd": "32",
+    "rcode": "00",
+    "dpaval": "25",
+    "res-data": "00.00",
+    "hwpid": "ffff",
+    "request": "02.00.20.32.ff.ff.01.01",
+    "request-ts": "2017-05-09 18:51:05.401796",
+    "confirmation": "02.00.20.32.ff.ff.ff.23.02.04.02",
+    "confirmation-ts": "2017-05-09 18:51:05.473518",
+    "response": "02.00.20.b2.2e.00.00.25.00.00",
+    "response-ts": "2017-05-09 18:51:05.635960",
+    "status": "STATUS_NO_ERROR"
+}
+
+N2 relays off
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"02",
+	"pnum":"20",
+	"pcmd":"32",
+	"hwpid":"ffff",
+	"req-data":"00.00",
+	"request":".",
+	"request-ts":"",
+	"confirmation":".",
+	"confirmation-ts":"",
+	"response":".",
+	"response-ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "02",
+    "pnum": "20",
+    "pcmd": "32",
+    "rcode": "00",
+    "dpaval": "28",
+    "res-data": "01.01",
+    "hwpid": "ffff",
+    "request": "02.00.20.32.ff.ff.00.00",
+    "request-ts": "2017-05-09 18:52:54.644146",
+    "confirmation": "02.00.20.32.ff.ff.ff.1e.02.04.02",
+    "confirmation-ts": "2017-05-09 18:52:54.715796",
+    "response": "02.00.20.b2.2e.00.00.28.01.01",
+    "response-ts": "2017-05-09 18:52:54.877860",
+    "status": "STATUS_NO_ERROR"
+}
