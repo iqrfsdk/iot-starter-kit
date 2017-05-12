@@ -16,7 +16,7 @@ sudo docker run -d --name mqtt -p 1883:1883 -p 9001:9001 --network=isolated_nw -
 ```Bash
 sudo docker run -d -p 1880:1880 --restart=always --name redgw nodered/node-red-docker
 sudo docker network connect isolated_nw redgw
-docker exec -it redgw /bin/bash
+sudo docker exec -it redgw /bin/bash
 npm i node-red/node-red-dashboard
 exit
 sudo docker restart redgw
