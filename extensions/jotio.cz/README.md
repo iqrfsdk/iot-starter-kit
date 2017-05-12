@@ -22,7 +22,8 @@ exit
 sudo docker restart redgw
 ```
 ### configure NodeRed Flow
-
+Open:
+http://[Ip adress of UpBoard]:1880
 Import the contents of this [file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/extensions/jotio.cz/Jotio_App_NodeRed_mqtt.json) into nodered. 
 
 # Setup Azure ecosystem 
