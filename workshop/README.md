@@ -1,5 +1,7 @@
 # Hands-on Workshop for IQRF IoT Starter Kit
 
+![Block schema](schema/workshop-schema.png "Schema for GWs")
+
 ## Setup IQRF sensors and actuators
 
 - Download IQRF Startup [package](http://www.iqrf.org/support/how-to-start)

@@ -71,8 +71,8 @@ Follow the instructions [here](https://github.com/iqrfsdk/iqrf-daemon)
 - Create device in the iothub that will represent IQRF GW - UP board
 - Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
 - Copy connection string from your Azure portal
-- Generate SAS token using Device explorer - is used as password in MQTT [config](MqttMessaging.json)
-- Update MQTT [config](MqttMessaging.json) in the iqrf-daemon
+- Generate SAS token using Device explorer - is used as password in MQTT [config](workshop/daemon-config/MqttMessaging.json)
+- Update MQTT [config](workshop/daemon-config/MqttMessaging.json) in the iqrf-daemon
 - Restart the daemon
 
 ```bash
