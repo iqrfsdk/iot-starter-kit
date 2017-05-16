@@ -1,0 +1,44 @@
+{
+  "Configuration": "v0.0",
+  "ConfigurationDir": "/etc/iqrf-daemon",
+  "WatchDogTimeoutMilis": 10000,
+
+  "Components": [
+    {
+      "ComponentName": "TracerFile",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "IqrfInterface",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "UdpMessaging",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "MqttMessaging",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "MqMessaging",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "Scheduler",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "SimpleSerializer",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "JsonSerializer",
+      "Enabled":  true
+    },
+    {
+      "ComponentName": "BaseService",
+      "Enabled": true
+    }
+  ]
+}

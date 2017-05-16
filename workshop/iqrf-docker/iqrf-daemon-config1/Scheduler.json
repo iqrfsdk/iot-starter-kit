@@ -1,0 +1,28 @@
+{
+  "Tasks": [
+  ],
+
+  "TasksJson": [
+	{
+		"time": "*/45 * * * * * *",
+      		"service": "BaseServiceForMQTT2",
+		"message": {
+			"ctype":"dpa",
+	        	"type":"raw-hdp",
+		        "msgid":"1",
+		        "timeout":500,
+		        "nadr":"01",
+		        "pnum":"20",
+		        "pcmd":"31",
+		        "hwpid":"ffff",
+		        "req-data":"",
+		        "request":".",
+		        "request-ts":"",
+		        "confirmation":".",
+		        "confirmation-ts":"",
+		        "response":".",
+		        "response-ts":""
+	      }
+	}
+  ]
+}
