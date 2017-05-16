@@ -14,7 +14,7 @@
 
 ## Install Linux
 
-- UbiLinux (It has been done for you already)
+- UbiLinux
 
 - Ubuntu 
 
@@ -27,8 +27,6 @@
 - Plug-in already prepared IQRF coordinator to IQRF SPI board 
 
 ## Install IQRF daemon
-
-*It has been done for you already*
 
 - Check the daemon [architecture](https://github.com/iqrfsdk/iqrf-daemon/blob/master/doc/iqrf-linux-gw.png)
 
