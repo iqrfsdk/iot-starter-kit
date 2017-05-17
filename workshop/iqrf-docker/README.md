@@ -1,20 +1,20 @@
-#IQRF in Docker
+# IQRF in Docker
 
 Docker installation [guideline](https://github.com/iqrfsdk/iqrf-daemon/blob/master/DOCKER.md)
 
-##Running 2 IQRF daemons as 2 docker containers servising 2 IQRF networks
+## Running 2 IQRF daemons as 2 docker containers servising 2 IQRF networks
 
 ![Block schema](../schema/workshop-schema-docker.png "Schema for IQRF GWs in Docker")
 
 - IQRF1 via IQRF SPI (configuration in [iqrf-daemon-config1](iqrf-daemon-config1) folder)
 - IQRF2 via CDC IQRF (configuration in [iqrf-daemon-config2](iqrf-daemon-config2) folder)
 
-###Dedicated network for our containers
+### Dedicated network for our containers
 ```Bash
 docker network create --subnet 10.1.0.0/16 --gateway 10.1.0.1 --ip-range=10.1.1.0/24 -driver=bridge --label=host1network bridge01
 ```
 
-###MQTT broker
+### MQTT broker
 
 - Runs Mosquitto broker as daemon
 - Maps ports to the host system
@@ -24,7 +24,7 @@ docker network create --subnet 10.1.0.0/16 --gateway 10.1.0.1 --ip-range=10.1.1.
 docker run -d --name mqtt1broker -p 1883:1883 -p 9001:9001 --network=bridge01 --ip=10.1.1.1 --restart=always eclipse-mosquitto
 ```
 
-###IQRF MESH network1
+### IQRF MESH network1
 
 - Runs first IQRF daemon as docker daemon
 - Maps devices(SPI, CDC) into container
@@ -35,7 +35,7 @@ docker run -d --name mqtt1broker -p 1883:1883 -p 9001:9001 --network=bridge01 --
 docker run -d --name iqrf1daemon --device /dev/spidev2.0:/dev/spidev2.0 --device /dev/ttyACM0:/dev/ttyACM0 --privileged --net bridge01 --ip 10.1.1.2 --restart=always -v iqrf-daemon-config1:/etc/iqrf-daemon iqrfsdk/iqrf-daemon
 ```
 
-###IQRF MESH network2
+### IQRF MESH network2
 
 - Runs second IQRF daemon as docker daemon
 - Maps devices(SPI, CDC) into container
