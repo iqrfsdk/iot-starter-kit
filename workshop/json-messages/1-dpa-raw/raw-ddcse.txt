@@ -1,0 +1,298 @@
+Std. DDC-SE
+
+// 1st sensor is on-board TR temperature sensor.
+// 2nd sensor is either Dallas 18B20 or MCP9802 temperature sensor at DDC-SE01 board (according to the HW jumper position) chosen at the runtime based on the SW detection.
+// 3rd sensor is light intensity indicator at DDC-SE01 board (value range is 0[max light]-127[max dark]).
+// 4th sensor is potentiometer value at DDC-SE01 board (value range is 0[left stop]-127[right stop]).
+
+N1 STD-SENSOR device type - enumerate sensor types
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request":"01.00.5e.00.ff.ff.00.00.00.00",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "01.00.5e.00.ff.ff.00.00.00.00",
+    "request_ts": "2017-05-23 13:31:14.917446",
+    "confirmation": "01.00.5e.00.ff.ff.ff.52.01.04.01",
+    "confirmation_ts": "2017-05-23 13:31:14.960677",
+    "response": "01.00.5e.80.0f.00.00.30.01.01.81.81",
+    "response_ts": "2017-05-23 13:31:15.94870",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read T1,T2,L,Pot sensors
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request":"01.00.5e.00.ff.ff.0f.00.00.00",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "01.00.5e.00.ff.ff.0f.00.00.00",
+    "request_ts": "2017-05-23 13:32:47.293039",
+    "confirmation": "01.00.5e.00.ff.ff.ff.52.01.04.01",
+    "confirmation_ts": "2017-05-23 13:32:47.335869",
+    "response": "01.00.5e.80.0f.00.00.30.d8.01.c8.01.15.51",
+    "response_ts": "2017-05-23 13:32:47.471629",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read T1,T2,L,Pot sensors with types
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request":"01.00.5e.01.ff.ff.0f.00.00.00",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "01.00.5e.01.ff.ff.0f.00.00.00",
+    "request_ts": "2017-05-23 13:51:09.897761",
+    "confirmation": "01.00.5e.01.ff.ff.ff.51.01.04.01",
+    "confirmation_ts": "2017-05-23 13:51:09.940368",
+    "response": "01.00.5e.81.0f.00.00.2f.01.d8.01.01.c0.01.81.18.81.51",
+    "response_ts": "2017-05-23 13:51:10.79125",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read all sensors
+(Read all sensors with types can be used as well - "request":"01.00.5e.01.ff.ff.ff.ff.ff.ff")
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request":"01.00.5e.00.ff.ff.ff.ff.ff.ff",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "01.00.5e.00.ff.ff.ff.ff.ff.ff",
+    "request_ts": "2017-05-23 13:38:20.854796",
+    "confirmation": "01.00.5e.00.ff.ff.ff.50.01.04.01",
+    "confirmation_ts": "2017-05-23 13:38:20.897808",
+    "response": "01.00.5e.80.0f.00.00.2f.d8.01.c8.01.16.51",
+    "response_ts": "2017-05-23 13:38:21.33448",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read first sensor
+(Read first sensor with type can be used as well - "request":"01.00.5e.01.ff.ff")
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request":"01.00.5e.00.ff.ff",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "01.00.5e.00.ff.ff",
+    "request_ts": "2017-05-23 13:39:56.926880",
+    "confirmation": "01.00.5e.00.ff.ff.ff.50.01.04.01",
+    "confirmation_ts": "2017-05-23 13:39:56.969481",
+    "response": "01.00.5e.80.0f.00.00.2e.d8.01",
+    "response_ts": "2017-05-23 13:39:57.91994",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Temp1 - index 0
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.00",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.00",
+    "request_ts": "2017-05-23 18:11:30.225486",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4f.06.00.66.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:11:31.205574",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Temp2 (Dallas or MCP) - index 1
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.01",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.01",
+    "request_ts": "2017-05-23 18:13:05.118284",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4f.05.00.62.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:13:06.97918",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Light - index 2
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.02",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.02",
+    "request_ts": "2017-05-23 18:14:50.551225",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4d.06.00.3c.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:14:51.530865",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Potenciometer - index 3
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.03",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "00.00.0d.00.ff.ff.90.5e.00.03",
+    "request_ts": "2017-05-23 18:16:20.302995",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4c.06.00.56.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:16:21.283182",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 2bytes - Temp2 (Dallas or MCP) - index 1
+
+{
+    "ctype":"dpa",
+    "type":"raw",
+    "msgid":"1",
+    "timeout":1000,
+    "request": "00.00.0d.00.ff.ff.e0.5e.00.01",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw",
+    "msgid": "1",
+    "timeout": 1000,
+    "request": "00.00.0d.00.ff.ff.e0.5e.00.01",
+    "request_ts": "2017-05-23 18:17:38.675750",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4d.07.00.00.b4.01.01.00.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:17:39.656195",
+    "status": "STATUS_NO_ERROR"
+}

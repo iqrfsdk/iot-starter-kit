@@ -1,0 +1,8 @@
+Std. DDC-SE
+
+// 1st sensor is on-board TR temperature sensor.
+// 2nd sensor is either Dallas 18B20 or MCP9802 temperature sensor at DDC-SE01 board (according to the HW jumper position) chosen at the runtime based on the SW detection.
+// 3rd sensor is light intensity indicator at DDC-SE01 board (value range is 0[max light]-127[max dark]).
+// 4th sensor is potentiometer value at DDC-SE01 board (value range is 0[left stop]-127[right stop]).
+
+Work in progress!

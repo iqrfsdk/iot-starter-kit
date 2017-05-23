@@ -9,11 +9,11 @@ N1 LEDR Pulse
 	"cmd":"PULSE",
 	"hwpid":"ffff",
 	"request":".",
-	"request-ts":"",
+	"request_ts":"",
 	"confirmation":".",
-	"confirmation-ts":"",
+	"confirmation_ts":"",
 	"response":".",
-	"response-ts":""
+	"response_ts":""
 }
 
 {
@@ -24,11 +24,11 @@ N1 LEDR Pulse
     "nadr": "01",
     "cmd": "PULSE",
     "hwpid": "ffff",
-    "request": "01 00 06 03 ff ff",
-    "request-ts": "2017-05-09 18:58:11.355468",
-    "confirmation": "01 00 06 03 ff ff ff 27 01 04 01",
-    "confirmation-ts": "2017-05-09 18:58:11.425023",
-    "response": "01 00 06 83 1e 00 00 2b",
-    "response-ts": "2017-05-09 18:58:11.543124",
+    "request": "01.00.06.03.ff.ff",
+    "request_ts": "2017-05-23 18:26:51.152398",
+    "confirmation": "01.00.06.03.ff.ff.ff.4c.01.04.01",
+    "confirmation_ts": "2017-05-23 18:26:51.194708",
+    "response": "01.00.06.83.0f.00.00.29",
+    "response_ts": "2017-05-23 18:26:51.315593",
     "status": "STATUS_NO_ERROR"
 }

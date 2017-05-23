@@ -1,4 +1,11 @@
-N1 sensor readings
+Std. DDC-SE
+
+// 1st sensor is on-board TR temperature sensor.
+// 2nd sensor is either Dallas 18B20 or MCP9802 temperature sensor at DDC-SE01 board (according to the HW jumper position) chosen at the runtime based on the SW detection.
+// 3rd sensor is light intensity indicator at DDC-SE01 board (value range is 0[max light]-127[max dark]).
+// 4th sensor is potentiometer value at DDC-SE01 board (value range is 0[left stop]-127[right stop]).
+
+N1 STD-SENSOR device type - enumerate sensor types
 
 {
 	"ctype":"dpa",
@@ -6,16 +13,57 @@ N1 sensor readings
 	"msgid":"1",
 	"timeout":1000,
 	"nadr":"01",
-	"pnum":"20",
-	"pcmd":"31",
+	"pnum":"5e",
+	"pcmd":"00",
 	"hwpid":"ffff",
-	"req-data":"",
+	"req_data":"00.00.00.00",
 	"request":".",
-	"request-ts":"",
+	"request_ts":"",
 	"confirmation":".",
-	"confirmation-ts":"",
+	"confirmation_ts":"",
 	"response":".",
-	"response-ts":""
+	"response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "02",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "",
+    "hwpid": "ffff",
+    "rcode": "03",
+    "dpaval": "20",
+    "request": "02.00.5e.00.ff.ff.00.00.00.00",
+    "request_ts": "2017-05-23 18:49:12.774501",
+    "confirmation": "02.00.5e.00.ff.ff.ff.4e.02.04.02",
+    "confirmation_ts": "2017-05-23 18:49:12.817111",
+    "response": "02.00.5e.80.0f.00.03.20",
+    "response_ts": "2017-05-23 18:49:12.988980",
+    "status": "ERROR_PNUM"
+}
+
+N1 STD-SENSOR device type - read T1,T2,L,Pot sensors
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"0f.00.00.00",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
 }
 
 {
@@ -24,23 +72,147 @@ N1 sensor readings
     "msgid": "1",
     "timeout": 1000,
     "nadr": "01",
-    "pnum": "20",
-    "pcmd": "31",
-    "rcode": "00",
-    "dpaval": "28",
-    "res-data": "16 3e d8",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "dd.01.c0.01.1b.51",
     "hwpid": "ffff",
-    "request": "01 00 20 31 ff ff",
-    "request-ts": "2017-05-09 18:29:00.719556",
-    "confirmation": "01 00 20 31 ff ff ff 23 01 04 01",
-    "confirmation-ts": "2017-05-09 18:29:00.789384",
-    "response": "01 00 20 b1 1e 00 00 28 16 3e d8",
-    "response-ts": "2017-05-09 18:29:00.910839",
+    "rcode": "00",
+    "dpaval": "32",
+    "request": "01.00.5e.00.ff.ff.0f.00.00.00",
+    "request_ts": "2017-05-23 13:17:23.105770",
+    "confirmation": "01.00.5e.00.ff.ff.ff.54.01.04.01",
+    "confirmation_ts": "2017-05-23 13:17:23.148353",
+    "response": "01.00.5e.80.0f.00.00.32.dd.01.c0.01.1b.51",
+    "response_ts": "2017-05-23 13:17:23.284048",
     "status": "STATUS_NO_ERROR"
 }
 
+N1 STD-SENSOR device type - read T1,T2,L,Pot sensors with types
 
-FRC Temperature
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"01",
+    "hwpid":"ffff",
+    "req_data":"0f.00.00.00",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "01",
+    "res_data": "01.e0.01.01.c8.01.81.17.81.51",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "2f",
+    "request": "01.00.5e.01.ff.ff.0f.00.00.00",
+    "request_ts": "2017-05-23 13:44:43.135339",
+    "confirmation": "01.00.5e.01.ff.ff.ff.52.01.04.01",
+    "confirmation_ts": "2017-05-23 13:44:43.178329",
+    "response": "01.00.5e.81.0f.00.00.2f.01.e0.01.01.c8.01.81.17.81.51",
+    "response_ts": "2017-05-23 13:44:43.317063",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read all sensors
+(Read all sensors with types can be used as well - "pcmd":"01")
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"ff.ff.ff.ff",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "e0.01.c0.01.15.51",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "32",
+    "request": "01.00.5e.00.ff.ff.ff.ff.ff.ff",
+    "request_ts": "2017-05-23 13:21:54.770675",
+    "confirmation": "01.00.5e.00.ff.ff.ff.54.01.04.01",
+    "confirmation_ts": "2017-05-23 13:21:54.813278",
+    "response": "01.00.5e.80.0f.00.00.32.e0.01.c0.01.15.51",
+    "response_ts": "2017-05-23 13:21:54.948947",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read first sensor
+(Read first sensor with type can be used as well - "pcmd":"01")
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "d8.01",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "30",
+    "request": "01.00.5e.00.ff.ff",
+    "request_ts": "2017-05-23 13:26:48.836738",
+    "confirmation": "01.00.5e.00.ff.ff.ff.52.01.04.01",
+    "confirmation_ts": "2017-05-23 13:26:48.876771",
+    "response": "01.00.5e.80.0f.00.00.30.d8.01",
+    "response_ts": "2017-05-23 13:26:49.9471",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Temp1 - index 0
 
 {
 	"ctype":"dpa",
@@ -51,13 +223,13 @@ FRC Temperature
 	"pnum":"0d",
 	"pcmd":"00",
 	"hwpid":"ffff",
-	"req-data":"c0.00.00",
+	"req_data":"90.5e.00.00",
 	"request":".",
-	"request-ts":"",
+	"request_ts":"",
 	"confirmation":".",
-	"confirmation-ts":"",
+	"confirmation_ts":"",
 	"response":".",
-	"response-ts":""
+	"response_ts":""
 }
 
 {
@@ -68,37 +240,37 @@ FRC Temperature
     "nadr": "00",
     "pnum": "0d",
     "pcmd": "00",
-    "rcode": "00",
-    "dpaval": "23",
-    "res-data": "05.00.16.01.80.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "res_data": "06.00.66.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
     "hwpid": "ffff",
-    "request": "00.00.0d.00.ff.ff.c0.00.00",
-    "request-ts": "2017-05-09 18:31:55.391686",
+    "rcode": "00",
+    "dpaval": "4e",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.00",
+    "request_ts": "2017-05-23 18:00:20.627675",
     "confirmation": "",
-    "confirmation-ts": "",
-    "response": "00.00.0d.80.00.00.00.23.05.00.16.01.80.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
-    "response-ts": "2017-05-09 18:31:56.353680",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4e.06.00.66.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:00:21.608055",
     "status": "STATUS_NO_ERROR"
 }
 
-FRC Light
+FRC 1byte - Temp2 (Dallas or MCP) - index 1
 
 {
-	"ctype":"dpa",
-	"type":"raw-hdp",
-	"msgid":"1",
-	"timeout":1000,
-	"nadr":"00",
-	"pnum":"0d",
-	"pcmd":"00",
-	"hwpid":"ffff",
-	"req-data":"c1.00.00",
-	"request":".",
-	"request-ts":"",
-	"confirmation":".",
-	"confirmation-ts":"",
-	"response":".",
-	"response-ts":""
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"90.5e.00.01",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
 }
 
 {
@@ -109,37 +281,37 @@ FRC Light
     "nadr": "00",
     "pnum": "0d",
     "pcmd": "00",
-    "rcode": "00",
-    "dpaval": "21",
-    "res-data": "05.00.40.01.b0.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "res_data": "06.00.63.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
     "hwpid": "ffff",
-    "request": "00.00.0d.00.ff.ff.c1.00.00",
-    "request-ts": "2017-05-09 18:34:42.840630",
+    "rcode": "00",
+    "dpaval": "4d",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.01",
+    "request_ts": "2017-05-23 18:01:51.195251",
     "confirmation": "",
-    "confirmation-ts": "",
-    "response": "00.00.0d.80.00.00.00.21.05.00.40.01.b0.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
-    "response-ts": "2017-05-09 18:34:43.799013",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4d.06.00.63.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:01:52.175802",
     "status": "STATUS_NO_ERROR"
 }
 
-FRC Potenciometer
+FRC 1byte - Light - index 2
 
 {
-	"ctype":"dpa",
-	"type":"raw-hdp",
-	"msgid":"1",
-	"timeout":1000,
-	"nadr":"00",
-	"pnum":"0d",
-	"pcmd":"00",
-	"hwpid":"ffff",
-	"req-data":"c2.00.00",
-	"request":".",
-	"request-ts":"",
-	"confirmation":".",
-	"confirmation-ts":"",
-	"response":".",
-	"response-ts":""
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"90.5e.00.02",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
 }
 
 {
@@ -150,15 +322,97 @@ FRC Potenciometer
     "nadr": "00",
     "pnum": "0d",
     "pcmd": "00",
-    "rcode": "00",
-    "dpaval": "29",
-    "res-data": "0f.00.df.01.fe.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "res_data": "04.00.42.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
     "hwpid": "ffff",
-    "request": "00.00.0d.00.ff.ff.c2.00.00",
-    "request-ts": "2017-05-09 18:35:43.544810",
+    "rcode": "00",
+    "dpaval": "4f",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.02",
+    "request_ts": "2017-05-23 18:05:03.368265",
     "confirmation": "",
-    "confirmation-ts": "",
-    "response": "00.00.0d.80.00.00.00.29.0f.00.df.01.fe.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
-    "response-ts": "2017-05-09 18:35:44.499633",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4f.04.00.42.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:05:04.348227",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Potenciometer - index 3
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"90.5e.00.03",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "res_data": "06.00.56.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "4e",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.03",
+    "request_ts": "2017-05-23 18:07:18.622850",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4e.06.00.56.01.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:07:19.612906",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 2bytes - Temp2 (Dallas or MCP) - index 1
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"e0.5e.00.01",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "res_data": "07.00.00.b4.01.01.00.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "4f",
+    "request": "00.00.0d.00.ff.ff.e0.5e.00.01",
+    "request_ts": "2017-05-23 18:08:30.478410",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.4f.07.00.00.b4.01.01.00.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-23 18:08:31.458092",
     "status": "STATUS_NO_ERROR"
 }

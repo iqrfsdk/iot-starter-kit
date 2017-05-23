@@ -9,11 +9,11 @@ N1 Thermometer Read
 	"cmd":"READ",
 	"hwpid":"ffff",
 	"request":".",
-	"request-ts":"",
+	"request_ts":"",
 	"confirmation":".",
-	"confirmation-ts":"",
+	"confirmation_ts":"",
 	"response":".",
-	"response-ts":""
+	"response_ts":""
 }
 
 {
@@ -24,12 +24,12 @@ N1 Thermometer Read
     "nadr": "01",
     "cmd": "READ",
     "hwpid": "ffff",
-    "temperature": 23.25,
-    "request": "01 00 0a 00 ff ff",
-    "request-ts": "2017-05-09 19:08:25.4940",
-    "confirmation": "01 00 0a 00 ff ff ff 27 01 04 01",
-    "confirmation-ts": "2017-05-09 19:08:25.74582",
-    "response": "01 00 0a 80 1e 00 00 2e 17 74 01",
-    "response-ts": "2017-05-09 19:08:25.195622",
+    "temperature": 28.5,
+    "request": "01.00.0a.00.ff.ff",
+    "request_ts": "2017-05-23 18:29:41.791029",
+    "confirmation": "01.00.0a.00.ff.ff.ff.4e.01.04.01",
+    "confirmation_ts": "2017-05-23 18:29:41.831298",
+    "response": "01.00.0a.80.0f.00.00.2b.1c.c8.01",
+    "response_ts": "2017-05-23 18:29:41.964758",
     "status": "STATUS_NO_ERROR"
 }
