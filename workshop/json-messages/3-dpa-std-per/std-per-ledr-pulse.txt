@@ -1,19 +1,20 @@
 N1 LEDR Pulse
+http://iqrf.org/products/transceivers/tr-72d
 
 {
-	"ctype":"dpa",
-	"type":"std-per-ledr",
-	"msgid":"1",
-	"timeout":500,
-	"nadr":"01",
-	"cmd":"PULSE",
-	"hwpid":"ffff",
-	"request":".",
-	"request_ts":"",
-	"confirmation":".",
-	"confirmation_ts":"",
-	"response":".",
-	"response_ts":""
+    "ctype":"dpa",
+    "type":"std-per-ledr",
+    "msgid":"1",
+    "timeout":500,
+    "nadr":"01",
+    "cmd":"PULSE",
+    "hwpid":"ffff",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
 }
 
 {

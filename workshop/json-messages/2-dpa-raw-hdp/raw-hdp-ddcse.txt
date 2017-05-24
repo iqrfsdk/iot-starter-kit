@@ -1,4 +1,5 @@
 Std. DDC-SE
+http://iqrf.org/products/development-tools/development-kits/ddc-se-01
 
 // 1st sensor is on-board TR temperature sensor.
 // 2nd sensor is either Dallas 18B20 or MCP9802 temperature sensor at DDC-SE01 board (according to the HW jumper position) chosen at the runtime based on the SW detection.
@@ -8,21 +9,21 @@ Std. DDC-SE
 N1 STD-SENSOR device type - enumerate sensor types
 
 {
-	"ctype":"dpa",
-	"type":"raw-hdp",
-	"msgid":"1",
-	"timeout":1000,
-	"nadr":"01",
-	"pnum":"5e",
-	"pcmd":"00",
-	"hwpid":"ffff",
-	"req_data":"00.00.00.00",
-	"request":".",
-	"request_ts":"",
-	"confirmation":".",
-	"confirmation_ts":"",
-	"response":".",
-	"response_ts":""
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"00.00.00.00",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
 }
 
 {

@@ -1,4 +1,5 @@
 FRC Thermometer
+http://iqrf.org/products/transceivers/tr-72d
 
 {
     "ctype": "dpa",

@@ -1,4 +1,5 @@
 Std. DDC-RE
+http://iqrf.org/products/development-tools/development-kits/ddc-re-01
 
 // Index 0: Red LED
 // Index 1: Green LED

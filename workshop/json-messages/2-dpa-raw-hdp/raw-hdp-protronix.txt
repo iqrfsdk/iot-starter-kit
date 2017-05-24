@@ -1,0 +1,377 @@
+Std. Protronix
+
+// 1st sensor is temperature sensor.
+// 2nd sensor is humidity sensor.
+// 3rd sensor is co2 sensor.
+
+N1 STD-SENSOR device type - enumerate sensor types
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"01",
+	"pnum":"5e",
+	"pcmd":"00",
+	"hwpid":"ffff",
+	"req_data":"00.00.00.00",
+	"request":".",
+	"request_ts":"",
+	"confirmation":".",
+	"confirmation_ts":"",
+	"response":".",
+	"response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "01.80.02",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "01.00.5e.00.ff.ff.00.00.00.00",
+    "request_ts": "2017-05-24 14:40:52.789572",
+    "confirmation": "01.00.5e.00.ff.ff.ff.48.01.04.01",
+    "confirmation_ts": "2017-05-24 14:40:52.863192",
+    "response": "01.00.5e.80.0f.00.00.48.01.80.02",
+    "response_ts": "2017-05-24 14:40:52.984440",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read T,H,CO2 sensors
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"07.00.00.00",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "89.01.45.b3.01",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "47",
+    "request": "01.00.5e.00.ff.ff.07.00.00.00",
+    "request_ts": "2017-05-24 14:42:00.833800",
+    "confirmation": "01.00.5e.00.ff.ff.ff.48.01.04.01",
+    "confirmation_ts": "2017-05-24 14:42:00.908376",
+    "response": "01.00.5e.80.0f.00.00.47.89.01.45.b3.01",
+    "response_ts": "2017-05-24 14:42:01.32229",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read T,H,CO2 sensors with types
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"01",
+    "hwpid":"ffff",
+    "req_data":"07.00.00.00",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "01",
+    "res_data": "01.89.01.80.45.02.b6.01",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "01.00.5e.01.ff.ff.07.00.00.00",
+    "request_ts": "2017-05-24 14:43:00.203658",
+    "confirmation": "01.00.5e.01.ff.ff.ff.48.01.04.01",
+    "confirmation_ts": "2017-05-24 14:43:00.379307",
+    "response": "01.00.5e.81.0f.00.00.48.01.89.01.80.45.02.b6.01",
+    "response_ts": "2017-05-24 14:43:00.506635",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read all sensors
+(Read all sensors with types can be used as well - "pcmd":"01")
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"ff.ff.ff.ff",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "89.01.45.b6.01",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "01.00.5e.00.ff.ff.ff.ff.ff.ff",
+    "request_ts": "2017-05-24 14:43:43.763396",
+    "confirmation": "01.00.5e.00.ff.ff.ff.48.01.04.01",
+    "confirmation_ts": "2017-05-24 14:43:43.838554",
+    "response": "01.00.5e.80.0f.00.00.48.89.01.45.b6.01",
+    "response_ts": "2017-05-24 14:43:43.962434",
+    "status": "STATUS_NO_ERROR"
+}
+
+N1 STD-SENSOR device type - read first sensor
+(Read first sensor with type can be used as well - "pcmd":"01")
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"01",
+    "pnum":"5e",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "01",
+    "pnum": "5e",
+    "pcmd": "00",
+    "res_data": "89.01",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "47",
+    "request": "01.00.5e.00.ff.ff",
+    "request_ts": "2017-05-24 14:44:45.200025",
+    "confirmation": "01.00.5e.00.ff.ff.ff.48.01.04.01",
+    "confirmation_ts": "2017-05-24 14:44:45.370758",
+    "response": "01.00.5e.80.0f.00.00.47.89.01",
+    "response_ts": "2017-05-24 14:44:45.490771",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Temp - index 0
+
+{
+	"ctype":"dpa",
+	"type":"raw-hdp",
+	"msgid":"1",
+	"timeout":1000,
+	"nadr":"00",
+	"pnum":"0d",
+	"pcmd":"00",
+	"hwpid":"ffff",
+	"req_data":"90.5e.00.00",
+	"request":".",
+	"request_ts":"",
+	"confirmation":".",
+	"confirmation_ts":"",
+	"response":".",
+	"response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "res_data": "05.00.5d.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.00",
+    "request_ts": "2017-05-24 14:45:37.572734",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.48.05.00.5d.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-24 14:45:38.321170",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - Hum - index 1
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"90.5e.00.01",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "res_data": "03.00.49.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.01",
+    "request_ts": "2017-05-24 14:46:45.203756",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.48.03.00.49.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-24 14:46:46.53580",
+    "status": "STATUS_NO_ERROR"
+}
+
+FRC 1byte - CO2 - index 2
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"90.5e.00.02",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "res_data": "05.00.1f.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "00.00.0d.00.ff.ff.90.5e.00.02",
+    "request_ts": "2017-05-24 14:47:33.73165",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.48.05.00.1f.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-24 14:47:33.822182",
+    "status": "STATUS_NO_ERROR"
+}
+
+
+FRC 2bytes - Temp - index 1
+
+{
+    "ctype":"dpa",
+    "type":"raw-hdp",
+    "msgid":"1",
+    "timeout":1000,
+    "nadr":"00",
+    "pnum":"0d",
+    "pcmd":"00",
+    "hwpid":"ffff",
+    "req_data":"e0.5e.00.00",
+    "request":".",
+    "request_ts":"",
+    "confirmation":".",
+    "confirmation_ts":"",
+    "response":".",
+    "response_ts":""
+}
+
+{
+    "ctype": "dpa",
+    "type": "raw-hdp",
+    "msgid": "1",
+    "timeout": 1000,
+    "nadr": "00",
+    "pnum": "0d",
+    "pcmd": "00",
+    "res_data": "05.00.00.8d.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "hwpid": "ffff",
+    "rcode": "00",
+    "dpaval": "48",
+    "request": "00.00.0d.00.ff.ff.e0.5e.00.00",
+    "request_ts": "2017-05-24 14:48:41.847067",
+    "confirmation": "",
+    "confirmation_ts": "",
+    "response": "00.00.0d.80.00.00.00.48.05.00.00.8d.01.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00.00",
+    "response_ts": "2017-05-24 14:48:42.597468",
+    "status": "STATUS_NO_ERROR"
+}
