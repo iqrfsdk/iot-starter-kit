@@ -19,6 +19,7 @@ sudo docker network connect isolated_nw redgw
 sudo docker exec -it redgw /bin/bash
 npm i node-red/node-red-dashboard
 npm i node-red-node-watson
+npm i node-red-contrib-scx-ibmiotapp
 exit
 sudo docker restart redgw
 ```
