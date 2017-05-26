@@ -1,0 +1,19 @@
+Switching among gateway modes
+
+{
+  "ctype": "conf",
+  "type": "mode",
+  "cmd": "operational"
+}
+
+{
+  "ctype": "conf",
+  "type": "mode",
+  "cmd": "service"
+}
+
+{
+  "ctype": "conf",
+  "type": "mode",
+  "cmd": "forwarding"
+}
