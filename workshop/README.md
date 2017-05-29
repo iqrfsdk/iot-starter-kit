@@ -53,6 +53,13 @@ sudo apt-get update
 sudo apt-get install iqrf-daemon
 ```
 
+- Check the iqrf-daemon service status
+
+```bash
+sudo systemctl status iqrf-daemon.service
+```
+*or you can use iqrf-daemon-webapp*
+
 ## Configure IQRF daemon by [iqrf-daemon-webapp](https://github.com/iqrfsdk/iqrf-daemon-webapp) 
 
 - Use your browser 
@@ -98,7 +105,8 @@ sudo apt-get install mosquitto
 - Use Putty to connect to your UP board via SSH
 
 - Use iqrfapp and prepared [scripts](scripts) to communicate via the daemon to IQRF network
-*or you can use iqrf-daemon-webapp*
+
+- Or you can use iqrf-daemon-webapp interface
 
 ## Connect to Azure cloud
 
@@ -108,11 +116,11 @@ sudo apt-get install mosquitto
 
 - Create device in the iothub that will represent IQRF GW - UP board
 
-- Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
+- Use Device Explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
 
 - Copy connection string from your Azure portal and put it to the Device Explorer
 
-- Generate SAS token using Device explorer - is used as password in MQTT [config](daemon-config/MqttMessaging.json)
+- Generate SAS token using Device Explorer - is used as password in MQTT [config](daemon-config/MqttMessaging.json)
 
 - Update MQTT [config](daemon-config/MqttMessaging.json) in the iqrf-daemon
 
