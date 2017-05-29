@@ -1,8 +1,8 @@
-# IQRF gateways architecture
+# IQRF(A) Gateways
 
 ![Gateway schema](https://github.com/iqrfsdk/iqrf-daemon/blob/master/doc/iqrf-gateways.png "Schema for GWs")
 
-# Hands-on Workshop for IQRF IoT Starter Kit
+# Hands-on Workshop
 
 ![Workshop schema](schema/workshop-schema.png "Schema for the workshop")
 
@@ -81,23 +81,24 @@ sudo apt-get install mosquitto
 
 - Use prepared JSON [examples](json-messages) to communicate with IQRF sensors and actuators
 
-- Switch the daemon to service mode by prepared JSON [examples](json-messages/5-conf-mode) 
-
 ## Test UDP channel
+
+- Switch the daemon to **Service** mode by prepared JSON [examples](json-messages/5-conf-mode) 
 
 - Connect IQRF IDE to the UP board via UDP
 
 - Run IQMesh Network Manager to control your IQRF network
 
-- Switch the daemon back to operational mode by prepared JSON [examples](json-messages/5-conf-mode)
+- Switch the daemon to **Forwarding** mode by prepared JSON [examples](json-messages/5-conf-mode) 
+
+- Switch the daemon back to **Operational** mode by prepared JSON [examples](json-messages/5-conf-mode)
 
 ## Test MQ channel
 
 - Use Putty to connect to your UP board via SSH
 
 - Use iqrfapp and prepared [scripts](scripts) to communicate via the daemon to IQRF network
-
-- Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
+*or you can use iqrf-daemon-webapp*
 
 ## Connect to Azure cloud
 
@@ -109,7 +110,7 @@ sudo apt-get install mosquitto
 
 - Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
 
-- Copy connection string from your Azure portal
+- Copy connection string from your Azure portal and put it to the Device Explorer
 
 - Generate SAS token using Device explorer - is used as password in MQTT [config](daemon-config/MqttMessaging.json)
 
@@ -122,5 +123,4 @@ sudo apt-get install mosquitto
 ```bash
 sudo systemctl restart iqrf-daemon.service
 ```
-
-- Confirm receiving scheduled DDC-SE readings by Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases)
+- Confirm receiving scheduled DDC-SE readings by Device Explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases)
