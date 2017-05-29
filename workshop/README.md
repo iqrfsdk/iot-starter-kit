@@ -1,6 +1,10 @@
+# IQRF gateways architecture
+
+![Gateway schema](https://github.com/iqrfsdk/iqrf-daemon/blob/master/doc/iqrf-gateways.png "Schema for GWs")
+
 # Hands-on Workshop for IQRF IoT Starter Kit
 
-![Block schema](schema/workshop-schema.png "Schema for GWs")
+![Workshop schema](schema/workshop-schema.png "Schema for the workshop")
 
 ## Setup IQRF sensors and actuators
 
@@ -28,8 +32,6 @@
 
 ## Install IQRF daemon
 
-- Check the daemon [architecture](https://github.com/iqrfsdk/iqrf-daemon/blob/master/doc/iqrf-linux-gw.png)
-
 - Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH (192.168.13.x)
 
 - Download public key to verify the packages from the repository
@@ -55,7 +57,7 @@ sudo apt-get install iqrf-daemon
 
 - Use your browser 
 
-http://192.168.13.x:8000 (admin/iqrf)
+http://192.168.13.x (admin/iqrf)
 
 - Restart the iqrf-daemon service
 
@@ -79,7 +81,15 @@ sudo apt-get install mosquitto
 
 - Use prepared JSON [examples](json-messages) to communicate with IQRF sensors and actuators
 
-- Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
+- Switch the daemon to service mode by prepared JSON [examples](json-messages/5-conf-mode) 
+
+## Test UDP channel
+
+- Connect IQRF IDE to the UP board via UDP
+
+- Run IQMesh Network Manager to control your IQRF network
+
+- Switch the daemon back to operational mode by prepared JSON [examples](json-messages/5-conf-mode)
 
 ## Test MQ channel
 
@@ -88,32 +98,6 @@ sudo apt-get install mosquitto
 - Use iqrfapp and prepared [scripts](scripts) to communicate via the daemon to IQRF network
 
 - Try your own DPA [commands](http://www.iqrf.org/DpaTechGuide/)
-
-- Switch the daemon to service mode
-
-```bash
-sudo iqrfapp conf service
-```
-
-## Test UDP channel
-
-- Connect IQRF IDE to the UP board via UDP
-
-- Run IQMesh Network Manager to control your IQRF network
-
-- Switch the daemon back to operational mode by iqrfapp
-
-```bash
-sudo iqrfapp conf operational
-```
-
-## Use NodeRED to create your local dashboard
-
-- Install [NodeRED](../extensions/jotio.cz/README.md)
-
-- Import Jotio IQRF IoT [package](../extensions/jotio.cz/jotio_nodered.json)
-
-- Run your local control dashboard
 
 ## Connect to Azure cloud
 
@@ -140,11 +124,3 @@ sudo systemctl restart iqrf-daemon.service
 ```
 
 - Confirm receiving scheduled DDC-SE readings by Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases)
-
-## Try our mobile app
-
-- Download our free IoT IQRF app to your Android device
-
-- Setup MQTT connection to your broker
-
-- Give a try
