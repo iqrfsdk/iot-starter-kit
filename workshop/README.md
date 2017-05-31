@@ -16,26 +16,25 @@
 8. Test MQ channel
 9. Connect GW to Azure Cloud
 
-## Setup IQRF sensors and actuators
+## 1. Setup IQRF sensors and actuators
 
 - Download IQRF Startup [package](http://www.iqrf.org/support/how-to-start)
 - Install IQRF IDE software that is included in the package
 - Upload DPA plugins, custom handlers and configurations
 - Use IDE macros for IoT Starter Kit to test your IQRF mesh network
 
-## Install Linux
+## 2. Install Linux
 
 - UbiLinux
 - Ubuntu 
 - Yocto
 
-## Connect IQRF module 
+## 3. Install IQRF daemon
+
+### Connect IQRF module 
 
 - [Connect](http://www.iqrf.org/weben/downloads.php?id=412) IQRF SPI board to the UP board extension connector
 - Plug-in already prepared IQRF coordinator to IQRF SPI board 
-
-## Install IQRF daemon
-
 - Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH (192.168.13.x)
 
 - Download public key to verify the packages from the repository
@@ -56,26 +55,26 @@ sudo apt-get install iqrf-daemon
 sudo systemctl status iqrf-daemon.service
 ```
 
-## Configure IQRF daemon by [iqrf-daemon-webapp](https://github.com/iqrfsdk/iqrf-daemon-webapp) 
-
-- Use your browser to http://192.168.13.x (admin/iqrf)
-- Configure the daemon components
-- Restart the iqrf-daemon service
-
-## Install MQTT mosquitto broker
+## 4. Install MQTT mosquitto broker
 
 ```bash
 sudo apt-get update
 sudo apt-get install mosquitto
 ```
 
-## Test MQTT channel
+## 5. Configure IQRF daemon by [iqrf-daemon-webapp](https://github.com/iqrfsdk/iqrf-daemon-webapp) 
+
+- Use your browser to http://192.168.13.x (admin/iqrf)
+- Configure the daemon components
+- Restart the iqrf-daemon service
+
+## 6. Test MQTT channel
 
 - Download MQTT Paho [client](http://repo.eclipse.org/content/repositories/paho-releases/org/eclipse/paho/org.eclipse.paho.ui.app/1.0.0/org.eclipse.paho.ui.app-1.0.0-win32.win32.x86.zip) for Win/Linux
 - Connect Paho client to your Mosquitto broker on the UP (192.168.13.x)
 - Use prepared JSON [examples](json-messages/1-dpa-raw) to communicate with IQRF sensors and actuators
 
-## Test UDP channel
+## 7. Test UDP channel
 
 - Switch the daemon to **Service** mode by prepared JSON [examples](json-messages/5-conf-mode) 
 - Connect IQRF IDE to the UP board via UDP
@@ -84,13 +83,13 @@ sudo apt-get install mosquitto
 - Send any JSON [message](json-messages/1-dpa-raw) from Paho client 
 - Switch the daemon back to **Operational** mode by prepared JSON [examples](json-messages/5-conf-mode)
 
-## Test MQ channel
+## 8. Test MQ channel
 
 - Use iqrf-daemon-webapp iqrfapp interface and send 01.00.06.03.ff.ff
 - Or use Putty to connect to your UP board via SSH
 - And use iqrfapp and prepared [scripts](scripts) to communicate via the daemon to IQRF network
 
-## Connect to Azure cloud
+## 9. Connect to Azure cloud
 
 - Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate Azure package
 - Create iothub in your Azure portal
