@@ -37,6 +37,8 @@
 - Plug-in already prepared IQRF coordinator to IQRF SPI board 
 - Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH (192.168.13.x)
 
+### Installation from IQRF repository 
+
 - Download public key to verify the packages from the repository
 ```bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 66CB9A85
