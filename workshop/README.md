@@ -35,6 +35,9 @@
 
 - [Connect](http://www.iqrf.org/weben/downloads.php?id=412) IQRF SPI board to the UP board extension connector
 - Plug-in already prepared IQRF coordinator to IQRF SPI board 
+
+### Connect to UP board 
+
 - Download [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and connect to your UP board via SSH (192.168.13.x)
 
 ### Installation from IQRF repository 
