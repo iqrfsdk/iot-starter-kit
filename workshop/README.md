@@ -2,6 +2,9 @@
 
 ![Gateway schema](https://github.com/iqrfsdk/iqrf-daemon/blob/master/doc/iqrf-gateways.png "Schema for GWs")
 
+- https://github.com/iqrfsdk/iqrf-daemon/
+- https://github.com/iqrfsdk/iqrf-daemon/wiki
+
 # Hands-on Workshop
 
 ![Workshop schema](schema/workshop-schema.png "Schema for the workshop")
