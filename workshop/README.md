@@ -100,7 +100,7 @@ sudo apt-get install mosquitto
 - Create iothub in your Azure portal
 - Create device in the iothub that will represent IQRF GW - UP board
 - Use Device Explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
-- Copy connection string from your Azure portal and put it to the Device Explorer
+- Copy connection string (http://192.168.13.x/iqrf_hostnames.txt) from your Azure portal and put it to the Device Explorer
 - Generate SAS token using Device Explorer - is used as password in MQTT [config](daemon-config/MqttMessaging.json)
 - Update MQTT [config](daemon-config/MqttMessaging.json) in the iqrf-daemon
 - Enable [scheduler](daemon-config/Scheduler.json) for regural every 30s readings from DDC-SE
