@@ -23,7 +23,7 @@
     {
       "Name": "MqttMessaging2",
       "Properties": {
-        "BrokerAddr": "ssl://mqtt.online:49300",
+        "BrokerAddr": "ssl://mqtt.inteliglue.io:49300",
         "ClientId": "YOURID",
         "Enabled": true,
         "Persistence": 1,
