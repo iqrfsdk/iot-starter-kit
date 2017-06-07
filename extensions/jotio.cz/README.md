@@ -27,7 +27,7 @@ sudo docker restart redgw
 Open:
 http://[IP address of UpBoard]:1880
 
-Import the contents of this [file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/extensions/jotio.cz/Jotio_App_NodeRed_mqtt.json) into nodered. 
+Import the contents of this [file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/extensions/jotio.cz/JoTio_workshop_summit.json) into nodered. 
 
 # Setup Azure ecosystem 
 ### javascript
