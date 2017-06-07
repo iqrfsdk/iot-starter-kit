@@ -29,24 +29,5 @@ http://[IP address of UpBoard]:1880
 
 Import the contents of this [file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/extensions/jotio.cz/JoTio_workshop_summit.json) into nodered. 
 
-# Setup Azure ecosystem 
-### javascript
-```javascript
-// Convert Hex value to integer.
-function main(hexValue) {
-    return parseInt(hexValue, 16);
-}
-```
-### T-SQL
-```sql
-SELECT
-    *
-     ,UDF.hex2Int(Substring (response,25,2)) AS Temperature
-     ,UDF.hex2Int(Substring (response,28,2)) AS Light
-     ,UDF.hex2Int(Substring (response,31,2)) AS Potentiometer
-INTO
-    DataOUT
-FROM
-    DataIN
-```
+
 
