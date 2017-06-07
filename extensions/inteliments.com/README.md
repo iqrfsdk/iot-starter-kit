@@ -15,23 +15,23 @@
 1. Start with [registering free trial account](https://inteliments.com/en/forms/inteliglue-trial)
 2. Once you get your account access, login to [InteliGlue Portal](https://portal.inteliglue.io)
 3. Create new Data Account, you name it
-  ![InteliGlue Portal](assets/screenshot_new_data_account.png "InteliGlue Portal")
+  ![InteliGlue Portal](assets/screenshot_new_data_account.PNG "InteliGlue Portal")
   * Replace your IoT Starter Kit MqttMessaging.json TopicRequest and TopicResponse "YOURROOTTOPIC" string with your Data Account root topic. You will find this information in Data Account side panel.
-  ![InteliGlue Portal](assets/screenshot_data_account_panel.png "InteliGlue Portal")
+  ![InteliGlue Portal](assets/screenshot_data_account_panel.PNG "InteliGlue Portal")
 4. Create new MQTT Data Client "Data Clients" tab for your IQRF gateway
-  ![InteliGlue Portal](assets/screenshot_new_client_dialog.png "InteliGlue Portal")
+  ![InteliGlue Portal](assets/screenshot_new_client_dialog.PNG "InteliGlue Portal")
   * After new data client is created, copy paste your credentials from the screen (user your credentials / not from this screenshot).
-  ![InteliGlue Portal](assets/screenshot_new_client_dialog_credentials.png "InteliGlue Portal")
+  ![InteliGlue Portal](assets/screenshot_new_client_dialog_credentials.PNG "InteliGlue Portal")
   * Replace your MqttMessaging.json "User" and "Password" with credentials you got on the screen. Please note, that "ClientID" must be same valkue as "User".
 5. To get data from your Data Account, create another MQTT Data Client to subscribe data and process them in real time or / and create HTTP Data Client to use REST API to fetch your collected time series data. You can also use "Data viewer" tab to see collected data at web user interface.
 6. Make sure, that your BrokerAddr property matches your Data Account MQTT broker configuration.
-![InteliGlue Portal](assets/screenshot_control_panel.png "InteliGlue Portal")
+![InteliGlue Portal](assets/screenshot_control_panel.PNG "InteliGlue Portal")
 
 # Contact
 
 We prefer personal contact, please do not hesitate to get in touch with us.
 
-* E: [office@inteliments.com](mailto://office@inteliments.com)
+* E: [office@inteliments.com](mailto:office@inteliments.com)
 * W: [https://inteliments.com](https://inteliments.com)
 * A: Technology and Development Center, Technology Center Hradec Králové, Piletická 486/19, 503 41 Hradec Králové, Czech Republic 
 * A: Inteliments Business Development Center, Apparaten Fabriek STRIJP-S, Torenallee 26-50, 5617 BD Eindhoven, The Netherlands
