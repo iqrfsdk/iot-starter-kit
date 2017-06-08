@@ -1,0 +1,3128 @@
+[
+    {
+        "id": "83e74317.847d7",
+        "type": "tab",
+        "label": "JoTio_Request"
+    },
+    {
+        "id": "fa95133c.cf3ed",
+        "type": "tab",
+        "label": "JoTio_Response"
+    },
+    {
+        "id": "ab9ce235.81e3",
+        "type": "tab",
+        "label": "JoTio_Visualization"
+    },
+    {
+        "id": "8a01b5e2.befca8",
+        "type": "tab",
+        "label": "Operation mode"
+    },
+    {
+        "id": "2aae6cf1.3e9e04",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b711df8f.7ced3",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "172.25.3.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "6277fd5.d947604",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Helvetica Neue",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "Helvetica Neue"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "fa52c63d.3b67d8",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "172.25.3.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "24dca395.d911cc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "bf265723.8d8408",
+        "type": "ui_group",
+        "z": "",
+        "name": "Light",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "74a4083b.f71db8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Potentiometer",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "3480a900.759538",
+        "type": "ui_group",
+        "z": "",
+        "name": "Relay",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "9b94772f.e5c748",
+        "type": "ui_group",
+        "z": "",
+        "name": "Red LED",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "d0d9c91e.eb8ce8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Green LED",
+        "tab": "",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "321ba92b.d96746",
+        "type": "ui_group",
+        "z": "",
+        "name": "About JoTio ",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "2e42f7b9.791c58",
+        "type": "ui_group",
+        "z": "",
+        "name": "About as",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "5482be05.07bd4",
+        "type": "ui_group",
+        "z": "",
+        "name": "IoT",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "4f994a9b.2cae94",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ed4136",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Prezentace 3",
+                "default": "#4B7930",
+                "baseColor": "#111111",
+                "baseFont": "Helvetica Neue",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#ed4136",
+                    "value": "#ed4136",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#0193f1",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#015f87",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                }
+            }
+        },
+        "site": {
+            "name": "JoTio DemoDay",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 0,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a4412137.f598a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Our products",
+        "tab": "",
+        "order": 4,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "6f77c22c.5e0ebc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Our current projects",
+        "tab": "",
+        "order": 5,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "f064e42a.f3a538",
+        "type": "ui_group",
+        "z": "",
+        "name": "Microrisc",
+        "tab": "",
+        "order": 6,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "b0eadc65.b5026",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "172.25.3.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "17910bcd.a25984",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "5be7e2b0.62037c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Light",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "41a68c1f.1ac5c4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Potentiometer",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "def08a1b.6fdb28",
+        "type": "ui_group",
+        "z": "",
+        "name": "Relay",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "6d955660.b1b238",
+        "type": "ui_group",
+        "z": "",
+        "name": "Red LED",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "f56920c3.1520d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Green LED",
+        "tab": "",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "9748c26b.4d84f",
+        "type": "ui_group",
+        "z": "",
+        "name": "About JoTio ",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "269bd653.eb820a",
+        "type": "ui_group",
+        "z": "",
+        "name": "About as",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "7dbadbd3.5e4264",
+        "type": "ui_group",
+        "z": "",
+        "name": "IoT",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "89a13b06.de1418",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ed4136",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Prezentace 3",
+                "default": "#4B7930",
+                "baseColor": "#111111",
+                "baseFont": "Helvetica Neue",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#ed4136",
+                    "value": "#ed4136",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#0193f1",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#015f87",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                }
+            }
+        },
+        "site": {
+            "name": "JoTio DemoDay",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 0,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "76f5af16.78c4a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Our products",
+        "tab": "",
+        "order": 4,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "d397084c.057e78",
+        "type": "ui_group",
+        "z": "",
+        "name": "Our current projects",
+        "tab": "",
+        "order": 5,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "9f48569.b4251a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Microrisc",
+        "tab": "",
+        "order": 6,
+        "disp": false,
+        "width": "7"
+    },
+    {
+        "id": "58d166a.dadca98",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://iqrf.mybluemix.net/ws",
+        "wholemsg": "false"
+    },
+    {
+        "id": "df9b5e4a.a67cc",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://sapinodered.eu-de.mybluemix.net/wsiqrf",
+        "wholemsg": "false"
+    },
+    {
+        "id": "d0416295.7fb86",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://czu.eu-de.mybluemix.net/wsiqrfe",
+        "wholemsg": "false"
+    },
+    {
+        "id": "dc128bdc.e34c68",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://czu.eu-de.mybluemix.net/wsiqrfback",
+        "wholemsg": "false"
+    },
+    {
+        "id": "f94755b0.3e58b8",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "ws://iqrf.mybluemix.net/wsiqrf",
+        "wholemsg": "false"
+    },
+    {
+        "id": "6c808f67.ed8e7",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "172.25.3.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "a7952f7b.410dd",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "a73b0cdd.303",
+        "type": "ui_group",
+        "z": "",
+        "name": "Light",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "fbbdcbfe.317378",
+        "type": "ui_group",
+        "z": "",
+        "name": "Potentiometer",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "519a160f.577148",
+        "type": "ui_group",
+        "z": "",
+        "name": "Relay",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "36e7f64.7760f0a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Red LED",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "7c72fc53.7a8f94",
+        "type": "ui_group",
+        "z": "",
+        "name": "Green LED",
+        "tab": "",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "caefa76a.039298",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "Helvetica Neue"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7aea0166.a0992",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "172.25.3.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "d25aa9ad.2369d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "8988ba2d.3687b8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Light",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "f64b1d76.8a6aa",
+        "type": "ui_group",
+        "z": "",
+        "name": "Potentiometer",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "ad132e7d.26067",
+        "type": "ui_group",
+        "z": "",
+        "name": "Relay",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "ebd65a34.8c4a08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Red LED",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "917a8662.d46b98",
+        "type": "ui_group",
+        "z": "",
+        "name": "Green LED",
+        "tab": "",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "fa7a6af7.934258",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "c573c432.6bfad8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Protronix Temperature",
+        "tab": "",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "285b03b4.25d48c",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://iqrf.mybluemix.net/wsiqrfback",
+        "wholemsg": "false"
+    },
+    {
+        "id": "fc0cb9ae.7b1418",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://iqrfdemo.mybluemix.net/wsiqrf1",
+        "wholemsg": "false"
+    },
+    {
+        "id": "350e4d0b.56fb62",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATMO",
+        "tab": "",
+        "order": 13,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "bf333ebc.4c7bd",
+        "type": "ui_group",
+        "z": "",
+        "name": "SE KIT Temperature",
+        "tab": "51cd786.3b09588",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "78c2c53.80e483c",
+        "type": "ui_group",
+        "z": "",
+        "name": "SE KIT Light",
+        "tab": "51cd786.3b09588",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "de5342a0.eac29",
+        "type": "ui_group",
+        "z": "",
+        "name": "SE KIT Potentiometr",
+        "tab": "51cd786.3b09588",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "4201b0a4.f1b58",
+        "type": "ui_group",
+        "z": "",
+        "name": "RE_KIT_01",
+        "tab": "51cd786.3b09588",
+        "order": 11,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "d3f0e100.8a147",
+        "type": "ui_group",
+        "z": "",
+        "name": "RE_KIT_02",
+        "tab": "51cd786.3b09588",
+        "order": 10,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "25148a99.9c8986",
+        "type": "ui_group",
+        "z": "",
+        "name": "Red_LED",
+        "tab": "51cd786.3b09588",
+        "order": 9,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e92ae9cc.f8e648",
+        "type": "ui_group",
+        "z": "",
+        "name": "Green_LED",
+        "tab": "51cd786.3b09588",
+        "order": 8,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "372029a2.a931b6",
+        "type": "ui_group",
+        "z": "",
+        "name": "Node Temperature",
+        "tab": "51cd786.3b09588",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "51cd786.3b09588",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "8743df61.66783",
+        "type": "ui_group",
+        "name": "Group 7",
+        "tab": "",
+        "order": 7,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "ba06613c.b022f",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://iqrf.mybluemix.net/wsiqrf",
+        "wholemsg": "false"
+    },
+    {
+        "id": "2111f364.2ff50c",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "ws://iqrf.mybluemix.net/feedback",
+        "wholemsg": "false"
+    },
+    {
+        "id": "abdc3995.a09fc8",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://iqrf.mybluemix.net/feedback",
+        "wholemsg": "false"
+    },
+    {
+        "id": "1d9650b6.0b3aaf",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://xxx.mybluemix.net/wsiqrfback",
+        "wholemsg": "false"
+    },
+    {
+        "id": "79f1818a.19e38",
+        "type": "mqtt out",
+        "z": "83e74317.847d7",
+        "name": "Gateway Request",
+        "topic": "Iqrf/DpaRequest",
+        "qos": "",
+        "retain": "",
+        "broker": "7aea0166.a0992",
+        "x": 900,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f7b437b3.e619d8",
+        "type": "inject",
+        "z": "8a01b5e2.befca8",
+        "name": "Servisní mod",
+        "topic": "",
+        "payload": "{   \"ctype\": \"conf\",   \"type\": \"mode\",   \"cmd\": \"service\" }",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "3234d024.72edb"
+            ]
+        ]
+    },
+    {
+        "id": "a547e79f.0eff78",
+        "type": "inject",
+        "z": "8a01b5e2.befca8",
+        "name": "Standartní mod",
+        "topic": "",
+        "payload": "{   \"ctype\": \"conf\",   \"type\": \"mode\",   \"cmd\": \"operational\" }",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "3234d024.72edb"
+            ]
+        ]
+    },
+    {
+        "id": "3a434b09.3271d4",
+        "type": "mqtt out",
+        "z": "8a01b5e2.befca8",
+        "name": "Gateway Request",
+        "topic": "Iqrf/DpaRequest",
+        "qos": "",
+        "retain": "",
+        "broker": "7aea0166.a0992",
+        "x": 630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "de166d55.05a44",
+        "type": "debug",
+        "z": "8a01b5e2.befca8",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 590,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "23283b01.247284",
+        "type": "mqtt in",
+        "z": "8a01b5e2.befca8",
+        "name": "Gateway Response",
+        "topic": "Iqrf/DpaResponse",
+        "qos": "2",
+        "broker": "7aea0166.a0992",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "b395eca5.e23c4",
+                "26d77b65.c242a4"
+            ]
+        ]
+    },
+    {
+        "id": "b395eca5.e23c4",
+        "type": "json",
+        "z": "8a01b5e2.befca8",
+        "name": "",
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "aff503a9.7fc73"
+            ]
+        ]
+    },
+    {
+        "id": "aff503a9.7fc73",
+        "type": "debug",
+        "z": "8a01b5e2.befca8",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 610,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "3234d024.72edb",
+        "type": "json",
+        "z": "8a01b5e2.befca8",
+        "name": "",
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "de166d55.05a44",
+                "3a434b09.3271d4"
+            ]
+        ]
+    },
+    {
+        "id": "26d77b65.c242a4",
+        "type": "debug",
+        "z": "8a01b5e2.befca8",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 410,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "20448450.b9d2fc",
+        "type": "inject",
+        "z": "8a01b5e2.befca8",
+        "name": "forward",
+        "topic": "",
+        "payload": "{   \"ctype\": \"conf\",   \"type\": \"mode\",   \"cmd\": \"forwarding\" }",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "3234d024.72edb"
+            ]
+        ]
+    },
+    {
+        "id": "1e431038.9110a",
+        "type": "comment",
+        "z": "83e74317.847d7",
+        "name": "adresy iqrf site",
+        "info": "IQRF DEV SENSOR     -- 1\nIQRF DEV RELAY      -- 2\nIQRF Protronix      -- 3\n",
+        "x": 230,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "737fd90d.f1acc8",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "Req sensor std",
+        "func": "var data={\n    type: \"raw\",\n    request: {\n        nadr: \"0x0001\",\n        pnum: \"0x5E\",\n        pcmd: \"0x01\",\n        hwpid: \"0xFFFF\",\n        pdata: \"0xFFFFFFFF\",\n    },\n    timeout: 0\n}\nmsg.payload=data;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "e1306a5b.a68818"
+            ]
+        ]
+    },
+    {
+        "id": "2e0a8c68.1cb234",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Senzor Kit 3s",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "x": 260,
+        "y": 180,
+        "wires": [
+            [
+                "737fd90d.f1acc8"
+            ]
+        ]
+    },
+    {
+        "id": "e1306a5b.a68818",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "JSONtoIQRF",
+        "func": "out = ('000'+Number(msg.payload.request.nadr).toString(16)).slice(-2);\nout += \".\"+(('000'+Number(msg.payload.request.nadr).toString(16)).slice(-4)).substr(0,2);\nout += \".\"+('0'+Number(msg.payload.request.pnum).toString(16)).slice(-2);\nout += \".\"+('0'+Number(msg.payload.request.pcmd).toString(16)).slice(-2);\nout += \".\"+('000'+Number(msg.payload.request.hwpid).toString(16)).slice(-2);\nout += \".\"+(('000'+Number(msg.payload.request.hwpid).toString(16)).slice(-4)).substr(0,2);\n\n\n\n\nif (typeof msg.payload.request.pdata !== 'undefined' && msg.payload.request.pdata !== null) \n{\n    // jsou pro nas data pdata !!!\n    // potreba zjistit delku stringu.\n    \n    len = msg.payload.request.pdata.length; \n    count = -len;\n    for(i=len;i>2;i=i-2)\n    {\n        count = count + 2;\n        out += \".\"+(('000'+Number(msg.payload.request.pdata).toString(16)).slice(count)).substr(0,2);\n    }\n    //msg.payload = count;\n    //return msg;\n}\n\nmsg.payload= {ctype:\"dpa\", type: msg.payload.type, request: out, timeout: msg.payload.timeout};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 180,
+        "wires": [
+            [
+                "63a550f8.d873",
+                "79f1818a.19e38"
+            ]
+        ]
+    },
+    {
+        "id": "63a550f8.d873",
+        "type": "debug",
+        "z": "83e74317.847d7",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 890,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7de87e4d.1e8b9",
+        "type": "mqtt in",
+        "z": "fa95133c.cf3ed",
+        "name": "Gateway Response",
+        "topic": "Iqrf/DpaResponse",
+        "qos": "2",
+        "broker": "7aea0166.a0992",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "faac3fcc.9907a"
+            ]
+        ]
+    },
+    {
+        "id": "d848f88a.db3c08",
+        "type": "mqtt out",
+        "z": "fa95133c.cf3ed",
+        "name": "Status",
+        "topic": "Iqrf/DpaResponse",
+        "qos": "",
+        "retain": "",
+        "broker": "7aea0166.a0992",
+        "x": 910,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "faac3fcc.9907a",
+        "type": "json",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "x": 430,
+        "y": 140,
+        "wires": [
+            [
+                "a07a6e3b.359a5",
+                "197f153b.9f22fb"
+            ]
+        ]
+    },
+    {
+        "id": "ccb55cb2.4a2ce",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "Get Temp",
+        "func": "var res=msg.payload.response.pdata.split(\".\");\n\n\nparstemp1 =  parseInt(res[5],16);   //ff\nparstemp2 =  parseInt(res[4],16);   //d0\n\ntemp1 = parstemp1;\ntemp2 = parstemp2;\n\ntemp1 &= 0x7F;\ntemp2 &= 0xF0;\n\ntemp = (temp1<<4) + (temp2>>4);\n\ntemp2 =  parstemp2;\ntemp2 &= 0x0F;\n\ntemp2 *= 0.0625;\n\ntemp += temp2; \n\nif(((parstemp1 & 0x80)>>7) === 1)\n{\n    temp = 2048 - temp;\n    temp = -temp;\n}\nmsg.payload={\"KitTemp\":temp};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 360,
+        "wires": [
+            [
+                "a41976c3.997458"
+            ]
+        ]
+    },
+    {
+        "id": "ba98a0ee.0cd8a",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "Get Potenciometer",
+        "func": "var res=msg.payload.response.pdata.split(\".\");\nmsg.payload={\"KitPot\":parseInt(res[9],16)};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "a41976c3.997458"
+            ]
+        ]
+    },
+    {
+        "id": "caf8ae8.a59d85",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "Get Light",
+        "func": "var res=msg.payload.response.pdata.split(\".\");\nmsg.payload={\"KitLight\":parseInt(res[7],16)};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "a41976c3.997458"
+            ]
+        ]
+    },
+    {
+        "id": "e4f30235.92826",
+        "type": "debug",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "false",
+        "x": 930,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "423649d9.3c6da8",
+        "type": "inject",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "topic": "",
+        "payload": "Test",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 290,
+        "y": 1580,
+        "wires": [
+            [
+                "3d258a5.9819076"
+            ]
+        ]
+    },
+    {
+        "id": "3d258a5.9819076",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "Req Tst",
+        "func": "var data={\n    request: {\n        nadr:  \"0x0001\",\n        pnum:  \"0x20\",\n        pcmd:  \"0xB1\",\n        hwpid: \"0x001E\",\n        err:   \"0x00\",\n        dpa:   \"0x67\",\n        pdata1: Math.floor((Math.random() * 30) + 1),\n        pdata2: Math.floor((Math.random() * 255) + 1),\n        pdata3: Math.floor((Math.random() * 255) + 1)\n    },\n}\nmsg.payload=data.request;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 1580,
+        "wires": [
+            [
+                "7acbf685.398e28",
+                "e4f30235.92826"
+            ]
+        ]
+    },
+    {
+        "id": "7acbf685.398e28",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "JSONtoIQRF",
+        "func": "out = ('000'+Number(msg.payload.nadr).toString(16)).slice(-2);\nout += \".\"+(('000'+Number(msg.payload.nadr).toString(16)).slice(-4)).substr(0,2);\nout += \".\"+('0'+Number(msg.payload.pnum).toString(16)).slice(-2);\nout += \".\"+('0'+Number(msg.payload.pcmd).toString(16)).slice(-2);\nout += \".\"+('000'+Number(msg.payload.hwpid).toString(16)).slice(-2);\nout += \".\"+(('000'+Number(msg.payload.hwpid).toString(16)).slice(-4)).substr(0,2);\n\nres = ('000'+Number(msg.payload.nadr).toString(16)).slice(-2);\nres += \".\"+(('000'+Number(msg.payload.nadr).toString(16)).slice(-4)).substr(0,2);\nres += \".\"+('0'+Number(msg.payload.pnum).toString(16)).slice(-2);\nres += \".\"+('0'+Number(msg.payload.pcmd).toString(16)).slice(-2);\nres += \".\"+('000'+Number(msg.payload.hwpid).toString(16)).slice(-2);\nres += \".\"+(('000'+Number(msg.payload.hwpid).toString(16)).slice(-4)).substr(0,2);\nres += \".\"+('0'+Number(msg.payload.err).toString(16)).slice(-2);\nres += \".\"+('0'+Number(msg.payload.dpa).toString(16)).slice(-2);\nres += \".\"+('0'+Number(msg.payload.pdata1).toString(16)).slice(-2);\nres += \".\"+('0'+Number(msg.payload.pdata2).toString(16)).slice(-2);\nres += \".\"+('0'+Number(msg.payload.pdata3).toString(16)).slice(-2);\n\n//res += ('00000'+Number(msg.payload.pdata).toString(16)).slice(-2)+\" \";\n//res += (('00000'+Number(msg.payload.pdata).toString(16)).slice(-4)).substr(0,2);\n//res += (('00000'+Number(msg.payload.pdata).toString(16)).slice(-4)).substr(0,2);\n\nmsg.payload= {ctype:\"dpa\", type: \"raw\", timeout: 0, request: out, response: res};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 1480,
+        "wires": [
+            [
+                "d848f88a.db3c08",
+                "e4f30235.92826"
+            ]
+        ]
+    },
+    {
+        "id": "4bb616f4.57ffe8",
+        "type": "switch",
+        "z": "fa95133c.cf3ed",
+        "name": "PNUM ?",
+        "property": "payload.response.pnum",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "94",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 1,
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "ccb55cb2.4a2ce",
+                "caf8ae8.a59d85",
+                "ba98a0ee.0cd8a",
+                "6ee1864b.e4ff08"
+            ]
+        ]
+    },
+    {
+        "id": "a07a6e3b.359a5",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "IQRFtoJSON",
+        "func": "var response=msg.payload.response.split(\".\");\nvar request=msg.payload.request.split(\".\");\n\nvar data={\n    type: \"\",\n    request: {\n        nadr: \"\",\n        pnum: \"\",\n        pcmd: \"\",\n        hwpid: \"\"\n    },\n    response: {\n        nadr: \"\",\n        pnum: \"\",\n        pcmd: \"\",\n        hwpid: \"\",\n        errn: \"\",\n        dpa: \"\",\n        pdata: \"\",\n    },\n    timeout: \"\",\n    result: \"\",\n    time: new Date()\n}\n\n\ndata.type = msg.payload.type;\n\ndata.request.nadr=parseInt(request[0], 16) + (parseInt(request[1], 16)*256);\ndata.request.pnum=parseInt(request[2], 16);\ndata.request.pcmd=parseInt(request[3], 16);\ndata.request.hwpid=parseInt(request[4], 16) + (parseInt(request[5], 16)*256);\n\ndata.response.nadr=parseInt(response[0], 16) + (parseInt(response[1], 16)*256);\ndata.response.pnum=parseInt(response[2], 16);\ndata.response.pcmd=parseInt(response[3], 16);\ndata.response.hwpid=parseInt(response[4], 16) + (parseInt(response[5], 16)*256);\ndata.response.errn=parseInt(response[6], 16);\ndata.response.dpa=parseInt(response[7], 16);\ndata.response.pdata=msg.payload.response.slice(24).trim();\ndata.timeout=msg.payload.timeout;\ndata.result=msg.payload.result;\nmsg.payload=data;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "3f652c17.2ff8f4",
+                "37bd624b.e0aa7e"
+            ]
+        ]
+    },
+    {
+        "id": "3f652c17.2ff8f4",
+        "type": "debug",
+        "z": "fa95133c.cf3ed",
+        "name": "parse",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 750,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b9781c1e.5ca21",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "STD binary output Relay1 kit 1",
+        "func": "//---  04.00.4B.00.FF.FF.01.00.00.00.01\n\n// prijde adresa \n// prijde stav\n// prijde vystup cislo\nvar data={\n    type: \"raw\",\n    request: {\n        nadr: \"0x0002\",\n        pnum: \"0x4B\",\n        pcmd: \"0x00\",\n        hwpid: \"0xFFFF\",\n        pdata: \"0x0400000001\",\n    },\n    timeout: 1000\n}\n\nif(msg.payload == 1)\n{\n    data.request.pdata = \"0x0400000001\";\n}\nelse if(msg.payload == 0)\n{\n    data.request.pdata = \"0x0400000000\";\n}\n\nmsg.payload=data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "3ef15972.30b276"
+            ]
+        ]
+    },
+    {
+        "id": "10007a3a.009186",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "STD binary output Relay2 kit 1",
+        "func": "//---  04.00.4B.00.FF.FF.01.00.00.00.01\n\n// prijde adresa \n// prijde stav\n// prijde vystup cislo\nvar data={\n    type: \"raw\",\n    request: {\n        nadr: \"0x0002\",\n        pnum: \"0x4B\",\n        pcmd: \"0x00\",\n        hwpid: \"0xFFFF\",\n        pdata: \"0x0800000001\",\n    },\n    timeout: 1000\n}\n\nif(msg.payload == 1)\n{\n    data.request.pdata = \"0x0800000001\";\n}\nelse if(msg.payload == 0)\n{\n    data.request.pdata = \"0x0800000000\";\n}\n\nmsg.payload=data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 770,
+        "y": 520,
+        "wires": [
+            [
+                "3ef15972.30b276"
+            ]
+        ]
+    },
+    {
+        "id": "807a2daf.ea1a8",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 ON",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "b9781c1e.5ca21"
+            ]
+        ]
+    },
+    {
+        "id": "fb3eb8d9.3d2aa8",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 OFF",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "b9781c1e.5ca21"
+            ]
+        ]
+    },
+    {
+        "id": "6f2f2418.88fe6c",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 ON",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "10007a3a.009186"
+            ]
+        ]
+    },
+    {
+        "id": "fb7540e8.81ef",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 OFF",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 560,
+        "wires": [
+            [
+                "10007a3a.009186"
+            ]
+        ]
+    },
+    {
+        "id": "2b758e3c.9f73d2",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "STD binary output LED RED kit 3",
+        "func": "//---  04.00.4B.00.FF.FF.01.00.00.00.01\n\n// prijde adresa \n// prijde stav\n// prijde vystup cislo\nvar data={\n    type: \"raw\",\n    request: {\n        nadr: \"0x0001\",\n        pnum: \"0x06\",\n        pcmd: \"0x01\",\n        hwpid: \"0xFFFF\",\n    },\n    timeout: 1000\n}\n\nif(msg.payload == 1)\n{\n    data.request.pcmd = \"0x01\";\n}\nelse if(msg.payload == 0)\n{\n    data.request.pcmd = \"0x00\";\n}\n\nmsg.payload=data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 700,
+        "wires": [
+            [
+                "3ef15972.30b276"
+            ]
+        ]
+    },
+    {
+        "id": "1a54a9d5.d9e926",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 ON",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 660,
+        "wires": [
+            [
+                "2b758e3c.9f73d2"
+            ]
+        ]
+    },
+    {
+        "id": "50bb43b.c1966bc",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 OFF",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 740,
+        "wires": [
+            [
+                "2b758e3c.9f73d2"
+            ]
+        ]
+    },
+    {
+        "id": "7f0c58e2.6d7aa8",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "CLOUD",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 550,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3947f275.bc682e",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "STD binary output LED GREEN kit 3",
+        "func": "//---  04.00.4B.00.FF.FF.01.00.00.00.01\n\n// prijde adresa \n// prijde stav\n// prijde vystup cislo\nvar data={\n    type: \"raw\",\n    request: {\n        nadr: \"0x0001\",\n        pnum: \"0x07\",\n        pcmd: \"0x01\",\n        hwpid: \"0xFFFF\",\n    },\n    timeout: 1000\n}\n\nif(msg.payload == 1)\n{\n    data.request.pcmd = \"0x01\";\n}\nelse if(msg.payload == 0)\n{\n    data.request.pcmd = \"0x00\";\n}\n\nmsg.payload=data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 880,
+        "wires": [
+            [
+                "3ef15972.30b276"
+            ]
+        ]
+    },
+    {
+        "id": "9708cb3c.d963a8",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 ON",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 840,
+        "wires": [
+            [
+                "3947f275.bc682e"
+            ]
+        ]
+    },
+    {
+        "id": "c902a111.b7a66",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "Switch 1 OFF",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 530,
+        "y": 920,
+        "wires": [
+            [
+                "3947f275.bc682e"
+            ]
+        ]
+    },
+    {
+        "id": "fe848fa4.ef678",
+        "type": "inject",
+        "z": "83e74317.847d7",
+        "name": "CLOUD",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 550,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3756f23.a5a44",
+        "type": "switch",
+        "z": "fa95133c.cf3ed",
+        "name": "ADR",
+        "property": "payload.response.nadr",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 230,
+        "y": 560,
+        "wires": [
+            [
+                "4bb616f4.57ffe8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "be2356d2.2871b8",
+        "type": "websocket in",
+        "z": "83e74317.847d7",
+        "name": "Cloud",
+        "server": "",
+        "client": "1d9650b6.0b3aaf",
+        "x": 210,
+        "y": 340,
+        "wires": [
+            [
+                "d8c5154a.40cad8",
+                "69c0f235.17a4cc"
+            ]
+        ]
+    },
+    {
+        "id": "be66c422.0917a8",
+        "type": "switch",
+        "z": "83e74317.847d7",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "setout1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "setout2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "redled",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "greenled",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 5,
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "846e815c.d1b38"
+            ],
+            [
+                "a042578e.e3c318"
+            ],
+            [
+                "bdd51340.fb614"
+            ],
+            [
+                "f041bdaa.b25e4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d8c5154a.40cad8",
+        "type": "json",
+        "z": "83e74317.847d7",
+        "name": "",
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "be66c422.0917a8",
+                "7891c504.8a439c"
+            ]
+        ]
+    },
+    {
+        "id": "846e815c.d1b38",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "convert",
+        "func": "msg.payload = msg.payload.command;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 380,
+        "wires": [
+            [
+                "b9781c1e.5ca21"
+            ]
+        ]
+    },
+    {
+        "id": "a042578e.e3c318",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "convert",
+        "func": "msg.payload = msg.payload.command;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 520,
+        "wires": [
+            [
+                "10007a3a.009186"
+            ]
+        ]
+    },
+    {
+        "id": "bdd51340.fb614",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "convert",
+        "func": "msg.payload = msg.payload.command;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 700,
+        "wires": [
+            [
+                "2b758e3c.9f73d2"
+            ]
+        ]
+    },
+    {
+        "id": "f041bdaa.b25e4",
+        "type": "function",
+        "z": "83e74317.847d7",
+        "name": "convert",
+        "func": "msg.payload = msg.payload.command;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 880,
+        "wires": [
+            [
+                "3947f275.bc682e"
+            ]
+        ]
+    },
+    {
+        "id": "6ee1864b.e4ff08",
+        "type": "function",
+        "z": "fa95133c.cf3ed",
+        "name": "Get Temp",
+        "func": "var res=msg.payload.response.pdata.split(\".\");\n\n\nparstemp1 =  parseInt(res[2],16);   //ff\nparstemp2 =  parseInt(res[1],16);   //d0\n\ntemp1 = parstemp1;\ntemp2 = parstemp2;\nif(temp1 == 0xFF && temp2 == 0xFF)\n{\n    temp = \"NaN\";\n    msg.payload={\"KitNodeTemp\":temp};\n    return msg;\n}\n\ntemp1 &= 0x7F;\ntemp2 &= 0xF0;\n\ntemp = (temp1<<4) + (temp2>>4);\n\ntemp2 =  parstemp2;\ntemp2 &= 0x0F;\n\ntemp2 *= 0.0625;\n\ntemp += temp2; \n\nif(((parstemp1 & 0x80)>>7) === 1)\n{\n    temp = 2048 - temp;\n    temp = -temp;\n}\nif(temp == -2048)\n{\n    temp = \"NaN\";\n}\nmsg.payload={\"KitNodeTemp\":temp};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "a41976c3.997458"
+            ]
+        ]
+    },
+    {
+        "id": "a41976c3.997458",
+        "type": "join",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "timeout": "0.2",
+        "count": "",
+        "x": 810,
+        "y": 400,
+        "wires": [
+            [
+                "b4c7acc3.c297",
+                "2acffadd.deb2b6",
+                "77dad8c5.ec17c8"
+            ]
+        ]
+    },
+    {
+        "id": "3ef15972.30b276",
+        "type": "link out",
+        "z": "83e74317.847d7",
+        "name": "ToGateway",
+        "links": [
+            "39b5a99a.da8fb6"
+        ],
+        "x": 1000,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "39b5a99a.da8fb6",
+        "type": "link in",
+        "z": "83e74317.847d7",
+        "name": "ToGateway",
+        "links": [
+            "3ef15972.30b276"
+        ],
+        "x": 535,
+        "y": 220,
+        "wires": [
+            [
+                "e1306a5b.a68818"
+            ]
+        ]
+    },
+    {
+        "id": "4f94eeae.6c17a",
+        "type": "comment",
+        "z": "83e74317.847d7",
+        "name": "--------------------------------------------------------------------------------------------------------------------------------------------------------------",
+        "info": "",
+        "x": 510,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "eecadbc0.dddd48",
+        "type": "comment",
+        "z": "ab9ce235.81e3",
+        "name": "MeasureData",
+        "info": "",
+        "x": 130,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "455d631.511d99c",
+        "type": "ui_gauge",
+        "z": "ab9ce235.81e3",
+        "name": "Temperature_SE_KIT",
+        "group": "bf333ebc.4c7bd",
+        "order": 0,
+        "width": "6",
+        "height": "5",
+        "gtype": "gage",
+        "title": "",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ea41925f.f1b6c",
+        "type": "ui_chart",
+        "z": "ab9ce235.81e3",
+        "name": "Temperature_SE_KIT",
+        "group": "bf333ebc.4c7bd",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for data",
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2f39258a.d7749a",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "Get  S_KIT TempDS",
+        "func": "if(msg.payload.KitTemp)\n{\n    msg.payload=msg.payload.KitTemp;\n    if(msg.payload > -2000)\n    {\n        msg.payload = Math.round(msg.payload * 10)/10;\n        return msg;\n    }\n}\n\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "c2bb9ad0.976178",
+                "ea41925f.f1b6c",
+                "455d631.511d99c"
+            ]
+        ]
+    },
+    {
+        "id": "e1ea2b41.bdabd8",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "Get S_KIT Light",
+        "func": "if(msg.payload.KitLight)\n{\n    if (msg.payload.KitLight)\n    {\n        msg.payload=8*(127-msg.payload.KitLight);\n       return msg;\n    }\n}\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 420,
+        "wires": [
+            [
+                "95bbcdca.115a8",
+                "501fa5e4.f1f31c",
+                "b65a8b53.3b62d8"
+            ]
+        ]
+    },
+    {
+        "id": "95bbcdca.115a8",
+        "type": "ui_chart",
+        "z": "ab9ce235.81e3",
+        "name": "Light",
+        "group": "78c2c53.80e483c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for data",
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "1ba722d9.dcc37d",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "Get S_KIT Pot",
+        "func": "if(msg.payload.KitPot)\n{\n    msg.payload=msg.payload.KitPot;\n    return msg;\n}\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "762d4ffc.a5143",
+                "4b2c3373.88db3c",
+                "a4eb4186.5c3d2"
+            ]
+        ]
+    },
+    {
+        "id": "762d4ffc.a5143",
+        "type": "ui_gauge",
+        "z": "ab9ce235.81e3",
+        "name": "Potentiometer",
+        "group": "de5342a0.eac29",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "",
+        "label": "Volume",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "127",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 620,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c2bb9ad0.976178",
+        "type": "debug",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 810,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "501fa5e4.f1f31c",
+        "type": "debug",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 810,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4b2c3373.88db3c",
+        "type": "debug",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 830,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "281d522d.5a13be",
+        "type": "link in",
+        "z": "ab9ce235.81e3",
+        "name": "IqrfGraf",
+        "links": [
+            "b4c7acc3.c297"
+        ],
+        "x": 186,
+        "y": 298,
+        "wires": [
+            [
+                "2f39258a.d7749a",
+                "e1ea2b41.bdabd8",
+                "1ba722d9.dcc37d",
+                "ce02503a.1a432",
+                "4613df81.61b0b"
+            ]
+        ]
+    },
+    {
+        "id": "61fcc1eb.290e2",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "ON",
+        "group": "4201b0a4.f1b58",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "ON",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "setout1",
+        "x": 410,
+        "y": 820,
+        "wires": [
+            [
+                "6d618e43.2a26b",
+                "d29e0803.dbd6f8"
+            ]
+        ]
+    },
+    {
+        "id": "319605a4.90ad2a",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "OFF",
+        "group": "4201b0a4.f1b58",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "OFF",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "setout1",
+        "x": 410,
+        "y": 900,
+        "wires": [
+            [
+                "6d618e43.2a26b",
+                "d29e0803.dbd6f8"
+            ]
+        ]
+    },
+    {
+        "id": "d29e0803.dbd6f8",
+        "type": "ui_switch",
+        "z": "ab9ce235.81e3",
+        "name": "Switch 1",
+        "label": "Switch",
+        "group": "4201b0a4.f1b58",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "false",
+        "topic": "setout1",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 540,
+        "y": 860,
+        "wires": [
+            [
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "d5be5b62.d1f1b8",
+        "type": "comment",
+        "z": "ab9ce235.81e3",
+        "name": "IQRF",
+        "info": "",
+        "x": 830,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "6d618e43.2a26b",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "Set value",
+        "func": "var data={\n    name:msg.topic,\n    command:msg.payload \n}\nmsg.payload=data;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 680,
+        "y": 1060,
+        "wires": [
+            [
+                "28b752e4.59d71e",
+                "bb3f4b69.fdcb58",
+                "66efe47e.82fc7c"
+            ]
+        ]
+    },
+    {
+        "id": "844adb3f.d56758",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "ON",
+        "group": "d3f0e100.8a147",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "ON",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "setout2",
+        "x": 410,
+        "y": 960,
+        "wires": [
+            [
+                "6d618e43.2a26b",
+                "63706d53.4851a4"
+            ]
+        ]
+    },
+    {
+        "id": "ce4fa041.2bcea",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "OFF",
+        "group": "d3f0e100.8a147",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "OFF",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "setout2",
+        "x": 410,
+        "y": 1040,
+        "wires": [
+            [
+                "6d618e43.2a26b",
+                "63706d53.4851a4"
+            ]
+        ]
+    },
+    {
+        "id": "63706d53.4851a4",
+        "type": "ui_switch",
+        "z": "ab9ce235.81e3",
+        "name": "Switch 2",
+        "label": "Switch",
+        "group": "d3f0e100.8a147",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "false",
+        "topic": "setout2",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 540,
+        "y": 1000,
+        "wires": [
+            [
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "b6c18323.2a5fb",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "ON",
+        "group": "25148a99.9c8986",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "ON",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "redled",
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            [
+                "6304cf44.b5654",
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "bd400915.8a2028",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "OFF",
+        "group": "25148a99.9c8986",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "OFF",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "redled",
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "6304cf44.b5654",
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "6304cf44.b5654",
+        "type": "ui_switch",
+        "z": "ab9ce235.81e3",
+        "name": "Red LED",
+        "label": "Switch",
+        "group": "25148a99.9c8986",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "false",
+        "topic": "redled",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 540,
+        "y": 1240,
+        "wires": [
+            [
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "d5796fd.337ba9",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "ON",
+        "group": "e92ae9cc.f8e648",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "ON",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "greenled",
+        "x": 410,
+        "y": 1080,
+        "wires": [
+            [
+                "60d9a85f.e83668",
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "e2878641.9d3638",
+        "type": "ui_button",
+        "z": "ab9ce235.81e3",
+        "name": "OFF",
+        "group": "e92ae9cc.f8e648",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "OFF",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "greenled",
+        "x": 410,
+        "y": 1160,
+        "wires": [
+            [
+                "60d9a85f.e83668",
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "60d9a85f.e83668",
+        "type": "ui_switch",
+        "z": "ab9ce235.81e3",
+        "name": "Green LED",
+        "label": "Switch",
+        "group": "e92ae9cc.f8e648",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "decouple": "false",
+        "topic": "greenled",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 550,
+        "y": 1120,
+        "wires": [
+            [
+                "6d618e43.2a26b"
+            ]
+        ]
+    },
+    {
+        "id": "eea8337e.1436f",
+        "type": "ui_gauge",
+        "z": "ab9ce235.81e3",
+        "name": "Temperature_node",
+        "group": "372029a2.a931b6",
+        "order": 0,
+        "width": "6",
+        "height": "5",
+        "gtype": "gage",
+        "title": "",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "dbf769fa.747748",
+        "type": "ui_chart",
+        "z": "ab9ce235.81e3",
+        "name": "Temperature_node",
+        "group": "372029a2.a931b6",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for data",
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e03e35ee.665238",
+        "type": "debug",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 830,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4613df81.61b0b",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "Get S_KIT TempNode",
+        "func": "if(msg.payload.KitNodeTemp)\n{\n    msg.payload=msg.payload.KitNodeTemp;\n    if(msg.payload > -2000)\n    {\n        msg.payload = Math.round(msg.payload * 10)/10;\n        return msg;\n    }\n}\n\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 200,
+        "wires": [
+            [
+                "eea8337e.1436f",
+                "e03e35ee.665238",
+                "dbf769fa.747748"
+            ]
+        ]
+    },
+    {
+        "id": "a4eb4186.5c3d2",
+        "type": "ui_chart",
+        "z": "ab9ce235.81e3",
+        "name": "Potenciometr",
+        "group": "de5342a0.eac29",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting for data",
+        "ymin": "0",
+        "ymax": "127",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 610,
+        "y": 540,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ce02503a.1a432",
+        "type": "debug",
+        "z": "ab9ce235.81e3",
+        "name": "Complete data",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 400,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b65a8b53.3b62d8",
+        "type": "ui_gauge",
+        "z": "ab9ce235.81e3",
+        "name": "Light",
+        "group": "78c2c53.80e483c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "",
+        "label": "lx",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 590,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b4c7acc3.c297",
+        "type": "link out",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "links": [
+            "281d522d.5a13be"
+        ],
+        "x": 955,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "28b752e4.59d71e",
+        "type": "debug",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 850,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "181e7225.82c0be",
+        "type": "link in",
+        "z": "83e74317.847d7",
+        "name": "Button",
+        "links": [
+            "bb3f4b69.fdcb58"
+        ],
+        "x": 195,
+        "y": 600,
+        "wires": [
+            [
+                "be66c422.0917a8"
+            ]
+        ]
+    },
+    {
+        "id": "bb3f4b69.fdcb58",
+        "type": "link out",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "links": [
+            "181e7225.82c0be"
+        ],
+        "x": 795,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "2acffadd.deb2b6",
+        "type": "websocket out",
+        "z": "fa95133c.cf3ed",
+        "name": "IBM Bluemix",
+        "server": "",
+        "client": "ba06613c.b022f",
+        "x": 1010,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "197f153b.9f22fb",
+        "type": "debug",
+        "z": "fa95133c.cf3ed",
+        "name": "raw",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 570,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "37bd624b.e0aa7e",
+        "type": "link out",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "links": [
+            "3fed3857.bf3308"
+        ],
+        "x": 715,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3fed3857.bf3308",
+        "type": "link in",
+        "z": "fa95133c.cf3ed",
+        "name": "ToParse",
+        "links": [
+            "37bd624b.e0aa7e"
+        ],
+        "x": 135,
+        "y": 560,
+        "wires": [
+            [
+                "e3756f23.a5a44"
+            ]
+        ]
+    },
+    {
+        "id": "c4a5d043.2a103",
+        "type": "comment",
+        "z": "fa95133c.cf3ed",
+        "name": "--------------------------------------------------------------------------------------------------------------------------------------------------------------",
+        "info": "",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "77dad8c5.ec17c8",
+        "type": "debug",
+        "z": "fa95133c.cf3ed",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 1010,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "69c0f235.17a4cc",
+        "type": "debug",
+        "z": "83e74317.847d7",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 350,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3b396d9f.334ad2",
+        "type": "link in",
+        "z": "ab9ce235.81e3",
+        "name": "feedback",
+        "links": [
+            "c3a292f9.3bf7c",
+            "7891c504.8a439c"
+        ],
+        "x": 95,
+        "y": 1060,
+        "wires": [
+            [
+                "4efbbbd.ce74544"
+            ]
+        ]
+    },
+    {
+        "id": "1138faf4.c3fda5",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "ToNumber",
+        "func": "msg.payload = Number(msg.payload.command)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 860,
+        "wires": [
+            [
+                "d29e0803.dbd6f8"
+            ]
+        ]
+    },
+    {
+        "id": "d356fcf9.1127e",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "ToNumber",
+        "func": "msg.payload = Number(msg.payload.command)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 1000,
+        "wires": [
+            [
+                "63706d53.4851a4"
+            ]
+        ]
+    },
+    {
+        "id": "7891c504.8a439c",
+        "type": "link out",
+        "z": "83e74317.847d7",
+        "name": "",
+        "links": [
+            "3b396d9f.334ad2"
+        ],
+        "x": 275,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4efbbbd.ce74544",
+        "type": "switch",
+        "z": "ab9ce235.81e3",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "setout1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "setout2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "redled",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "greenled",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 4,
+        "x": 190,
+        "y": 1060,
+        "wires": [
+            [
+                "1138faf4.c3fda5"
+            ],
+            [
+                "d356fcf9.1127e"
+            ],
+            [
+                "3d2e6576.19d1aa"
+            ],
+            [
+                "9817db41.07e2f8"
+            ]
+        ]
+    },
+    {
+        "id": "3d2e6576.19d1aa",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "ToNumber",
+        "func": "msg.payload = Number(msg.payload.command)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9817db41.07e2f8",
+        "type": "function",
+        "z": "ab9ce235.81e3",
+        "name": "ToNumber",
+        "func": "msg.payload = Number(msg.payload.command)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66efe47e.82fc7c",
+        "type": "websocket out",
+        "z": "ab9ce235.81e3",
+        "name": "feedback to cloud",
+        "server": "",
+        "client": "abdc3995.a09fc8",
+        "x": 870,
+        "y": 1100,
+        "wires": []
+    }
+]
