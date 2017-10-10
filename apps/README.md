@@ -6,6 +6,8 @@ Follow our [guide](https://github.com/iqrfsdk/iqrf-daemon/blob/master/docker/REA
 
 ## Node-RED app
 
+Custom flow has been develop by our partner [JoTio](http://jotio.cz/).
+
 ### Build it for the UP board
 
 ```Bash
