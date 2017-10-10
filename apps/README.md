@@ -1,4 +1,4 @@
-# Demo Apps for IOT-STARTER-KIT
+# Demo Apps
 
 ## Get ready for the Docker ride
 
@@ -25,5 +25,6 @@ docker build -f Dockerfile.rpi -t iot-iqrf-nodered-app .
 ### Run it
 
 ```Bash
-docker container run -d -p 1880:1880 --name iot-iqrf-nodered-app --net bridge01 --ip 10.1.1.3 --restart=always iot-iqrf-nodered-app
+docker container run -d -p 1880:1880 --name iot-iqrf-nodered-app --net bridge01 \ 
+--ip 10.1.1.3 --restart=always iot-iqrf-nodered-app
 ```
