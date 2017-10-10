@@ -1,0 +1,26 @@
+#IOT-STARTER-KIT nodered demo app for the RPI board
+
+FROM arm32v7/node
+
+MAINTAINER Rostislav Spinar "rostislav.spinar@iqrf.com"
+LABEL maintainer="rostislav.spinar@iqrf.com"
+
+# install the dashboard
+RUN	npm -i -g --unsafe-perm node-red \
+	&& npm -i -g --unsafe-perm node-red/node-red-dashboard
+
+#create user folder
+RUN mkdir -p /node-red/user-dir
+WORKDIR /node-red
+
+# copy the app script
+COPY ./rpi-node-red.sh rpi-node-red.sh
+
+# make the script exe
+RUN chmod u+x rpi-node-red.sh
+
+# expose port to host
+EXPOSE 1880
+
+# run the app script
+CMD [ "rpi-node-red.sh" ]

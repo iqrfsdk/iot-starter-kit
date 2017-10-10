@@ -1,0 +1,12 @@
+##IOT-STARTER-KIT nodered demo app for the UP board
+
+FROM nodered/node-red-docker
+
+MAINTAINER Rostislav Spinar "rostislav.spinar@iqrf.com"
+LABEL maintainer="rostislav.spinar@iqrf.com"
+
+# install the dashboard
+RUN	npm -i node-red/node-red-dashboard
+
+# expose port to host
+EXPOSE 1880
