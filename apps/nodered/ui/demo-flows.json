@@ -24,7 +24,7 @@
         "id": "ae8a1f56.99e2c",
         "type": "mqtt-broker",
         "z": "",
-        "broker": "172.25.3.1",
+        "broker": "10.1.1.1",
         "port": "1883",
         "clientid": "",
         "usetls": false,

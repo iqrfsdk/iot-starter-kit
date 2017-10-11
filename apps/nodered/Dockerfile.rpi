@@ -14,7 +14,7 @@ RUN mkdir -p /node-red/user-dir
 
 # copy custom flow
 WORKDIR /data
-COPY ./flows.json flows.json
+COPY ui/demo-flows.json demo-flows.json
 
 # copy the app script
 WORKDIR /node-red

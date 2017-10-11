@@ -10,7 +10,7 @@ RUN npm install node-red/node-red-dashboard
 
 # copy custom flow
 WORKDIR /data
-COPY ./flows.json flows.json
+COPY ui/demo-flows.json demo-flows.json
 
 # expose port to host
 EXPOSE 1880
