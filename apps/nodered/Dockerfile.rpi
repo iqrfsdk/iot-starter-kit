@@ -13,7 +13,7 @@ RUN npm install node-red \
 RUN mkdir -p /node-red/user-dir
 
 # copy custom flow
-WORKDIR /data
+WORKDIR /node-red/user-dir
 COPY ui/demo-flows.json demo-flows.json
 
 # copy the app script
