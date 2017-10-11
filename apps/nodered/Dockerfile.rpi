@@ -1,29 +1,17 @@
 #IOT-STARTER-KIT nodered demo app for the RPI board
 
-FROM arm32v7/node
+FROM nodered/node-red-docker:rpi
 
 MAINTAINER Rostislav Spinar "rostislav.spinar@iqrf.com"
 LABEL maintainer="rostislav.spinar@iqrf.com"
 
 # install the dashboard
-RUN npm install node-red \
-    && npm install node-red/node-red-dashboard
+RUN npm install node-red/node-red-dashboard
 
-#create user folder
-RUN mkdir -p /node-red/user-dir
+USER node-red
 
 # copy custom flow
-COPY ui/flows.json /node-red/user-dir/flows.json
-
-# copy the app script
-WORKDIR /node-red
-COPY ./rpi-node-red.sh rpi-node-red.sh
-
-# make the script exe
-RUN chmod u+x rpi-node-red.sh
+COPY ui/flows.json /data/flows.json
 
 # expose port to host
 EXPOSE 1880
-
-# run the app script
-CMD [ "rpi-node-red.sh" ]
