@@ -8,9 +8,10 @@ LABEL maintainer="rostislav.spinar@iqrf.com"
 # install the dashboard
 RUN npm install node-red/node-red-dashboard
 
+USER node-red
+
 # copy custom flow
-WORKDIR /data
-COPY ui/demo-flows.json demo-flows.json
+COPY ui/flows.json /data/flows.json
 
 # expose port to host
 EXPOSE 1880
