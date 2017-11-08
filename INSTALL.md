@@ -34,7 +34,7 @@ sudo apt update && sudo apt full-upgrade -y
 * Ready IQRF GW [image](https://hub.docker.com/r/iqrfsdk/iqrf-gateway-debian/)
 
 ```bash
-docker container run -d -p 80:80 -p 1883:1883 -p 8080:8080 -p 9001:9001 --device /dev/spidev2.0:/dev/spidev2.0 --privileged --name iqrf-gateway --restart=always iqrf-gateway:latest
+docker container run -d -p 80:80 -p 1883:1883 -p 8080:8080 -p 9001:9001 --device /dev/spidev2.0:/dev/spidev2.0 --privileged --name iqrf-gateway --restart=always iqrfsdk/iqrf-gateway:latest
 ```
 
 #### Check Node-RED Dashboard
@@ -42,18 +42,21 @@ docker container run -d -p 80:80 -p 1883:1883 -p 8080:8080 -p 9001:9001 --device
 ```bash
 http://localhost/ui
 ```
+![IQRF App Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/nodered-dashboard.png "IQRF App Dashboard")
 
 #### Check IQRF WebAPP Dashboard
 
 ```bash
 http://localhost:8080
 ```
+![IQRF WebAPP Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/iqrf-daemon-webapp.png "IQRF WebAPP Dashboard")
 
 #### Check Supervisor Service Dashboard
 
 ```bash
 http://localhost:9001
 ```
+![IQRF Supervisor Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/supervisor-dashboard.png "IQRF Supervisor Dashboard")
 
 ## IoT Starter Kit - Part 3: Possible extensions
 
