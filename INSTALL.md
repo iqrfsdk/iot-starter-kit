@@ -27,7 +27,7 @@ sudo apt update && sudo apt full-upgrade -y
 
 ### Step 3 - Install Docker CE
 
-* Install [Docker](https://github.com/iqrfsdk/iqrf-daemon/blob/master/docker/INSTALL.md)
+* Install [Docker](https://github.com/iqrfsdk/iqrf-daemon/blob/master/docker/INSTALL.md) for Debian
 
 ### Step 4 - Run Docker image
 
