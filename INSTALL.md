@@ -33,6 +33,6 @@ sudo apt update && sudo apt full-upgrade -y
 
 * Ready IQRF GW docker [image](https://hub.docker.com/r/iqrfsdk/iqrf-gateway-debian/)
 
-## IoT Starter Kit - Part3: Possible extensions
+## IoT Starter Kit - Part 3: Possible extensions
 
 * Learn more about kit [extensions](https://github.com/iqrfsdk/iot-starter-kit/tree/master/extensions)
