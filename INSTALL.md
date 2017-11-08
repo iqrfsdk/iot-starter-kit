@@ -1,41 +1,43 @@
 # Installation guide
 
-## Setup IQRF sensors and actuators
+## IoT Starter Kit - Part1: IQRF Network
 
-* Create IQRF network
-* Configure IQRF network
+* Download IQRF-Startup package
+* Install IQRF IDE
+* Upload HWP profiles and IQRF standard handlers
+* Bond and discover IQRF sensors and actuators
 
-Follow the instructions in the iot-starter-kit guide in IQRF Startup Package. 
+[![IoT Starter Kit - Part1: IQRF Network](https://img.youtube.com/vi/zOiRGo4ZIyo/0.jpg)](https://www.youtube.com/watch?v=zOiRGo4ZIyo "IoT Starter Kit - Part1: IQRF Network")
 
-## Install Linux to your UP board and connect IQRF module
+## IoT Starter Kit - Part2: IQRF GW
 
-* Follow the [instructions](https://github.com/iqrfsdk/iot-starter-kit/tree/master/core/aaeon.com)
-to install UbiLinux, Ubuntu or Yocto.
-* Follow the instructions [here](http://www.iqrf.org/weben/downloads.php?id=412) on how to attach
-IQRF SPI board to UP board extension connector.
-* Plug in prepared (by setup in IQRF IDE) IQRF coordinator to IQRF SPI board.
+### Install OS Linux
 
-## Install ready IQRF daemon on the UP board
+* Install [UbiLinux](https://up-community.org/wiki/Ubilinux)
+* Post-install tips
 
-Follow the instructions [here](https://github.com/iqrfsdk/iqrf-daemon)
+```bash
+sudo apt update && sudo apt full-upgrade -y
+```
 
-* Download public key to verify the packages from the repository
-* Add repository to the source list
-* Install or update the daemon
-* Check the daemon service status
-* Adjust your configuration
+### Install Docker CE
 
-## Connect the UP to Azure cloud
+* Install [Docker](https://github.com/iqrfsdk/iqrf-daemon/blob/master/docker/INSTALL.md)
 
-* Start with dev essentials [program](https://www.visualstudio.com/cs/dev-essentials/) and activate Azure package
-* Create iothub in your Azure portal
-* Create device in the iothub that will represent IQRF GW - UP board
-* Use Device explorer [app](https://github.com/Azure/azure-iot-sdk-csharp/releases) to connect to iothub
-* Copy connection string from your Azure portal
-* Generate SAS token using Device explorer - is used as password in MQTT [config](workshop/daemon-config/MqttMessaging.json)
-* Update MQTT [config](workshop/daemon-config/MqttMessaging.json) in the iqrf-daemon
-* Restart the daemon
+### Insert IQRF Coordinator
+
+* Attach [IQRF SPI board](http://www.iqrf.org/weben/downloads.php?id=412)
+* Insert prepared IQRF Coordinator to the IQRF SPI board
+
+### Install IQRF GW Docker image
+
+* Ready to go IQRF GW docker [image](https://hub.docker.com/r/iqrfsdk/iqrf-gateway-debian/)
+
+```bash
+git clone https://github.com/iqrfsdk/iqrf-gateway.git
+...
+```
 
 ## Learn about possible extensions
 
-Check the content [here](https://github.com/iqrfsdk/iot-starter-kit/tree/master/extensions)
+Check the extensions [here](https://github.com/iqrfsdk/iot-starter-kit/tree/master/extensions)
