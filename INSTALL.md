@@ -58,6 +58,12 @@ http://localhost:9001
 ```
 ![IQRF Supervisor Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/supervisor-dashboard.png "IQRF Supervisor Dashboard")
 
+### Optional - Stop Docker image
+
+```bash
+docker container stop iqrf-gateway
+```
+
 ## IoT Starter Kit - Part 3: Possible extensions
 
 * Learn more about kit [extensions](https://github.com/iqrfsdk/iot-starter-kit/tree/master/extensions)
