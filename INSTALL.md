@@ -11,58 +11,81 @@
 
 ## IoT Starter Kit - Part 2: IQRF GW
 
-### Step 1 - Insert IQRF Coordinator
+### Step 1 - Download IoT Starter Kit installer image
+
+[IoT Starter Kit installer](https://dl.iqrfsdk.org/iot-starter-kit-v080-installer.img.bz2)
+
+Installer burns complete image right after the boot without any user interaction, just wait:
+
+* Ubilinux 4.0
+* IQRF daemon
+* IQRF daemon webapp
+* Mosquitto broker
+* Nodejs
+* Node-RED
+* Node-RED IoT Starter Kit dashboard
+* Gparted
+
+Burning is signalled by blinking of the GREEN led on the UP board. When we are done blinking stops.
+
+### Step 2 - Install 7-Zip and Rufus tools
+
+* Download and install [7-Zip](http://www.7-zip.org/)
+* Download and install [Rufus](https://rufus.akeo.ie/)
+
+### Step 3 - Extract image and burn it to 8G(16G) USB disk
+
+* Extract image using 7-Zip
+* Burn image to USB disk using Rufus
+
+![Burn installer to 8G(16G) USB disk](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/rufus-burn-installer.png)
+
+### Step 4 - Plug 8G(16G) USB installer to the UP board
+
+* Plug 8G(16G) USB installer to the UP board
+* Let the UP board boot from USB (Press F7 and select UEFI disk to boot from)
+* Wait till blinking of GREEN led is stopped
+* Power-off the UP board
+* Unplug USB installer
+
+### Step 5 - Insert IQRF Coordinator
+
+![IQRF SPI board](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/iqrf-spi-board.png)
 
 * Attach [IQRF SPI board](http://www.iqrf.org/weben/downloads.php?id=412)
 * Insert prepared IQRF Coordinator to the IQRF SPI board
 
-### Step 2 - Install OS Linux
+### Step 6 - Boot installed image
 
-* Install [UbiLinux](https://up-community.org/wiki/Ubilinux)
-* Post-install tips
+* Power-on the UP board and boot normally
+* Login using: user=ubilinux; pass=ubilinux
+* Run Gparted and extend UP flash to 32GB
 
-```bash
-sudo apt update && sudo apt full-upgrade -y
-```
+Enjoy, your are done! 
+Now, check all is fine!
 
-### Step 3 - Install Docker CE
-
-* Install [Docker](https://github.com/iqrfsdk/iqrf-daemon/blob/master/docker/INSTALL.md) for Debian
-
-### Step 4 - Run Docker image
-
-* Ready IQRF GW [image](https://hub.docker.com/r/iqrfsdk/iqrf-gateway-debian/)
+### Step 7 - Check Node-RED dashboard
 
 ```bash
-docker container run -d -p 80:80 -p 1883:1883 -p 8080:8080 -p 9001:9001 --device /dev/spidev2.0:/dev/spidev2.0 --privileged --name iqrf-gateway --restart=always iqrfsdk/iqrf-gateway:latest
+http://localhost:1880/ui
 ```
+![IQRF App Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/node-red-ui.png "IQRF App Dashboard")
 
-#### Check Node-RED Dashboard
+### Step 8 - Check Node-RED flow
 
 ```bash
-http://localhost/ui
+http://localhost:1880
 ```
-![IQRF App Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/nodered-dashboard.png "IQRF App Dashboard")
+![IQRF App Flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/node-red-flows.png "IQRF App Flow")
 
-#### Check IQRF WebAPP Dashboard
+### Step 9 - Check IQRF daemon WebAPP dashboard
 
 ```bash
-http://localhost:8080
+http://localhost
 ```
-![IQRF WebAPP Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/iqrf-daemon-webapp.png "IQRF WebAPP Dashboard")
+![IQRF daemon WebAPP Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/iqrf-daemon-webapp-gateway.png "IQRF daemon WebAPP Dashboard")
 
-#### Check Supervisor Service Dashboard
-
-```bash
-http://localhost:9001
-```
-![IQRF Supervisor Dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/docs/supervisor-dashboard.png "IQRF Supervisor Dashboard")
-
-### Optional - Stop Docker image
-
-```bash
-docker container stop iqrf-gateway
-```
+* Login using: user=admin; pass=iqrf
 
 ## IoT Starter Kit - Part 3: Possible extensions
 
