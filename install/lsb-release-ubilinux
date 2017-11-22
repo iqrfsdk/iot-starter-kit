@@ -1,0 +1,4 @@
+DISTRIB_ID=ubilinux
+DISTRIB_DESCRIPTION="ubilinux 4 (dolcetto)"
+DISTRIB_RELEASE=4.0
+DISTRIB_CODENAME=dolcetto

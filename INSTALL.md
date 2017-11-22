@@ -11,17 +11,17 @@
 
 ## IoT Starter Kit - Part 2: IQRF GW
 
-### Option 1 - Linux Image (!Work in progress!)
+### Option 1 - Step by Step Installation
 
-[IQRF GW - Linux Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/GW-L-IMAGE.md)
+[IQRF GW - Step by Step Installation](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-SbS-INSTALL.md)
 
 ### Option 2 - Docker Image
 
-[IQRF GW - Docker Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/GW-D-IMAGE.md)
+[IQRF GW - Docker Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-D-IMAGE.md)
 
-### Option 3 - Step by Step Installation (!Work in progress!)
+### Option 3 - Linux Image (!Work in progress!)
 
-[IQRF GW - Step by Step Installation](https://github.com/iqrfsdk/iot-starter-kit/tree/master/GW-SbS-INSTALL.md)
+[IQRF GW - Linux Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-L-IMAGE.md)
 
 ## IoT Starter Kit - Part 3: Possible extensions
 
