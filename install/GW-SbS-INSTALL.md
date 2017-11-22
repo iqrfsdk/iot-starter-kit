@@ -165,7 +165,7 @@ http://localhost/en/iqrfnet/send-raw
 
 * Select macro Pulse LEDR and send it!
 
-![IQRF JSON DPA RAW structure](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png.png "IQRF JSON DPA RAW structure")
+![IQRF JSON DPA RAW structure](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png "IQRF JSON DPA RAW structure")
 
 * Learn JSON DPA RAW structure!
 
