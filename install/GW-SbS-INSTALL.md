@@ -23,7 +23,7 @@ sudo apt-get update && sudo apt-get full-upgrade -y
 sudo apt-get install -y mosquitto mosquitto-clients
 ```
 
-## Step 4B - Confirm MQTT broker is running
+### Step 4B - Confirm MQTT broker is running
 
 ```bash
 ubilinux@ubilinux:~$ systemctl status mosquitto.service
@@ -44,7 +44,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F973CFCE6B3BE25C
 sudo apt-get update && sudo apt-get install -y iqrf-daemon
 ```
 
-## Step 5B - Confirm IQRF daemon is running
+### Step 5B - Confirm IQRF daemon is running
 
 ```bash
 ubilinux@ubilinux:~$ systemctl status iqrf-daemon.service
@@ -57,7 +57,7 @@ ubilinux@ubilinux:~$ systemctl status iqrf-daemon.service
            ââ15905 /usr/bin/iqrf_startup /etc/iqrf-daemon/config.json
 ```
 
-## Step 6A - Install IQRF daemon webapp
+## Step 6A - Install IQRF WebAPP
 
 ```bash
 cd /home/ubilinux
@@ -66,13 +66,12 @@ cd iqrf-daemon-webapp/install/
 sudo python3 install.py -d debian -v 9
 ```
 
-## Step 6B - Confirm IQRF daemon webapp is running
+### Step 6B - Confirm IQRF WebAPP is running
 
 ```bash
-http://localhost
+http://localhost/en
 ```
-
-![IQRF daemon WebAPP dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-gateway.png "IQRF daemon WebAPP dashboard")
+![IQRF daemon WebAPP dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF daemon WebAPP dashboard")
 
 * Login using: user=admin; pass=iqrf
 
@@ -81,16 +80,18 @@ http://localhost
 ```bash
 http://localhost/en/config/iqrf
 ```
-
 ![Select spidev2.0 interface](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev2.0 interface")
+
+* Save new configuration!
 
 ## Step 7B - Restart IQRF daemon
 
 ```bash
 http://localhost/en/service
 ```
-
 ![Restart IQRF daemon](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF daemon")
+
+* Hit Restart!
 
 ## Step 8A - Install Nodejs
 
@@ -99,8 +100,97 @@ cd /home/ubilinux
 git clone https://github.com/iqrfsdk/iot-starter-kit.git
 cd iot-starter-kit/install
 sudo cp lsb-release-debian /etc/lsb-release
+sudo apt-get install curl libssl-dev
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs
+sudo cp lsb-release-ubilinux /etc/lsb-release
 ```
 
-TBC
+## Step 9A - Install Node-RED
+
+```bash
+sudo npm install -g --unsafe-perm node-red
+sudo npm install -g pm2
+```
+
+* Have patience with commands!
+
+### Step 9B - Start Node-RED
+
+```bash
+pm2 start /usr/bin/node-red -- -v
+```
+
+### Step 9C - Add Node-RED dashboard
+
+```bash
+http://localhost:1880
+```
+
+### Step 9D - Run IoT-Starter-Kit flow
+
+```bash
+cd /home/ubilinux/iot-starter-kit/install
+cp node-red/* /home/ubilinux/.node-red
+pm2 restart node-red
+```
+
+### Step 9E - Allow Node-RED to run after reboot
+
+```bash
+pm2 save
+pm2 startup
+```
+
+## Step 10A - Check Node-RED dashboard
+
+```bash
+http://localhost:1880/ui
+```
+![IQRF App dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App Dashboard")
+
+### Step 10B - Check Node-RED flow
+
+```bash
+http://localhost:1880
+```
+![IQRF App flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App Flow")
+
+### Step 10C - Blink coordinator LEDR from IQRF WebAPP
+
+```bash
+http://localhost/en/iqrfnet/send-raw
+```
+![IQRF Send DPA packet](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
+
+* Select macro Pulse LEDR and send it!
+
+![IQRF JSON DPA RAW structure](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png.png "IQRF JSON DPA RAW structure")
+
+* Learn JSON DPA RAW structure!
+
+### Step 10D - Inspect JSON messages between Node-RED and IQRF daemon
+
+* Listen for all JSON DPA RAW-HDP Requests
+
+```bash
+mosquitto_sub -t Iqrf/DpaRequest
+```
+
+* Listen for all JSON DPA RAW-HDP Responses
+
+```bash
+mosquitto_sub -t Iqrf/DpaResponse
+```
+
+### Step 10E - Check our examples
+
+```bash
+cd /home/ubilinux
+git clone https://github.com/iqrfsdk/iqrf-daemon-examples.git
+cd iqrf-daemon-examples
+```
+
+* Contribution to the examples very much appreciated!
+
+Enjoy and spred the joy!
