@@ -10,6 +10,7 @@
 ## Step 2 - Install OS Linux
 
 * Install [UbiLinux 4.0](https://up-community.org/downloads/download/44-ubilinux/90-ubilinux-installer-4-0)
+* default login: user=ubilinux; pass=ubilinux
 
 ## Step 3 - Update UbiLinux 4.0
 
