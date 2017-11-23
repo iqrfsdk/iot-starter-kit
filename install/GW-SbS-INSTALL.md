@@ -84,7 +84,7 @@ http://localhost/en/config/iqrf
 
 * Save new configuration!
 
-## Step 7B - Restart IQRF daemon
+### Step 7B - Restart IQRF daemon
 
 ```bash
 http://localhost/en/service
@@ -118,6 +118,7 @@ sudo npm install -g pm2
 ### Step 9B - Start Node-RED
 
 ```bash
+cd /home/ubilinux
 pm2 start /usr/bin/node-red -- -v
 ```
 
@@ -126,6 +127,8 @@ pm2 start /usr/bin/node-red -- -v
 ```bash
 http://localhost:1880
 ```
+![Manage palete](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-1.png "Manage palete")
+![Install node-red-dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
 
 ### Step 9D - Run IoT-Starter-Kit flow
 
@@ -139,7 +142,35 @@ pm2 restart node-red
 
 ```bash
 pm2 save
+
+[PM2] Saving current process list...
+[PM2] Successfully saved in /home/ubilinux/.pm2/dump.pm2
+```
+
+```bash
 pm2 startup
+
+[PM2] Init System found: systemd
+[PM2] To setup the Startup Script, copy/paste the following command:
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubilinux --hp /home/ubilinux
+```
+
+```bash
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubilinux --hp /home/ubilinux
+```
+
+### Step 9F - Confirm Node-RED is running
+
+```bash
+systemctl status pm2-ubilinux
+
+â pm2-ubilinux.service - PM2 process manager
+   Loaded: loaded (/etc/systemd/system/pm2-ubilinux.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2017-11-23 01:20:09 UTC; 1min 10s ago
+     Docs: https://pm2.keymetrics.io/
+ Main PID: 21952 (PM2 v2.7.2: God)
+   CGroup: /system.slice/pm2-ubilinux.service
+           âŁ 21952 PM2 v2.7.2: God Daemon (/home/ubilinux/.pm2)
 ```
 
 ## Step 10A - Check Node-RED dashboard
@@ -171,13 +202,13 @@ http://localhost/en/iqrfnet/send-raw
 
 ### Step 10D - Inspect JSON messages between Node-RED and IQRF daemon
 
-* Listen for all JSON DPA RAW-HDP Requests
+* Listen for all JSON DPA RAW Requests
 
 ```bash
 mosquitto_sub -t Iqrf/DpaRequest
 ```
 
-* Listen for all JSON DPA RAW-HDP Responses
+* Listen for all JSON DPA RAW Responses
 
 ```bash
 mosquitto_sub -t Iqrf/DpaResponse
