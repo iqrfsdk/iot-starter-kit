@@ -9,7 +9,8 @@
 
 ## Step 2 - Install OS Linux
 
-* Install [UbiLinux 4.0](https://up-community.org/downloads/download/44-ubilinux/90-ubilinux-installer-4-0)
+* Download [UbiLinux 4.0](https://up-community.org/downloads/download/44-ubilinux/90-ubilinux-installer-4-0)
+* Burn UbiLinux 4.0 iso image to USB flash by [Etcher](https://etcher.io/)
 * default login: user=ubilinux; pass=ubilinux
 
 ## Step 3 - Update UbiLinux 4.0
@@ -83,6 +84,7 @@ http://localhost/en/config/iqrf
 ```
 ![Select spidev2.0 interface](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev2.0 interface")
 
+* Select available interface!
 * Save new configuration!
 
 ### Step 7B - Restart IQRF daemon
@@ -100,11 +102,11 @@ http://localhost/en/service
 cd /home/ubilinux
 git clone https://github.com/iqrfsdk/iot-starter-kit.git
 cd iot-starter-kit/install
-sudo cp lsb-release-debian /etc/lsb-release
+sudo cp etc/lsb-release-debian /etc/lsb-release
 sudo apt-get install curl libssl-dev
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs
-sudo cp lsb-release-ubilinux /etc/lsb-release
+sudo cp etc/lsb-release-ubilinux /etc/lsb-release
 ```
 
 ## Step 9A - Install Node-RED
@@ -113,8 +115,6 @@ sudo cp lsb-release-ubilinux /etc/lsb-release
 sudo npm install -g --unsafe-perm node-red
 sudo npm install -g pm2
 ```
-
-* Have patience with commands!
 
 ### Step 9B - Start Node-RED
 

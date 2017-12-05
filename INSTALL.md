@@ -19,10 +19,6 @@
 
 [IQRF GW - Docker Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-D-IMAGE.md)
 
-### Option 3 - Linux Image (!Work in progress!)
-
-[IQRF GW - Linux Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-L-IMAGE.md)
-
 ## IoT Starter Kit - Part 3: Possible extensions
 
 * Learn more about kit [extensions](https://github.com/iqrfsdk/iot-starter-kit/tree/master/extensions)
