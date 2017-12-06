@@ -9,7 +9,7 @@
 
 ## Step 2 - Install OS Linux
 
-* Download [UbiLinux 4.0](https://up-community.org/downloads/download/44-ubilinux/90-ubilinux-installer-4-0)
+* Download [UbiLinux 4.0](https://emutex.com/products/ubilinux)
 * Burn UbiLinux 4.0 iso image to USB flash by [Etcher](https://etcher.io/)
 * default login: user=ubilinux; pass=ubilinux
 
