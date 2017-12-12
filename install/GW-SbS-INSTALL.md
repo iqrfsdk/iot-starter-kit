@@ -40,9 +40,9 @@ ubilinux@ubilinux:~$ systemctl status mosquitto.service
 ## Step 5A - Install IQRF daemon
 
 ```bash
-echo "deb http://repos.iqrfsdk.org/debian stretch testing" | sudo tee -a /etc/apt/sources.list.d/iqrf-daemon.list
+echo "deb http://repos.iqrfsdk.org/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/iqrf-daemon.list
 sudo apt-get install -y dirmngr
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F973CFCE6B3BE25C
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9C076FCC7AB8F2E43C2AB0E73241B9B7B4BD8F8E
 sudo apt-get update && sudo apt-get install -y iqrf-daemon
 ```
 
