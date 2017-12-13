@@ -9,15 +9,13 @@
 
 [![IoT Starter Kit - Part1: IQRF Network](https://img.youtube.com/vi/zOiRGo4ZIyo/0.jpg)](https://www.youtube.com/watch?v=zOiRGo4ZIyo "IoT Starter Kit - Part1: IQRF Network")
 
-## IoT Starter Kit - Part 2: IQRF GW
+## IoT Starter Kit - Part 2: IQRF Gateway
 
 ### Option 1 - Step by Step Installation
 
-[IQRF GW - Step by Step Installation](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-SbS-INSTALL.md)
+[IQRF Gateway UP board - Step by Step Installation](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)
 
-### Option 2 - Docker Image
-
-[IQRF GW - Docker Image](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/GW-D-IMAGE.md)
+[IQRF Gateway RPI board - Step by Step Installation](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)
 
 ## IoT Starter Kit - Part 3: Possible extensions
 

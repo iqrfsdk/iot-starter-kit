@@ -16,7 +16,7 @@
 ## Step 3 - Update UbiLinux 4.0
 
 ```bash
-sudo apt-get update && sudo apt-get full-upgrade -y
+sudo apt-get update && sudo apt-get -y full-upgrade
 ```
 
 ## Step 4A - Install MQTT broker
@@ -37,16 +37,16 @@ ubilinux@ubilinux:~$ systemctl status mosquitto.service
            ââ14253 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
 ```
 
-## Step 5A - Install IQRF daemon
+## Step 5A - Install IQRF Gateway Daemon
 
 ```bash
-echo "deb http://repos.iqrfsdk.org/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/iqrf-daemon.list
 sudo apt-get install -y dirmngr
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9C076FCC7AB8F2E43C2AB0E73241B9B7B4BD8F8E
+echo "deb http://repos.iqrfsdk.org/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/iqrf-daemon.list
 sudo apt-get update && sudo apt-get install -y iqrf-daemon
 ```
 
-### Step 5B - Confirm IQRF daemon is running
+### Step 5B - Confirm IQRF Gateway Daemon is running
 
 ```bash
 ubilinux@ubilinux:~$ systemctl status iqrf-daemon.service
@@ -59,7 +59,7 @@ ubilinux@ubilinux:~$ systemctl status iqrf-daemon.service
            ââ15905 /usr/bin/iqrf_startup /etc/iqrf-daemon/config.json
 ```
 
-## Step 6A - Install IQRF WebAPP
+## Step 6A - Install IQRF Gateway Daemon WebApp
 
 ```bash
 cd /home/ubilinux
@@ -68,12 +68,12 @@ cd iqrf-daemon-webapp/install/
 sudo python3 install.py -d debian -v 9
 ```
 
-### Step 6B - Confirm IQRF WebAPP is running
+### Step 6B - Confirm IQRF Gateway Daemon WebApp is running
 
 ```bash
 http://localhost/en
 ```
-![IQRF daemon WebAPP dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF daemon WebAPP dashboard")
+![IQRF Gateway Daemon WebApp dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
 
 * Login using: user=admin; pass=iqrf
 
@@ -87,16 +87,16 @@ http://localhost/en/config/iqrf
 * Select available interface!
 * Save new configuration!
 
-### Step 7B - Restart IQRF daemon
+### Step 7B - Restart IQRF Gateway Daemon
 
 ```bash
 http://localhost/en/service
 ```
-![Restart IQRF daemon](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF daemon")
+![Restart IQRF Gateway Daemon](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
 
 * Hit Restart!
 
-## Step 8A - Install Nodejs
+## Step 8A - Install Node.js
 
 ```bash
 cd /home/ubilinux
@@ -179,16 +179,16 @@ systemctl status pm2-ubilinux
 ```bash
 http://localhost:1880/ui
 ```
-![IQRF App dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App Dashboard")
+![IQRF Gateway App dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App Dashboard")
 
 ### Step 10B - Check Node-RED flow
 
 ```bash
 http://localhost:1880
 ```
-![IQRF App flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App Flow")
+![IQRF Gateway App flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App Flow")
 
-### Step 10C - Blink coordinator LEDR from IQRF WebAPP
+### Step 10C - Blink coordinator LEDR from IQRF Gateway Daemon WebAPP
 
 ```bash
 http://localhost/en/iqrfnet/send-raw
@@ -201,7 +201,7 @@ http://localhost/en/iqrfnet/send-raw
 
 * Learn JSON DPA RAW structure!
 
-### Step 10D - Inspect JSON messages between Node-RED and IQRF daemon
+### Step 10D - Inspect JSON messages between Node-RED and IQRF Gateway Daemon
 
 * Listen for all JSON DPA RAW Requests
 
