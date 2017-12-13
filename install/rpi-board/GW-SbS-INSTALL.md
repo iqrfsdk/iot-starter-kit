@@ -106,7 +106,7 @@ sudo python3 install.py -d debian -v 9
 ### Step 6B - Confirm IQRF Gateway Daemon WebApp is running
 
 ```bash
-http://localhost/en
+http://your-rpi-ip/en
 ```
 ![IQRF Gateway Daemon WebApp dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
 
@@ -115,7 +115,7 @@ http://localhost/en
 ## Step 7A - Configure IQRF SPI interface
 
 ```bash
-http://localhost/en/config/iqrf
+http://your-rpi-ip/en/config/iqrf
 ```
 ![Select spidev0.0 interface](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev0.0 interface")
 
@@ -125,7 +125,7 @@ http://localhost/en/config/iqrf
 ### Step 7B - Restart IQRF Gateway Daemon
 
 ```bash
-http://localhost/en/service
+http://your-rpi-ip/en/service
 ```
 ![Restart IQRF Gateway Daemon](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
 
@@ -150,13 +150,13 @@ sudo npm install -g pm2
 
 ```bash
 cd /home/pi
-pm2 start /usr/bin/node-red-pi -- -v
+pm2 start /usr/bin/node-red --node-args="--max-old-space-size=128" -- -v
 ```
 
 ### Step 9C - Add Node-RED dashboard
 
 ```bash
-http://localhost:1880
+http://your-rpi-ip:1880
 ```
 ![Manage palete](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-1.png "Manage palete")
 ![Install node-red-dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
@@ -167,8 +167,8 @@ http://localhost:1880
 cd /home/pi
 git clone https://github.com/iqrfsdk/iot-starter-kit.git
 cd iot-starter-kit/install
-cp node-red/* /home/pi/.node-red
-pm2 restart node-red-pi
+cp rpi-board/node-red/* /home/pi/.node-red
+pm2 restart node-red
 ```
 
 ### Step 9E - Allow Node-RED to run after reboot
@@ -177,7 +177,7 @@ pm2 restart node-red-pi
 pm2 save
 
 [PM2] Saving current process list...
-[PM2] Successfully saved in /home/ubilinux/.pm2/dump.pm2
+[PM2] Successfully saved in /home/pi/.pm2/dump.pm2
 ```
 
 ```bash
@@ -185,11 +185,11 @@ pm2 startup
 
 [PM2] Init System found: systemd
 [PM2] To setup the Startup Script, copy/paste the following command:
-sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubilinux --hp /home/ubilinux
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
 ```
 
 ```bash
-sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubilinux --hp /home/ubilinux
+sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
 ```
 
 ### Step 9F - Confirm Node-RED is running
@@ -209,21 +209,21 @@ systemctl status pm2-pi
 ## Step 10A - Check Node-RED dashboard
 
 ```bash
-http://localhost:1880/ui
+http://your-rpi-ip:1880/ui
 ```
 ![IQRF Gateway App dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF Gateway App Dashboard")
 
 ### Step 10B - Check Node-RED flow
 
 ```bash
-http://localhost:1880
+http://your-rpi-ip:1880
 ```
 ![IQRF Gateway App flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF Gateway App Flow")
 
 ### Step 10C - Blink coordinator LEDR from IQRF Gateway Daemon WebApp
 
 ```bash
-http://localhost/en/iqrfnet/send-raw
+http://your-rpi-ip/en/iqrfnet/send-raw
 ```
 ![IQRF Send DPA packet](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
 

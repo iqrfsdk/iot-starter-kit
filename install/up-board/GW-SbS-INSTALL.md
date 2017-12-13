@@ -135,7 +135,7 @@ http://localhost:1880
 
 ```bash
 cd /home/ubilinux/iot-starter-kit/install
-cp node-red/* /home/ubilinux/.node-red
+cp up-board/node-red/* /home/ubilinux/.node-red
 pm2 restart node-red
 ```
 
