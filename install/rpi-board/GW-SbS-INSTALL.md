@@ -84,7 +84,7 @@ sudo apt-get update && sudo apt-get install -y iqrf-daemon
 ### Step 5B - Confirm IQRF Gateway Daemon is running
 
 ```bash
-ubilinux@ubilinux:~$ systemctl status iqrf-daemon.service
+pi@raspberrypi:~$ systemctl status iqrf-daemon.service
 â iqrf-daemon.service - IQRF daemon iqrf_startup
    Loaded: loaded (/lib/systemd/system/iqrf-daemon.service; enabled; vendor preset: enabled)
    Active: active (running) since Wed 2017-11-22 17:31:01 UTC; 52s ago
@@ -134,7 +134,7 @@ http://localhost/en/service
 ## Step 8A - Install Node.js
 
 ```bash
-sudo apt-get install curl libssl-dev
+sudo apt-get install -y curl
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs
 ```

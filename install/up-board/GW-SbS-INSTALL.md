@@ -103,7 +103,7 @@ cd /home/ubilinux
 git clone https://github.com/iqrfsdk/iot-starter-kit.git
 cd iot-starter-kit/install
 sudo cp etc/lsb-release-debian /etc/lsb-release
-sudo apt-get install curl libssl-dev
+sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install nodejs
 sudo cp etc/lsb-release-ubilinux /etc/lsb-release
