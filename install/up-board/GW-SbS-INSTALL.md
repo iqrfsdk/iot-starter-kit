@@ -120,7 +120,7 @@ sudo npm install -g pm2
 
 ```bash
 cd /home/ubilinux
-pm2 start /usr/bin/node-red -- -v
+pm2 start /usr/bin/node-red
 ```
 
 ### Step 9C - Add Node-RED dashboard

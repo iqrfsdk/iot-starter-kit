@@ -10,7 +10,7 @@
 ## Step 2 - Install OS Linux
 
 * Download [Raspbian Lite](https://downloads.raspberrypi.org/raspbian_lite_latest)
-* Burn Raspbian Lite iso image to USB flash by [Etcher](https://etcher.io/)
+* Burn Raspbian Lite iso image to SD card or USB flash by [Etcher](https://etcher.io/)
 * default login: user=pi; pass=raspberry
 
 ## Step 3A - Update Raspbian Lite
@@ -150,7 +150,7 @@ sudo npm install -g pm2
 
 ```bash
 cd /home/pi
-pm2 start /usr/bin/node-red --node-args="--max-old-space-size=128" -- -v
+pm2 start /usr/bin/node-red --node-args="--max-old-space-size=128"
 ```
 
 ### Step 9C - Add Node-RED dashboard
