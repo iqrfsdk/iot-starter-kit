@@ -59,6 +59,9 @@ sudo apt-get install -y mosquitto mosquitto-clients
 ### Step 4B - Confirm MQTT broker is running
 
 ```bash
+systemctl status mosquitto.service
+```
+```bash
 pi@raspberrypi:~ $ systemctl status mosquitto.service
 â mosquitto.service - LSB: mosquitto MQTT v3.1 message broker
    Loaded: loaded (/etc/init.d/mosquitto; generated; vendor preset: enabled)
@@ -83,6 +86,9 @@ sudo apt-get update && sudo apt-get install -y iqrf-daemon
 
 ### Step 5B - Confirm IQRF Gateway Daemon is running
 
+```bash
+systemctl status iqrf-daemon.service
+```
 ```bash
 pi@raspberrypi:~$ systemctl status iqrf-daemon.service
 â iqrf-daemon.service - IQRF daemon iqrf_startup
@@ -175,14 +181,16 @@ pm2 restart node-red
 
 ```bash
 pm2 save
-
+```
+```bash
 [PM2] Saving current process list...
 [PM2] Successfully saved in /home/pi/.pm2/dump.pm2
 ```
 
 ```bash
 pm2 startup
-
+```
+```bash
 [PM2] Init System found: systemd
 [PM2] To setup the Startup Script, copy/paste the following command:
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
@@ -196,7 +204,8 @@ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -
 
 ```bash
 systemctl status pm2-pi
-
+```
+```bash
 â pm2-pi.service - PM2 process manager
    Loaded: loaded (/etc/systemd/system/pm2-pi.service; enabled; vendor preset: enabled)
    Active: active (running) since Thu 2017-11-23 01:20:09 UTC; 1min 10s ago
