@@ -1,4 +1,10 @@
-# How to start with IBM Bluemix cloud platform
+# IBM Cloud
+
+## Connect the IQRF gateway to IBM Cloud
+
+[![IoT Starter Kit - Part3: IBM Cloud](https://img.youtube.com/vi/wka40rh9ZUc/0.jpg)](https://www.youtube.com/watch?v=wka40rh9ZUc "IoT Starter Kit - Part3: IBM Cloud")
+
+## How to start with IBM Bluemix cloud platform
 
 Steps:
 
