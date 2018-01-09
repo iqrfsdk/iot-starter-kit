@@ -1,10 +1,10 @@
-# Mobile APP for IoT Starter Kit
+# IoT Starter Kit - mobile app
 
 https://www.master.cz
 
 We are Master Internet. We have background in providing data centre services and in creating mobile apps that help people all over the world. When you combine these two types of knowledge with seasoned developers and software engineers, there aren’t many things that can go wrong. 
 
-In cooperation with IQRF, we’ve created an IoT Starter app to go along with the IoT Starter Kit. It’s modifiable and easily cooperates with sensors from the starter kit. That means you can control all of these sensors by tapping away on your phone:
+In cooperation with IQRF, we’ve created an [IoT Starter app](https://play.google.com/store/apps/details?id=org.iqrfalliance.demo&hl=cs) to go along with the IoT Starter Kit. It’s modifiable and easily cooperates with sensors from the starter kit. That means you can control all of these sensors by tapping away on your phone:
 
 - **DDC - SE**
 
