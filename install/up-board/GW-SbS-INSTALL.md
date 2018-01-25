@@ -46,7 +46,7 @@ These steps describe how to setup Mosquitto with a static password and ACL file.
 
 Using the mosquitto_passwd command, it is possible to create a password file for authentication.
 
-#### Create password for <user_name> ubilinux
+#### Create password for <user_name> (ubilinux)
 
 Example to create a password file and add add an username (use the -c only the first time as it will create a new file):
 
