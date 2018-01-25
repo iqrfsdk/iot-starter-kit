@@ -40,6 +40,46 @@ ubilinux@ubilinux:~$ systemctl status mosquitto.service
            ââ14253 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
 ```
 
+### Step 4C (optional) - Static password and ACL file
+
+These steps describe how to setup Mosquitto with a static password and ACL file.
+
+Using the mosquitto_passwd command, it is possible to create a password file for authentication.
+
+#### Create password for <user_name> ubilinux
+
+Example to create a password file and add add an username (use the -c only the first time as it will create a new file):
+
+```bash
+sudo mosquitto_passwd -c /etc/mosquitto/passwd <user_name>
+```
+
+#### Create ACL file
+
+* Add [ACL file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/acls)
+
+#### Modify mosquitto configuration
+
+* Include lines to enable authorization in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf)
+
+* Restart MQTT broker
+
+```bash
+sudo systemctl restart mosquitto.service
+```
+
+### Step 4D (optional) - Enable websockets
+
+#### Modify mosquitto configuration
+
+* Include lines to enable websocket in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf)
+
+* Restart MQTT broker
+
+```bash
+sudo systemctl restart mosquitto.service
+```
+
 ## Step 5A - Install IQRF Gateway Daemon
 
 ```bash

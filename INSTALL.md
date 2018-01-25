@@ -11,7 +11,7 @@
 
 ## IoT Starter Kit - Part 2: IQRF Gateway
 
-### Option 1 - Step by Step Installation
+### Step by Step Installation
 
 * [IQRF Gateway UP board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)
 * [IQRF Gateway RPI board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)

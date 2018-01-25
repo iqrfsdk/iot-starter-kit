@@ -1,0 +1,3 @@
+user ubilinux
+topic write Iqrf/DpaRequest
+topic write Iqrf/DpaResponse
