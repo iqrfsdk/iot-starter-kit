@@ -108,7 +108,7 @@ sudo systemctl restart mosquitto.service
 
 #### Modify mosquitto configuration
 
-* Include lines to enable websocket as in [configuration file] (https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
+* Include lines to enable websocket as in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
