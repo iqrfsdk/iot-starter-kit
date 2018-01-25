@@ -91,11 +91,12 @@ sudo mosquitto_passwd -c /etc/mosquitto/passwd <user_name>
 
 #### Create ACL file
 
-* Add [ACL file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/acls)
+* Add [ACL file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/acls) 
+to your /etc/mosquitto folder
 
 #### Modify mosquitto configuration
 
-* Include lines to enable authorization in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf)
+* Include lines to enable authorization as in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
@@ -107,7 +108,7 @@ sudo systemctl restart mosquitto.service
 
 #### Modify mosquitto configuration
 
-* Include lines to enable websocket in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf)
+* Include lines to enable websocket as in [configuration file] (https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
