@@ -1,3 +1,3 @@
 user ubilinux
-topic write Iqrf/DpaRequest
-topic write Iqrf/DpaResponse
+topic readwrite Iqrf/DpaRequest
+topic readwrite Iqrf/DpaResponse
