@@ -1,5 +1,7 @@
 # IoT Starter Kit - Part 1: IQRF Network
 
+**Read carefully step-by-step PDF guide with detailed instructions!**
+
 ## PDF guide
 
 * Part1: [IQRF Network](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part1.pdf)

@@ -1,5 +1,7 @@
 # IoT Starter Kit - Part 3: Extensions
 
+**Read carefully step-by-step PDF guide with detailed instructions!**
+
 ## PDF guides
 
 * Part3a: [AWS IoT](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3a.pdf)
