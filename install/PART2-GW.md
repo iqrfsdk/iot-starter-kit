@@ -6,7 +6,7 @@
 
 * Part2: [IQRF GW](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)
 
-###  UP and RPI boards
+#### Optional
 
 * Part2a: [UP board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)
 * Part2b: [RPI board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)
