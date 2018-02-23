@@ -4,7 +4,7 @@
 
 ## PDF guide
 
-* Part2: [IQRF GW](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)
+* Part2: [IQRF Gateway](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)
 
 #### Optional
 
