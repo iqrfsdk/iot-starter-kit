@@ -26,4 +26,4 @@ When you’ve completed this part, you’ll be ready for **[Part 2: Install your
 
 ## Watch our video guide 
 
-* Part1: [![Build your IQRF network](https://img.youtube.com/vi/zOiRGo4ZIyo/0.jpg)](https://www.youtube.com/watch?v=zOiRGo4ZIyo "Part1: Build your IQRF Network")
+->[![Build your IQRF network](https://img.youtube.com/vi/zOiRGo4ZIyo/0.jpg)](https://www.youtube.com/watch?v=zOiRGo4ZIyo "Part1: Build your IQRF Network")<-

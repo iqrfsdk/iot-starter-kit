@@ -15,7 +15,7 @@ In this part, you will:
 
 ### Watch our video guide
 
-* Part3: [![How to connect to Amazon Web Services](https://img.youtube.com/vi/tG-808hIB20/0.jpg)](https://www.youtube.com/watch?v=tG-808hIB20 "Part3: AWS IoT")
+->[![How to connect to Amazon Web Services](https://img.youtube.com/vi/tG-808hIB20/0.jpg)](https://www.youtube.com/watch?v=tG-808hIB20 "Part3: AWS IoT")<-
 
 ---
 
@@ -32,7 +32,7 @@ In this part, you will:
 
 ### Watch our video guide
 
-* Part3: [![How to connect to Microsoft Azure](https://img.youtube.com/vi/rSLF7TP4iQ0/0.jpg)](https://www.youtube.com/watch?v=rSLF7TP4iQ0 "Part3: Microsoft Azure")
+->[![How to connect to Microsoft Azure](https://img.youtube.com/vi/rSLF7TP4iQ0/0.jpg)](https://www.youtube.com/watch?v=rSLF7TP4iQ0 "Part3: Microsoft Azure")<-
 
 ---
 
@@ -51,7 +51,7 @@ In this part, you will:
 
 ### Watch our video guide
 
-* Part3: [![How to connect to IBM Cloud](https://img.youtube.com/vi/wka40rh9ZUc/0.jpg)](https://www.youtube.com/watch?v=wka40rh9ZUc "Part3: IBM Cloud")
+->[![How to connect to IBM Cloud](https://img.youtube.com/vi/wka40rh9ZUc/0.jpg)](https://www.youtube.com/watch?v=wka40rh9ZUc "Part3: IBM Cloud")<-
 
 ---
 
