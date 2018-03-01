@@ -22,7 +22,7 @@ Your PC must have this minimum configuration to run the IQRF IDE:
 *	Vista, Windows 7 (32 bit, 64 bit), Windows 8.x (32 bit, 64 bit), Windows 10 (32 bit, 64 bit) 
 *	Internet Explorer 7.0 or higher or other suitable browsers for Help 
 
-When you’ve completed this part, you’ll be ready for Part 2: Install your IQRF gateway.
+When you’ve completed this part, you’ll be ready for **[Part 2: Install your IQRF gateway](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/PART2-GW.md)**.
 
 ## Watch our video guide 
 
