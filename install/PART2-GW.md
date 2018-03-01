@@ -1,16 +1,24 @@
-# IoT Starter Kit - Part 2: IQRF Gateway
+# IoT Starter Kit - Part 2: Install your IQRF gateway
 
-**Read carefully step-by-step PDF guide with detailed instructions!**
+**Install an operating system, IQRF Gateway Daemon and basic services on the UP board and make the IQRF Gateway from it. Read data from sensors and control relays from a Node-RED application.**
 
-## PDF guide
+Read carefully step-by-step **[PDF guide](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)** with detailed instructions!
 
-* Part2: [IQRF Gateway](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)
+In this part, you will:
 
-#### Optional
+*	Install and update Ubilinux as an operating system on UP board
+*	Install an MQTT Broker
+*	Install IQRF Gateway Daemon
+*	Install IQRF Gateway Daemon WebApp
+*	Configure SPI interface
+*	Install Node.js
+*	Install Node-RED and run IoT-Starter-Kit flow 
+*	Read data from sensors and control relays from a Node-RED application
 
-* Part2a: [UP board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)
-* Part2b: [RPI board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)
+When you’ve completed this part, you’ll be ready for **[Part 3: Connect to the cloud](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/PART3-EXT.md)**.
 
-## Video guide
+If you need to customize the IQRF Gateway, study **[Optional steps with UP board](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)**, or read instructions for **[Raspberry PI installation](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)**.
 
-* Part2: [![IQRF Gateway](https://img.youtube.com/vi/PhBL8MRQJTo/0.jpg)](https://www.youtube.com/watch?v=PhBL8MRQJTo "Part2: IQRF Gateway")
+## Watch our video guide 
+
+* Part2: [![Install your IQRF gateway](https://img.youtube.com/vi/PhBL8MRQJTo/0.jpg)](https://www.youtube.com/watch?v=PhBL8MRQJTo "Part2: Install your IQRF gateway")

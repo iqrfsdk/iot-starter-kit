@@ -1,15 +1,58 @@
 # IoT Starter Kit - Part 3: Extensions
 
-**Read carefully step-by-step PDF guide with detailed instructions!**
+**Configure the UP board to communicate with the Amazon Web Services (AWS), Microsoft Azure or IBM Cloud through the MQTT channel. Collect, store, process and visualize data in a cloud or send your commands to the IQRF network remotely.**
 
-## PDF guides
+## Connect to Amazon Web Services
 
-* Part3a: [AWS IoT](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3a.pdf)
-* Part3b: [Microsoft Azure](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3b.pdf)
-* Part3c: [IBM Cloud](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3c.pdf)
+Read carefully step-by-step **[PDF guide](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3a.pdf)** with detailed instructions!
 
-## Video guides
+In this part, you will:
 
-* Part3a: [![AWS IoT](https://img.youtube.com/vi/tG-808hIB20/0.jpg)](https://www.youtube.com/watch?v=tG-808hIB20 "Part3: AWS IoT")
-* Part3b: [![Microsoft Azure](https://img.youtube.com/vi/rSLF7TP4iQ0/0.jpg)](https://www.youtube.com/watch?v=rSLF7TP4iQ0 "Part3b: Microsoft Azure")
-* Part3c: [![IBM Cloud](https://img.youtube.com/vi/wka40rh9ZUc/0.jpg)](https://www.youtube.com/watch?v=wka40rh9ZUc "Part3c: IBM Cloud")
+*	Connect your UP board to the local network
+*	Create an Amazon Web Services account
+*	Set up the connection between AWS and your UP board
+*	Test the connection by sending commands for data collecting and network control
+
+### Watch our video guide
+
+* Part3: [![How to connect to Amazon Web Services](https://img.youtube.com/vi/tG-808hIB20/0.jpg)](https://www.youtube.com/watch?v=tG-808hIB20 "Part3: AWS IoT")
+
+---
+
+## Connect to Microsoft Azure
+
+Read carefully step-by-step **[PDF guide](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3b.pdf)** with detailed instructions!
+
+In this part, you will:
+
+*	Connect your UP board to the local network
+*	Create an IoT Hub and a virtual device in Microsoft Azure cloud
+*	Set up the MQTT interface in the IQRF Gateway
+*	Test the connection using Device Explorer by sending commands for data collecting and network control
+
+### Watch our video guide
+
+* Part3: [![How to connect to Microsoft Azure](https://img.youtube.com/vi/rSLF7TP4iQ0/0.jpg)](https://www.youtube.com/watch?v=rSLF7TP4iQ0 "Part3: Microsoft Azure")
+
+---
+
+## Connect to IBM Cloud
+
+Read carefully step-by-step **[PDF guide](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part3c.pdf)** with detailed instructions!
+
+In this part, you will:
+
+*	Connect your UP board to the local network
+*	Set up the cloud application using Internet of Things Platform Starter
+*	Use Watson IoT Platform to create the virtual device representing your gateway
+*	Set up the MQTT interface in the IQRF Gateway
+*	Set up the Node-RED application in the IBM Cloud
+*	Test the connection using Node-RED application by sending commands for data collecting and network control
+
+### Watch our video guide
+
+* Part3: [![How to connect to IBM Cloud](https://img.youtube.com/vi/wka40rh9ZUc/0.jpg)](https://www.youtube.com/watch?v=wka40rh9ZUc "Part3: IBM Cloud")
+
+---
+
+When you’ve completed this part, you’ll have the IoT set prepared for your own applications. You can add more hardware extensions like sensors or actuators. Look at www.iqrf.shop for interoperable devices.
