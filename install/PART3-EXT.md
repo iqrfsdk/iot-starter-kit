@@ -1,4 +1,4 @@
-# IoT Starter Kit - Part 3: Extensions
+# Part 3: Connect to cloud
 
 **Configure the UP board to communicate with the Amazon Web Services (AWS), Microsoft Azure or IBM Cloud through the MQTT channel. Collect, store, process and visualize data in a cloud or send your commands to the IQRF network remotely.**
 

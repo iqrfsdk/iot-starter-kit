@@ -1,4 +1,4 @@
-# IoT Starter Kit - Part 1: Build your IQRF network
+# Part 1: Build your IQRF network
 
 **Set up and configure IQRF network components with an IQRF IDE installed on your PC.**
 

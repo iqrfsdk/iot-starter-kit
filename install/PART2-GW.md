@@ -1,4 +1,4 @@
-# IoT Starter Kit - Part 2: Install your IQRF gateway
+# Part 2: Install your IQRF gateway
 
 **Install an operating system, IQRF Gateway Daemon and basic services on the UP board and make the IQRF Gateway from it. Read data from sensors and control relays from a Node-RED application.**
 
