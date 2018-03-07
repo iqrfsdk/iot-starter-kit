@@ -21,4 +21,4 @@ If you need to customize the IQRF Gateway, study **[Optional steps with UP board
 
 ## Watch our video guide 
 
-[![Install your IQRF gateway](https://img.youtube.com/vi/PhBL8MRQJTo/0.jpg)](https://www.youtube.com/watch?v=PhBL8MRQJTo "Part2: Install your IQRF gateway")
+[![Install your IQRF gateway](https://img.youtube.com/vi/5BzxgPCByPM/0.jpg)](https://www.youtube.com/watch?v=5BzxgPCByPM "Part2: Install your IQRF gateway")
