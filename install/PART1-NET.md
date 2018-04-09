@@ -2,7 +2,7 @@
 
 **Set up and configure IQRF network components with an IQRF IDE installed on your PC.**
 
-Read carefully step-by-step **[PDF guide](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part1.pdf)** with detailed instructions!
+Carefully read and follow the detailed step-by-step instructions! **[PDF Guide](https://github.com/iqrfsdk/iot-starter-kit/tree/master/install/pdf/iqrf-part1.pdf)** will be opened in a viewer mode. We strongly recommend downloading it and open on your computer locally to have hyperlinks functional and to be able to copy strings. The Download button you will find at the top of the page with a PDF preview.
 
 In this part, you will:
 
