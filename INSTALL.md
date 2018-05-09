@@ -16,5 +16,4 @@ You can find examples of existing solutions here:
 * [Street lighting](https://www.iqrfalliance.org/marketplace/street-lighting-datmo-modular-system)
 * [Sensor networks](https://www.iqrfalliance.org/marketplace/sensnet)
 
-Share your ideas and solve problems with others on [IQRF Alliance Forum](https://forum.iqrfalliance.org/viewforum.php?f=12&sid=72931649477c30e41b42ac177f80740e).
-
+Share your ideas and solve problems with others on [IQRF Forum](https://forum.iqrfalliance.org/viewforum.php?f=44&sid=7d7aa122b2f96427accea8648aa0da1f).
