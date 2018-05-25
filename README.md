@@ -1,4 +1,4 @@
-# Iot-Starter-Kit
+# UP-IQRF IoT Starter Kit
 
 A kit is designed to quickly and effectively build up your IoT infrastructure.
 
