@@ -1,13 +1,13 @@
 ![RehiveTech](/extensions/rehivetech.com/images/logo.png)
 
-RehiveTech Management System is an ecosystem used for remote monitoring and maintainance of IoT gateways and embedded devices in general. Gateway with the client software installed reports required data to the cloud and allows to monitor not only itself but also the elements of sensor network that are connected to the device. IQRF wireless technology is also supported and offers an advanced management of IQRF nodes. The solution enables operators to address most of the necessary operating interventions remotely using web interface available for any type of device (computer, tablet or smartphone). This works not only for one gateway but the system is primarily designed for management of group of devices (e.g. in case of the need to update multiple devices simultaneously).
+PIXLA from RehiveTech is an ecosystem used for remote monitoring and maintenance of IoT Gateways or all Linux based devices in general. Such device with the PIXLA client software installed reports user specified data securely to the PIXLA cloud. All measured data are then available via PIXLA web interface (www.pixla.online) from computer, tablet or even smartphone. Moreover, the solution enables operators to address most of the necessary operating interventions remotely via the same web interface.
  
 # Installation
  
 The key point is in installing the client side software on the device running OS Linux system. Installation is performed via a prepared installation package. For installation please do follow the instructions bellow.
 
 #### Step 1
-Create your own user ancount at the management website [registration page](https://management.rehivetech.com/en/sign/up/).
+Create your own user ancount at the management website [registration page](https://www.pixla.online/en/sign/up/).
 
 ![Registration](/extensions/rehivetech.com/images/registration.png)
 
@@ -22,7 +22,7 @@ Each registered gateway is identified by an unique identifier called **token** t
 ![Add-command](/extensions/rehivetech.com/images/adding_device.png)
 
 ### Step 4
-Check if everything is correct and device is posting data into the managament system. You should see the device active in the [monitoring](https://management.rehivetech.com/en/monitoring/) section and should be also able to run an action from the [management](https://management.rehivetech.com/en/management/) section.
+Check if everything is correct and device is posting data into the managament system. You should see the device active in the [monitoring](https://www.pixla.online/en/monitoring/) section and should be also able to run an action from the [management](https://www.pixla.online/en/management/) section.
 
 ![Statistics](/extensions/rehivetech.com/images/statistics.png)
 
