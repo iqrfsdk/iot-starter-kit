@@ -1,4 +1,4 @@
-# IoT Starter Kit - mobile app
+# 	IQRF Network Manager - mobile app
 
 https://www.master.cz
 
