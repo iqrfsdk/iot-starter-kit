@@ -2,7 +2,7 @@
 
 ## Step 1 - Insert IQRF coordinator
 
-![IQRF SPI board](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-spi-board.png)
+![IQRF SPI board](../pics/iqrf-spi-board.png)
 
 * Attach [IQRF SPI board](http://www.iqrf.org/weben/downloads.php?id=412)
 * Insert prepared IQRF Coordinator to the IQRF SPI board
@@ -56,12 +56,12 @@ sudo mosquitto_passwd -c /etc/mosquitto/passwd <user_name>
 
 #### Create ACL file
 
-* Add [ACL file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/up-board/mosquitto/acls) 
+* Add [ACL file](mosquitto/acls) 
 to your /etc/mosquitto folder
 
 #### Modify mosquitto configuration
 
-* Include lines to enable authorization as in [configuration file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/up-board/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
+* Include lines to enable authorization as in [configuration file](mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
@@ -73,7 +73,7 @@ sudo systemctl restart mosquitto.service
 
 #### Modify mosquitto configuration
 
-* Include lines to enable websocket as in [configuration file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/up-board/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
+* Include lines to enable websocket as in [configuration file](mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
@@ -114,7 +114,7 @@ sudo apt-get install -y iqrf-gateway-webapp
 ```bash
 http://localhost/en
 ```
-![IQRF Gateway Daemon WebApp dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
+![IQRF Gateway Daemon WebApp dashboard](../pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
 
 * Create your own login credentials
 
@@ -123,7 +123,7 @@ http://localhost/en
 ```bash
 http://localhost/en/config/iqrf
 ```
-![Select spidev2.0 interface](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev2.0 interface")
+![Select spidev2.0 interface](../pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev2.0 interface")
 
 * Select available interface!
 * Save new configuration!
@@ -133,7 +133,7 @@ http://localhost/en/config/iqrf
 ```bash
 http://localhost/en/service
 ```
-![Restart IQRF Gateway Daemon](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
+![Restart IQRF Gateway Daemon](../pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
 
 * Hit Restart!
 
@@ -169,8 +169,8 @@ pm2 start /usr/bin/node-red
 ```bash
 http://localhost:1880
 ```
-![Manage palete](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-1.png "Manage palete")
-![Install node-red-dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
+![Manage palete](https://../pics/node-red-add-dashboard-1.png "Manage palete")
+![Install node-red-dashboard](../pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
 
 ### Step 9D - Run IoT-Starter-Kit flow
 
@@ -223,25 +223,25 @@ systemctl status pm2-ubilinux
 ```bash
 http://localhost:1880/ui
 ```
-![IQRF Gateway App dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App Dashboard")
+![IQRF Gateway App dashboard](../pics/node-red-ui.png "IQRF App Dashboard")
 
 ### Step 10B - Check Node-RED flow
 
 ```bash
 http://localhost:1880
 ```
-![IQRF Gateway App flow](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App Flow")
+![IQRF Gateway App flow](../pics/node-red-flows.png "IQRF App Flow")
 
 ### Step 10C - Blink coordinator LEDR from IQRF Gateway Daemon WebAPP
 
 ```bash
 http://localhost/en/iqrfnet/send-raw
 ```
-![IQRF Send DPA packet](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
+![IQRF Send DPA packet](../pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
 
 * Select macro Pulse LEDR and send it!
 
-![IQRF JSON DPA RAW structure](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png "IQRF JSON DPA RAW structure")
+![IQRF JSON DPA RAW structure](../pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png "IQRF JSON DPA RAW structure")
 
 * Learn JSON DPA RAW structure!
 
