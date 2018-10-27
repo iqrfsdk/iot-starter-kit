@@ -1,4 +1,0 @@
-{
-  "IqrfInterface": "/dev/ttyACM0",
-  "DpaHandlerTimeout": 500
-}

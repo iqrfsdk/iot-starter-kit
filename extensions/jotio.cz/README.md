@@ -5,7 +5,7 @@ A set of commands that all install. [here](https://github.com/JoTioTech/IQRF-IoT
 
 ##  OS (ubilinux3 / ubilinux4) with installed IQRF Daemon and configuratio WebApp
 ### Run Docker 
-Install Docker -> See the inspiration [here](https://github.com/iqrfsdk/iqrf-daemon/blob/master/DOCKER.md)
+Install Docker -> See the inspiration [here](https://gitlab.iqrf.org/open-source/iqrf-daemon/blob/master/DOCKER.md)
 
 ### Setup Node-RED ecosystem 
 ### docker_net
@@ -24,7 +24,7 @@ sudo docker run -d -p 1880:1880 --restart=always --network=isolated_nw --ip=172.
 Open:
 http://[IP address of UpBoard]:1880
 
-Import the contents of this [file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/extensions/jotio.cz/Nodered_Local_demo.json) into nodered. 
+Import the contents of this [file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/extensions/jotio.cz/Nodered_Local_demo.json) into nodered. 
 
 
 

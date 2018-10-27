@@ -2,7 +2,7 @@
 
 ## Step 1 - Insert IQRF Coordinator
 
-![IQRF SPI board](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-spi-board.png)
+![IQRF SPI board](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-spi-board.png)
 
 * Attach [IQRF SPI board](http://www.iqrf.org/weben/downloads.php?id=412)
 * Insert prepared IQRF Coordinator to the IQRF SPI board
@@ -18,7 +18,7 @@ sudo apt update && sudo apt full-upgrade -y
 
 ## Step 3 - Install Docker CE
 
-* Install [Docker for Debian 9.0 Stretch](https://github.com/iqrfsdk/iqrf-daemon/blob/master/docker/INSTALL.md)
+* Install [Docker for Debian 9.0 Stretch](https://gitlab.iqrf.org/open-source/iqrf-daemon/blob/master/docker/INSTALL.md)
 
 ## Step 4 - Run Docker image
 
@@ -33,7 +33,7 @@ docker container run -d -p 80:80 -p 1883:1883 -p 8080:8080 -p 9001:9001 --device
 ```bash
 http://localhost:8080
 ```
-![IQRF daemon WebAPP dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-gateway.png "IQRF daemon WebAPP dashboard")
+![IQRF daemon WebAPP dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-gateway.png "IQRF daemon WebAPP dashboard")
 
 * Login using: user=admin; pass=iqrf
 
@@ -42,21 +42,21 @@ http://localhost:8080
 ```bash
 http://localhost/ui
 ```
-![IQRF App dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App dashboard")
+![IQRF App dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App dashboard")
 
 ### Check Node-RED flow
 
 ```bash
 http://localhost
 ```
-![IQRF App flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App flow")
+![IQRF App flow](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App flow")
 
 ### Check Supervisor Service dashboard
 
 ```bash
 http://localhost:9001
 ```
-![IQRF Supervisor dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/supervisor-dashboard.png "IQRF Supervisor dashboard")
+![IQRF Supervisor dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/supervisor-dashboard.png "IQRF Supervisor dashboard")
 
 ## Optional - Stop Docker image
 

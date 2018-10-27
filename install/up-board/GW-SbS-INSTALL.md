@@ -2,7 +2,7 @@
 
 ## Step 1 - Insert IQRF coordinator
 
-![IQRF SPI board](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-spi-board.png)
+![IQRF SPI board](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-spi-board.png)
 
 * Attach [IQRF SPI board](http://www.iqrf.org/weben/downloads.php?id=412)
 * Insert prepared IQRF Coordinator to the IQRF SPI board
@@ -56,12 +56,12 @@ sudo mosquitto_passwd -c /etc/mosquitto/passwd <user_name>
 
 #### Create ACL file
 
-* Add [ACL file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/up-board/mosquitto/acls) 
+* Add [ACL file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/up-board/mosquitto/acls) 
 to your /etc/mosquitto folder
 
 #### Modify mosquitto configuration
 
-* Include lines to enable authorization as in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/up-board/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
+* Include lines to enable authorization as in [configuration file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/up-board/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
@@ -73,7 +73,7 @@ sudo systemctl restart mosquitto.service
 
 #### Modify mosquitto configuration
 
-* Include lines to enable websocket as in [configuration file](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/up-board/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
+* Include lines to enable websocket as in [configuration file](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/up-board/mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
 
 * Restart MQTT broker
 
@@ -81,38 +81,32 @@ sudo systemctl restart mosquitto.service
 sudo systemctl restart mosquitto.service
 ```
 
-## Step 5A - Install IQRF Gateway Daemon
+## Step 5A - Stop IQRF Gateway Daemon v1
+
+```bash
+sudo systemctl stop iqrf-daemon
+sudo systemctl disable iqrf-daemon
+```
+
+## Step 5B - Install IQRF Gateway Daemon
 
 ```bash
 sudo apt-get install -y dirmngr
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9C076FCC7AB8F2E43C2AB0E73241B9B7B4BD8F8E
-echo "deb http://repos.iqrfsdk.org/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/iqrf-daemon.list
-sudo apt-get update && sudo apt-get install -y iqrf-daemon
+echo "deb http://repos.iqrf.org/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/iqrf-gateway.list
+sudo apt-get update && sudo apt-get install -y iqrf-gateway-daemon
 ```
 
-### Step 5B - Confirm IQRF Gateway Daemon is running
+### Step 5C - Confirm IQRF Gateway Daemon is running
 
 ```bash
-systemctl status iqrf-daemon.service
-```
-```bash
-ubilinux@ubilinux:~$ systemctl status iqrf-daemon.service
-â iqrf-daemon.service - IQRF daemon iqrf_startup
-   Loaded: loaded (/lib/systemd/system/iqrf-daemon.service; enabled; vendor preset: enabled)
-   Active: active (running) since Wed 2017-11-22 17:31:01 UTC; 52s ago
- Main PID: 15905 (iqrf_startup)
-    Tasks: 11 (limit: 4915)
-   CGroup: /system.slice/iqrf-daemon.service
-           ââ15905 /usr/bin/iqrf_startup /etc/iqrf-daemon/config.json
+systemctl status iqrf-gateway-daemon.service
 ```
 
 ## Step 6A - Install IQRF Gateway Daemon WebApp
 
 ```bash
-cd /home/ubilinux
-git clone https://github.com/iqrfsdk/iqrf-daemon-webapp.git
-cd iqrf-daemon-webapp/install/
-sudo python3 install.py -d debian -v 9
+sudo apt-get install -y iqrf-gateway-webapp
 ```
 
 ### Step 6B - Confirm IQRF Gateway Daemon WebApp is running
@@ -120,16 +114,16 @@ sudo python3 install.py -d debian -v 9
 ```bash
 http://localhost/en
 ```
-![IQRF Gateway Daemon WebApp dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
+![IQRF Gateway Daemon WebApp dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
 
-* Login using: user=admin; pass=iqrf
+* Create your own login credentials
 
 ## Step 7A - Configure IQRF SPI interface
 
 ```bash
 http://localhost/en/config/iqrf
 ```
-![Select spidev2.0 interface](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev2.0 interface")
+![Select spidev2.0 interface](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev2.0 interface")
 
 * Select available interface!
 * Save new configuration!
@@ -139,7 +133,7 @@ http://localhost/en/config/iqrf
 ```bash
 http://localhost/en/service
 ```
-![Restart IQRF Gateway Daemon](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
+![Restart IQRF Gateway Daemon](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
 
 * Hit Restart!
 
@@ -147,7 +141,7 @@ http://localhost/en/service
 
 ```bash
 cd /home/ubilinux
-git clone https://github.com/iqrfsdk/iot-starter-kit.git
+git clone https://gitlab.iqrf.org/open-source/iot-starter-kit.git
 cd iot-starter-kit/install
 sudo cp etc/lsb-release-debian /etc/lsb-release
 sudo apt-get install curl
@@ -175,8 +169,8 @@ pm2 start /usr/bin/node-red
 ```bash
 http://localhost:1880
 ```
-![Manage palete](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-1.png "Manage palete")
-![Install node-red-dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
+![Manage palete](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-1.png "Manage palete")
+![Install node-red-dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
 
 ### Step 9D - Run IoT-Starter-Kit flow
 
@@ -229,25 +223,25 @@ systemctl status pm2-ubilinux
 ```bash
 http://localhost:1880/ui
 ```
-![IQRF Gateway App dashboard](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App Dashboard")
+![IQRF Gateway App dashboard](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-ui.png "IQRF App Dashboard")
 
 ### Step 10B - Check Node-RED flow
 
 ```bash
 http://localhost:1880
 ```
-![IQRF Gateway App flow](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App Flow")
+![IQRF Gateway App flow](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/node-red-flows.png "IQRF App Flow")
 
 ### Step 10C - Blink coordinator LEDR from IQRF Gateway Daemon WebAPP
 
 ```bash
 http://localhost/en/iqrfnet/send-raw
 ```
-![IQRF Send DPA packet](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
+![IQRF Send DPA packet](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
 
 * Select macro Pulse LEDR and send it!
 
-![IQRF JSON DPA RAW structure](https://github.com/iqrfsdk/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png "IQRF JSON DPA RAW structure")
+![IQRF JSON DPA RAW structure](https://gitlab.iqrf.org/open-source/iot-starter-kit/blob/master/install/pics/iqrf-daemon-webapp-pulse-ledr-json-raw.png "IQRF JSON DPA RAW structure")
 
 * Learn JSON DPA RAW structure!
 
@@ -269,8 +263,8 @@ mosquitto_sub -t Iqrf/DpaResponse
 
 ```bash
 cd /home/ubilinux
-git clone https://github.com/iqrfsdk/iqrf-daemon-examples.git
-cd iqrf-daemon-examples
+git clone https://gitlab.iqrf.org/open-source/iqrf-gateway-daemon.git
+cd iqrf-gateway-daemon/examples
 ```
 
 * Contribution to the examples very much appreciated!

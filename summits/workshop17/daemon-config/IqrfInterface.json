@@ -1,4 +1,0 @@
-{
-  "IqrfInterface": "/dev/spidev2.0",
-  "DpaHandlerTimeout": 1000
-}
