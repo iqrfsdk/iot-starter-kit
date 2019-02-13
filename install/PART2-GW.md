@@ -2,7 +2,7 @@
 
 **Install an operating system, IQRF Gateway Daemon and basic services on the UP board and make the IQRF Gateway from it. Read data from sensors and control relays from a Node-RED application.**
 
-Carefully read and follow the detailed step-by-step instructions! **[PDF Guide](https://gitlab.iqrf.org/open-source/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)** will be opened in a viewer mode. We strongly recommend downloading it and open on your computer locally to have hyperlinks functional and to be able to copy strings. The Download button you will find at the top of the page with a PDF preview.
+Carefully read and follow the detailed step-by-step instructions! **[PDF Guide](https://gitlab.iqrf.org/alliance/iot-starter-kit/tree/master/install/pdf/iqrf-part2.pdf)** will be opened in a viewer mode. We strongly recommend downloading it and open on your computer locally to have hyperlinks functional and to be able to copy strings. The Download button you will find at the top of the page with a PDF preview.
 
 In this part, you will:
 
@@ -15,9 +15,9 @@ In this part, you will:
 *	Install Node-RED and run IoT-Starter-Kit flow 
 *	Read data from sensors and control relays from a Node-RED application
 
-When you’ve completed this part, you’ll be ready for **[Part 3: Connect to the cloud](https://gitlab.iqrf.org/open-source/iot-starter-kit/tree/master/install/PART3-EXT.md)**.
+When you’ve completed this part, you’ll be ready for **[Part 3: Connect to the cloud](https://gitlab.iqrf.org/alliance/iot-starter-kit/tree/master/install/PART3-EXT.md)**.
 
-If you need to customize the IQRF Gateway, study **[Optional steps with UP board](https://gitlab.iqrf.org/open-source/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)**, or read instructions for **[Raspberry PI installation](https://gitlab.iqrf.org/open-source/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)**.
+If you need to customize the IQRF Gateway, study **[Optional steps with UP board](https://gitlab.iqrf.org/alliance/iot-starter-kit/tree/master/install/up-board/GW-SbS-INSTALL.md)**, or read instructions for **[Raspberry PI installation](https://gitlab.iqrf.org/alliance/iot-starter-kit/tree/master/install/rpi-board/GW-SbS-INSTALL.md)**.
 
 ## Watch our video guide 
 

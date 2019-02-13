@@ -126,9 +126,9 @@ sudo systemctl disable iqrf-daemon
 ## Step 5B - Install IQRF Gateway Daemon
 
 ```bash
-sudo apt-get install -y dirmngr
+sudo apt-get install -y dirmngr apt-transport-https
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9C076FCC7AB8F2E43C2AB0E73241B9B7B4BD8F8E
-echo "deb http://repos.iqrf.org/debian stretch stable" | sudo tee -a /etc/apt/sources.list.d/iqrf-gateway.list
+echo "deb http://repos.iqrf.org/testing/debian stretch testing" | sudo tee -a /etc/apt/sources.list.d/iqrf-gateway.list
 sudo apt-get update && sudo apt-get install -y iqrf-gateway-daemon
 ```
 
@@ -141,13 +141,16 @@ systemctl status iqrf-gateway-daemon.service
 ## Step 6A - Install IQRF Gateway Daemon WebApp
 
 ```bash
-sudo apt-get install -y iqrf-gateway-webapp
+sudo apt-get -y install apt-transport-https lsb-release ca-certificates dirmngr
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D93B0C12C8D04D7AAFBCFA27CCD91D6111A06851
+sudo sh -c 'echo "deb https://repozytorium.mati75.eu/raspbian stretch-backports main contrib non-free" > /etc/apt/sources.list.d/php.list'
+sudo apt-get update && sudo apt-get install -y iqrf-gateway-webapp
 ```
 
 ### Step 6B - Confirm IQRF Gateway Daemon WebApp is running
 
 ```bash
-http://localhost/en
+http://localhost/
 ```
 ![IQRF Gateway Daemon WebApp dashboard](../pics/iqrf-daemon-webapp.png "IQRF Gateway Daemon WebApp dashboard")
 
@@ -156,7 +159,7 @@ http://localhost/en
 ## Step 7A - Configure IQRF SPI interface
 
 ```bash
-http://your-rpi-ip/en/config/iqrf
+http://localhost/config/iqrf-spi/
 ```
 ![Select spidev0.0 interface](../pics/iqrf-daemon-webapp-config-iqrf.png "Select spidev0.0 interface")
 
@@ -166,7 +169,7 @@ http://your-rpi-ip/en/config/iqrf
 ### Step 7B - Restart IQRF Gateway Daemon
 
 ```bash
-http://your-rpi-ip/en/service
+http://localhost/service
 ```
 ![Restart IQRF Gateway Daemon](../pics/iqrf-daemon-webapp-service-restart.png "Restart IQRF Gateway Daemon")
 
@@ -206,7 +209,7 @@ http://your-rpi-ip:1880
 
 ```bash
 cd /home/pi
-git clone https://gitlab.iqrf.org/open-source/iot-starter-kit.git
+git clone https://gitlab.iqrf.org/alliance/iot-starter-kit.git
 cd iot-starter-kit/install
 cp rpi-board/node-red/* /home/pi/.node-red
 pm2 restart node-red
@@ -253,21 +256,21 @@ systemctl status pm2-pi
 ## Step 10A - Check Node-RED dashboard
 
 ```bash
-http://your-rpi-ip:1880/ui
+http://localhost:1880/ui
 ```
 ![IQRF Gateway App dashboard](../pics/node-red-ui.png "IQRF Gateway App Dashboard")
 
 ### Step 10B - Check Node-RED flow
 
 ```bash
-http://your-rpi-ip:1880
+http://localhost:1880
 ```
 ![IQRF Gateway App flow](../pics/node-red-flows.png "IQRF Gateway App Flow")
 
 ### Step 10C - Blink coordinator LEDR from IQRF Gateway Daemon WebApp
 
 ```bash
-http://your-rpi-ip/en/iqrfnet/send-raw
+http://localhost/iqrfnet/send-raw
 ```
 ![IQRF Send DPA packet](../pics/iqrf-daemon-webapp-pulse-ledr.png "IQRF Send DPA packet")
 
