@@ -93,7 +93,7 @@ sudo systemctl disable iqrf-daemon
 ```bash
 sudo apt-get install -y dirmngr apt-transport-https
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 9C076FCC7AB8F2E43C2AB0E73241B9B7B4BD8F8E
-echo "deb https://repos.iqrf.org/testing/debian stretch testing" | sudo tee -a /etc/apt/sources.list.d/iqrf-gateway.list
+echo "deb https://repos.iqrf.org/debian stretch stable testing" | sudo tee -a /etc/apt/sources.list.d/iqrf-gateway.list
 sudo apt-get update && sudo apt-get install -y iqrf-gateway-daemon
 ```
 
