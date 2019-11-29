@@ -116,7 +116,7 @@ sudo systemctl start nodered.service
 ```bash
 http://localhost:1880
 ```
-![Manage palete](https://../pics/node-red-add-dashboard-1.png "Manage palete")
+![Manage palete](../pics/node-red-add-dashboard-1.png "Manage palete")
 ![Install node-red-dashboard](../pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
 
 ### Step 9C - Run IoT-Starter-Kit flow
