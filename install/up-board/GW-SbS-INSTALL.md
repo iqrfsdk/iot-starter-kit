@@ -40,55 +40,7 @@ ubilinux@ubilinux:~$ systemctl status mosquitto.service
            ââ14253 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
 ```
 
-### Step 4C (optional) - Static password and ACL file
-
-These steps describe how to setup Mosquitto with a static password and ACL file.
-
-Using the mosquitto_passwd command, it is possible to create a password file for authentication.
-
-#### Create password for <user_name> (ubilinux)
-
-Example to create a password file and add add an username (use the -c only the first time as it will create a new file):
-
-```bash
-sudo mosquitto_passwd -c /etc/mosquitto/passwd <user_name>
-```
-
-#### Create ACL file
-
-* Add [ACL file](mosquitto/acls) 
-to your /etc/mosquitto folder
-
-#### Modify mosquitto configuration
-
-* Include lines to enable authorization as in [configuration file](mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
-
-* Restart MQTT broker
-
-```bash
-sudo systemctl restart mosquitto.service
-```
-
-### Step 4D (optional) - Enable websockets
-
-#### Modify mosquitto configuration
-
-* Include lines to enable websocket as in [configuration file](mosquitto/mosquitto.conf) to your /etc/mosquitto/mosquitto.conf file
-
-* Restart MQTT broker
-
-```bash
-sudo systemctl restart mosquitto.service
-```
-
-## Step 5A - Stop IQRF Gateway Daemon v1
-
-```bash
-sudo systemctl stop iqrf-daemon
-sudo systemctl disable iqrf-daemon
-```
-
-## Step 5B - Install IQRF Gateway Daemon
+## Step 5A - Install IQRF Gateway Daemon
 
 ```bash
 sudo apt-get install -y dirmngr apt-transport-https
@@ -97,7 +49,7 @@ echo "deb https://repos.iqrf.org/debian stretch stable testing" | sudo tee -a /e
 sudo apt-get update && sudo apt-get install -y iqrf-gateway-daemon
 ```
 
-### Step 5C - Confirm IQRF Gateway Daemon is running
+### Step 5B - Confirm IQRF Gateway Daemon is running
 
 ```bash
 systemctl status iqrf-gateway-daemon.service
@@ -140,7 +92,7 @@ http://localhost/service
 
 * Hit Restart!
 
-## Step 8A - Install Node.js
+## Step 8A - Install Node.js and Node-RED
 
 ```bash
 cd /home/ubilinux
@@ -148,26 +100,18 @@ git clone https://gitlab.iqrf.org/alliance/iot-starter-kit.git
 cd iot-starter-kit/install
 sudo cp etc/lsb-release-debian /etc/lsb-release
 sudo apt-get install curl
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install nodejs
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 sudo cp etc/lsb-release-ubilinux /etc/lsb-release
 ```
 
-## Step 9A - Install Node-RED
+## Step 9A - Start Node-RED
 
 ```bash
-sudo npm install -g --unsafe-perm node-red
-sudo npm install -g pm2
+sudo systemctl enable nodered.service
+sudo systemctl start nodered.service
 ```
 
-### Step 9B - Start Node-RED
-
-```bash
-cd /home/ubilinux
-pm2 start /usr/bin/node-red
-```
-
-### Step 9C - Add Node-RED dashboard
+### Step 9B - Add Node-RED dashboard
 
 ```bash
 http://localhost:1880
@@ -175,50 +119,27 @@ http://localhost:1880
 ![Manage palete](https://../pics/node-red-add-dashboard-1.png "Manage palete")
 ![Install node-red-dashboard](../pics/node-red-add-dashboard-2.png "Install node-red-dashboard")
 
-### Step 9D - Run IoT-Starter-Kit flow
+### Step 9C - Run IoT-Starter-Kit flow
 
 ```bash
 cd /home/ubilinux/iot-starter-kit/install
 cp up-board/node-red/* /home/ubilinux/.node-red
-pm2 restart node-red
+sudo systemctl restart nodered.service
 ```
 
-### Step 9E - Allow Node-RED to run after reboot
+### Step 9D - Confirm Node-RED is running
 
 ```bash
-pm2 save
+systemctl status nodered.service
 ```
 ```bash
-[PM2] Saving current process list...
-[PM2] Successfully saved in /home/ubilinux/.pm2/dump.pm2
-```
-
-```bash
-pm2 startup
-```
-```bash
-[PM2] Init System found: systemd
-[PM2] To setup the Startup Script, copy/paste the following command:
-sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubilinux --hp /home/ubilinux
-```
-
-```bash
-sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubilinux --hp /home/ubilinux
-```
-
-### Step 9F - Confirm Node-RED is running
-
-```bash
-systemctl status pm2-ubilinux
-```
-```bash
-â pm2-ubilinux.service - PM2 process manager
-   Loaded: loaded (/etc/systemd/system/pm2-ubilinux.service; enabled; vendor preset: enabled)
-   Active: active (running) since Thu 2017-11-23 01:20:09 UTC; 1min 10s ago
-     Docs: https://pm2.keymetrics.io/
- Main PID: 21952 (PM2 v2.7.2: God)
-   CGroup: /system.slice/pm2-ubilinux.service
-           âŁ 21952 PM2 v2.7.2: God Daemon (/home/ubilinux/.pm2)
+â nodered.service - Node-RED graphical event wiring tool
+   Loaded: loaded (/etc/systemd/system/nodered.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2019-11-29 01:20:09 UTC; 1min 10s ago
+     Docs: http://nodered.org/docs/hardware/raspberrypi.html
+ Main PID: 20773 (node-red)
+   CGroup: /system.slice/nodered.service
+           âŁ 20773 node-red
 ```
 
 ## Step 10A - Check Node-RED dashboard
